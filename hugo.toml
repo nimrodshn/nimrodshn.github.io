@@ -1,0 +1,7 @@
+baseURL = 'https://nimrodshn.github.io'
+languageCode = 'en-us'
+title = 'Yet another corner of the internet'
+theme = 'hugo-kiera'
+
+[params]
+    katex = true
