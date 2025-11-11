@@ -6,7 +6,7 @@ draft = false
 
 Following the recommendations[[1](https://terrytao.wordpress.com/career-advice/write-down-what-youve-done/)][[2](https://terrytao.wordpress.com/career-advice/ask-yourself-dumb-questions-and-answer-them/)] of one Terry Tao, I've started this set of notes (or journal?) for my own enjoyment while reading through "Real Analysis and Probability" by Robert Ash.
 
-These notes will be split by chapter. I may jump to between chapters as the book is structured in such a way that one can jump from chapter two to chapter five.
+I may jump to between chapters two and chapter five as the book is structured in such a way that one can do that.
 
 # Chapter 1:
 

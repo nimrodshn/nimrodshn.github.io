@@ -1,0 +1,214 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>The Mathematics of &#34;Machi Koro&#34; - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/machi-koro/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="The Mathematics of &#34;Machi Koro&#34;">
+  <meta property="og:description" content="“Machi Koro” is a strategy (and luck) board game where players try to gain assets and money.
+Rules of the game In each turn; each player tosses a die (or two, if permitted) and gains (or losses) money depending on the outcome of the die and his current assets.
+Each player starts with the same set of assets:
+The starting hand. Credit: Machi Koro - The Rules and Tactics
+The goal of the game is to gain four “special” assets.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-11-11T07:56:31+02:00">
+    <meta property="article:modified_time" content="2025-11-11T07:56:31+02:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The Mathematics of &#34;Machi Koro&#34;">
+  <meta name="twitter:description" content="“Machi Koro” is a strategy (and luck) board game where players try to gain assets and money.
+Rules of the game In each turn; each player tosses a die (or two, if permitted) and gains (or losses) money depending on the outcome of the die and his current assets.
+Each player starts with the same set of assets:
+The starting hand. Credit: Machi Koro - The Rules and Tactics
+The goal of the game is to gain four “special” assets.">
+
+<meta name="generator" content="Hugo 0.126.2">
+    
+    <link rel="stylesheet" href="/css/katex.min.css" >
+    <script defer src="/js/katex.min.js"></script>
+    <script defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>The Mathematics of &#34;Machi Koro&#34;</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-11-11T07:56:31&#43;02:00">Nov 11, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>4 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p>&ldquo;Machi Koro&rdquo; is a strategy (and luck) board game where players try to gain assets and money.</p>
+<h2 id="rules-of-the-game">Rules of the game</h2>
+<p>In each turn; each player tosses a die (or two, if permitted) and gains (or losses) money depending on the outcome of the die and his current assets.</p>
+<p>Each player starts with the same set of assets:</p>
+<p><img src="starting-set-machi-koro.png" alt="Machi Koro starting assets"></p>
+<p><em>The starting hand. Credit: <a href="https://medium.com/@adthamburaj/machi-koro-the-rules-and-tactics-5d0fb8d11785">Machi Koro - The Rules and Tactics</a></em></p>
+<p>The goal of the game is to gain four &ldquo;special&rdquo; assets. These are the four lower cards in the above image.</p>
+<p>You gain assets by paying with the money you have gained. Each card has a cost written inside a yellow circle on the bottom left of each card.</p>
+<p>Each card has a state-and-action pair, the state or condition is depicted by each cards <em>color and number listed on top</em> (somewhat similar to <a href="https://en.wikipedia.org/wiki/Deterministic_finite_automaton">Finite Automaton</a>) and the action is listed on the card - For example; The blue card take action whevenr <em>any</em> player rolls the number listed on the top while the green cards take action only when the player holding them rolls the number listed on top.</p>
+<p>For example, whenever any player rolls 1 <em>all the players holding the &lsquo;Wheat Field&rsquo; card</em> (the blue card with 1 listed on top) gain a single coin (as the action written on it depicts).</p>
+<p>Whenver a player rolls 2 or 3 <em>only</em> she gains a single coin (due to the action written on it).</p>
+<p><img src="cards.png" alt="Machi Koro cards"></p>
+<p><em>&ldquo;Machi Koro&rdquo; cards. Credit: <a href="https://boardgamegeek.com/image/2016227">EndersGame</a></em></p>
+<h2 id="some-strategies-to-consider">Some strategies to consider</h2>
+<h3 id="single-die-strategy">Single die strategy</h3>
+<p>You start the game by rolling a single die, thus a reasonable strategy to begin with is to buy as many of the <em>lower</em> cards
+as possible so to gain from as many veriety.
+Since each card has the exact probability of $\frac{1}{6}$ this strategy guarentees that on each turn you will gain at least one coin.</p>
+<p>An important observation is that there are two <em>different</em> types of expected returns augmented by the cards conditions - one when the player rolls the die and another return when <em>other</em> players roll their die. We would like to maximize <em>both</em> but for the sake of simplicity we will focus, for now, on the return value when it is the players turn to roll the die.</p>
+<p>However the cards associated with four, five and six are more expensive, but for now, lets ignore their costs. Indeed, it is a good investment in buying the &ldquo;Convenience Store&rdquo; (the green four card) as soon as possible since it is relatively cheap (only costs two coins) but gains the player holding it <em>three</em> coins which increases expected return drastically as it jumps from (We assume here the initial hand of one &ldquo;Wheat Field&rdquo; card and one &ldquo;Bakery&rdquo; card) -</p>
+<p>$$\frac{1 + 1 + 1}{6} = \frac{1}{2}$$</p>
+<p>to -</p>
+<p>$$\frac{1 + 1 + 3}{6} = \frac{5}{6}$$</p>
+<p>What you will find quickly is that the other players will hord the &ldquo;Bakery&rdquo; and &ldquo;Convenience Store&rdquo; cards quickly in order to quickly gain money and increase their expected return. One needs to quickly buy out the &ldquo;Convenience Store&rdquo; cards in order to safeguard against this strategy. Otherwise one will lose quickly.</p>
+<h3 id="two-die-strategy">Two die strategy</h3>
+<p>Once you have bought enough of the &ldquo;Convenience Store&rdquo; and &ldquo;Bakery&rdquo; cards it is worth considering buying higher cards such as the &ldquo;Forest&rdquo; (the blue-five card) and one of the Purple Six cards (&ldquo;Stadium&rdquo;, &ldquo;TV Station&rdquo; and &ldquo;Buisness Center&rdquo;).These are helpful both for a single die strategy as well as for a two-die strategy.</p>
+<p>Once you have safeguard enough against the single die strategy it is worth considering a two-die strategy, however for it to be useful one should first buy at the <em>very least</em> the &ldquo;Cheese Factory&rdquo; and/or the &ldquo;Furniture Factory&rdquo;. As the probability of rolling these numbers are the heighest (this probability is <em>determined</em> by the dies) -</p>
+<p>$$ P[&ldquo;Rolling\ 6&rdquo;] = \frac{5}{36} $$</p>
+<p>$$ P[&ldquo;Rolling\ 7&rdquo;] = \frac{6}{36} = \frac{1}{6} $$</p>
+<p>$$ P[&ldquo;Rolling\ 8&rdquo;] = \frac{5}{36} $$</p>
+<p>Thus, there is a probability of $\frac{1}{2}$  of rolling <em>either of them</em>.</p>
+<p>Which means the expected value becomes, assuming a hand which contains all the cards from 1-8 and a &ldquo;TV Station&rdquo; for a six card -
+$$
+\frac{0}{36}*1+\frac{1}{36}*2+\frac{2}{36}*1+\frac{3}{36}*3+\frac{4}{36}*1+\frac{5}{36}*5+\frac{6}{36}*3+\frac{5}{36}*3 = \frac{75}{36}
+$$</p>
+<h3 id="summary">Summary</h3>
+<p>In my view - one first needs to safeguard against the one-die strategy which requires hording of lower and cheap cards like the &ldquo;Convenience Store&rdquo; and &ldquo;Bakery&rdquo; cards. Otherwise the expected value of the other players jumps quickly.</p>
+<p>Than, one needs to decide if they roll a single or two dies, if they would like to roll two dies a good strategy is to invest in one of the six cards and in the &ldquo;Cheese Factory&rdquo; and/or the &ldquo;Furniture Factory&rdquo; cards to ensure the expected value does not decrease.</p>
+<p>Otherwise the expected value is -</p>
+<p>$$
+\frac{0}{36}*1+\frac{1}{36}*2+\frac{2}{36}*1+\frac{3}{36}*3+\frac{4}{36}*1+\frac{5}{36}*5 = \frac{42}{36}
+$$</p>
+<p>Which is <em>lower</em> (!!) than, the expected return one may recieve by buying two or three of the &ldquo;Convenience Store&rdquo; cards -</p>
+<p>$$\frac{1 + 1 + 6}{6} = \frac{8}{6}$$</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/sigma-fields-and-measures/"><i class="fa fa-chevron-circle-left"></i> $\sigma$-fields and Measures</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+  
+
+
+
+
+</body>
+
+</html>
+

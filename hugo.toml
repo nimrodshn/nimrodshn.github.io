@@ -1,7 +1,17 @@
-baseURL = 'https://nimrodshn.github.io'
+baseURL = 'https://nimrodshn.github.io/'
 languageCode = 'en-us'
 title = 'Yet another corner of the internet'
 theme = 'hugo-kiera'
 
 [params]
     katex = true
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+[[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
