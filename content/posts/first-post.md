@@ -66,7 +66,7 @@ There are several "canonical" examples to play with thought the one I prefer the
 highlight the difference is to take two *disjoint sets* $A,B \subset{\Omega}$ and define:
 
 $$A_n=\begin{cases}
-   A &\text{if n is even}  \\
+   A &\text{if n is even}  \\\
    B &\text{if n is uneven} 
 \end{cases}$$
 
