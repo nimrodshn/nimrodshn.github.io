@@ -19,9 +19,9 @@
 
 <meta name="generator" content="Hugo 0.126.2">
     
-    <link rel="stylesheet" href="/css/katex.min.css" >
-    <script defer src="/js/katex.min.js"></script>
-    <script defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body, {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
       delimiters: [
         {left: '$$', right: '$$', display: true},
         {left: '$', right: '$', display: false},
@@ -85,6 +85,64 @@
     
 
     <li class="first" >
+      <h1><a href="http://localhost:1313/posts/limits_proof/" title="A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$">A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-11-30T00:00:00Z">Nov 30, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p>Definition: If $\liminf A_n = \limsup A_n = A^{\star}$ we define $\lim_n A_n = A^{\star}$.
+Problem: Assume $\mu$ a finite measure and $A_n\in\mathcal{F}, \forall{n}\in\mathbb{N}$. Show $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$
+An initial idea:
+My initial idea was to use the following properties of $\liminf A_n$ and $\limsup A_n$:
+$w\in\liminf{A_n} \iff \exist{n}$ such that $\forall{k\geq{n}}$ we have $w\in{A_k}$.
+$w\in\limsup{A_n} \iff$ there are infinitely many $n$ such that $w\in{A_n}$.
+However these propoerties do not reveal a connection between $\mu(\limsup{A_n})=\mu(\liminf{A_n})=\mu(A^{\star})$ and $\mu(A_n)$.</p>
+      
+      <a href="/posts/limits_proof/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
+      <h1><a href="http://localhost:1313/posts/an-explicit-construction-of-a-sigma-field/" title="An explicit construction of a $\sigma$-field">An explicit construction of a $\sigma$-field</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-11-27T00:00:00Z">Nov 27, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>5 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p>$\sigma$-field definition and motivation: Definition: A $\sigma$-field is a collection of subsets of a set $\Omega$ such that the following hold:
+$\Omega \in F$. if $A \in F$, so is $A^C \in F$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $F$ their union is in $F$ as well. The motivation for this discussion is based on the following problem by Ash:
+&ldquo;Let $A_1,&hellip;,A_n$ be arbitraty subsets of $\Omega$. Describe (explicitly) the smallest $\sigma$-field $\mathcal{F}$, containing $A_1,.</p>
+      
+      <a href="/posts/an-explicit-construction-of-a-sigma-field/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
       <h1><a href="http://localhost:1313/posts/machi-koro/" title="The Mathematics of &#34;Machi Koro&#34;">The Mathematics of &#34;Machi Koro&#34;</a></h1>
       <aside>
     <ul>
@@ -125,15 +183,15 @@ The goal of the game is to gain four &ldquo;special&rdquo; assets.</p>
 
         
 
-        <li>One minute read</li>
+        <li>10 minute read</li>
     </ul>
 </aside>
 
       
 
-      <p>The section begins with the definition of a sigma field (algebra) $\textit{F}$:
-A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:
-$\Omega \in \textit{F}$. if $A \in \textit{F}$, so is $A^C \in \textit{F}$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $\textit{F}$ their union is in $\textit{F}$ as well. Some observations: The empty set $\phi$ is also in F - since $\phi = \Omega^c \in \textit{F}$.</p>
+      <p>$\sigma$-fields: The section begins with the definition of a sigma field (algebra) $F$:
+Definition: A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:
+$\Omega \in F$. if $A \in F$, so is $A^C \in F$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $F$ their union is in $F$ as well. Observations: The empty set $\phi$ is also in F - since $\phi = \Omega^c \in F$.</p>
       
       <a href="/posts/sigma-fields-and-measures/">Read more…</a>
       

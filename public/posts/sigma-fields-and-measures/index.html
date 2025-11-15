@@ -10,9 +10,9 @@
 <meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/sigma-fields-and-measures/">
   <meta property="og:site_name" content="Yet another corner of the internet">
   <meta property="og:title" content="$\sigma$-fields and Measures">
-  <meta property="og:description" content="The section begins with the definition of a sigma field (algebra) $\textit{F}$:
-A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:
-$\Omega \in \textit{F}$. if $A \in \textit{F}$, so is $A^C \in \textit{F}$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $\textit{F}$ their union is in $\textit{F}$ as well. Some observations: The empty set $\phi$ is also in F - since $\phi = \Omega^c \in \textit{F}$.">
+  <meta property="og:description" content="$\sigma$-fields: The section begins with the definition of a sigma field (algebra) $F$:
+Definition: A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:
+$\Omega \in F$. if $A \in F$, so is $A^C \in F$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $F$ their union is in $F$ as well. Observations: The empty set $\phi$ is also in F - since $\phi = \Omega^c \in F$.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -22,15 +22,15 @@ $\Omega \in \textit{F}$. if $A \in \textit{F}$, so is $A^C \in \textit{F}$. For 
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="$\sigma$-fields and Measures">
-  <meta name="twitter:description" content="The section begins with the definition of a sigma field (algebra) $\textit{F}$:
-A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:
-$\Omega \in \textit{F}$. if $A \in \textit{F}$, so is $A^C \in \textit{F}$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $\textit{F}$ their union is in $\textit{F}$ as well. Some observations: The empty set $\phi$ is also in F - since $\phi = \Omega^c \in \textit{F}$.">
+  <meta name="twitter:description" content="$\sigma$-fields: The section begins with the definition of a sigma field (algebra) $F$:
+Definition: A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:
+$\Omega \in F$. if $A \in F$, so is $A^C \in F$. For any countable collection of sets ${A_i}_{i=0}^\infty$ in $F$ their union is in $F$ as well. Observations: The empty set $\phi$ is also in F - since $\phi = \Omega^c \in F$.">
 
 <meta name="generator" content="Hugo 0.126.2">
     
-    <link rel="stylesheet" href="/css/katex.min.css" >
-    <script defer src="/js/katex.min.js"></script>
-    <script defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body, {
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
       delimiters: [
         {left: '$$', right: '$$', display: true},
         {left: '$', right: '$', display: false},
@@ -102,7 +102,7 @@ $\Omega \in \textit{F}$. if $A \in \textit{F}$, so is $A^C \in \textit{F}$. For 
 
         
 
-        <li>One minute read</li>
+        <li>10 minute read</li>
     </ul>
 </aside>
 
@@ -113,20 +113,232 @@ $\Omega \in \textit{F}$. if $A \in \textit{F}$, so is $A^C \in \textit{F}$. For 
 
     
 
-    <p>The section begins with the definition of a sigma field (algebra) $\textit{F}$:</p>
-<p>A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:</p>
+    <h3 id="sigma-fields">$\sigma$-fields:</h3>
+<p>The section begins with the definition of a sigma field (algebra) $F$:</p>
+<p><strong>Definition</strong>: A sigma field is a collection of subsets of a set $\Omega$ such that the following hold:</p>
 <ol>
-<li>$\Omega \in \textit{F}$.</li>
-<li>if $A \in \textit{F}$, so is $A^C \in \textit{F}$.</li>
-<li>For any countable collection of sets ${A_i}_{i=0}^\infty$ in $\textit{F}$ their union  is in $\textit{F}$ as well.</li>
+<li>$\Omega \in F$.</li>
+<li>if $A \in F$, so is $A^C \in F$.</li>
+<li>For any countable collection of sets ${A_i}_{i=0}^\infty$ in $F$ their union  is in $F$ as well.</li>
 </ol>
-<h3 id="some-observations">Some observations:</h3>
+<h3 id="observations">Observations:</h3>
 <ol>
-<li>The empty set $\phi$ is also in F - since $\phi = \Omega^c \in \textit{F}$.</li>
+<li>The empty set $\phi$ is also in F - since $\phi = \Omega^c \in F$.</li>
 <li>Finite intersections are also in F - Using De Morgan, we may write -
 $(A^C \cup B^C)^C=A\cap B$</li>
 <li>Using the same reasoning so is countable intersections.</li>
 </ol>
+<h3 id="measures">Measures:</h3>
+<p><strong>Definition</strong>: A measure $\mu$ is a <em>non-negative countably additive</em> set-function defined on a $\sigma$-field $F$ of a set $\Omega$:</p>
+<p>$$
+\mu: F \rightarrow \mathbb{R}.
+$$</p>
+<p>Countably additive means that if $A_1,A_2..$ are any finite or countably infinite <em>disjoint</em> subsets of $F$ than:</p>
+<p>$$
+\mu(\bigcup_i{A_i}) = \Sigma_i\mu(A_i)
+$$</p>
+<p>If $\mu(\Omega)=1$ we call $\mu$ a probability measure.</p>
+<p><strong>Important note</strong>: What is the meaning of <strong>countably</strong> additive in the above definition?</p>
+<p>Take a countable collection of disjoint sets $A_1, A_2, &hellip;$ and a <em>finitly</em> additive set function $\mu$ and define $S_n=\bigcup_{i=1}^{n}A_i$ than -</p>
+<p>$$
+\lim_{n\rightarrow\infty}\mu(S_n) = \lim_{n\rightarrow\infty}\mu(\bigcup_{i=1}^{n}A_i) = \lim_{n\rightarrow\infty} \sum_{i=0}^n\mu(A_i)
+$$</p>
+<p>If limit of the partial sums on the right hand side <em>exists</em> (Admittedly, it may be $\infty$) and is equal to the measure of the limiting set on the left hand side for <em>any countable disjoint collection of sets</em> than we say that the set function is countably additive.</p>
+<h3 id="a-note-about-ashs-sigma-field-vs-field-comment-in-the-book">A note about Ash&rsquo;s $\sigma$-field vs field comment in the book.</h3>
+<p>Here Ash makes a rather peculiar decision to make the distinction between a field and a $\sigma$-field since if
+$F$ contains no countable unions - it makes no sense to talk about countable additivity.
+I assume that this allows him to make a generalization as a field can also be a $\sigma$-field if it contains countable unions
+but the latter may not be the case.</p>
+<p>According to Ash; if a measure is countably additive it is also finite bc one can simply take a collection such as -</p>
+<p>$$
+A_1, A_2,&hellip;,A_k,\phi,\phi,\phi&hellip;
+$$</p>
+<p>And due to countable addativity we may also deduce finite additivity.</p>
+<h3 id="observations-1">Observations</h3>
+<p>For any countable additive set funcion the following holds -</p>
+<ol>
+<li>$\mu(\phi) = 0$. Indeed, take and set $A$ in $F$ (At the very least $F$ contains $\Omega$ and $\phi$) and write -
+$$
+\mu(A)= \mu(A\cup\phi) = \mu(A)+\mu(\phi).
+$$</li>
+</ol>
+<p>Here there is a very important assumption that there exists a set A on which $\mu(A) &lt; \infty$</p>
+<ol start="2">
+<li>$\mu(A\cup{}B) = \mu(A)+\mu(B) - \mu(A\cap{}B)$</li>
+</ol>
+<p><strong>Proof:</strong> Take any two sets $A,B \in{F}$, than by additivity -</p>
+<p>$$
+\mu(A) = \mu(A-B) + \mu(A\cap{B}) \\
+\mu(B) = \mu(B-A) + \mu(A\cap{B})
+$$</p>
+<p>Summing the two together -
+$$
+\mu(A) +\mu(B) = \mu(A-B) + \mu(B-A) + 2\mu(A\cap{B}) = \
+[\mu(A-B) + \mu(B-A) + \mu(A\cap{B})] + \mu(A\cap{B}) = \
+\mu(A\cup{B}) + \mu(A\cap{B})
+$$</p>
+<ol start="3">
+<li>
+<p>If $A \subset B$, than - $\mu(B) = \mu(A) + \mu(B-A)$. (By additivity).</p>
+</li>
+<li>
+<p>Assume $\mu$ is nonegative (countable or finite) additive. The following is called &ldquo;union bound&rdquo; in probability - $\mu(\cup_i{A_i}) \leq \Sigma_i \mu(A_i)$.</p>
+</li>
+</ol>
+<p><strong>Proof</strong>:
+$$
+\mu(\cup_i{A_i}) = \mu(\cup_i (A_i \cap (A_1^c \cap &hellip; \cap A_{i-1}^c))) = \Sigma_i \mu((A_i \cap (A_1^c \cap &hellip; \cap A_{i-1}^c))) \leq \Sigma_i \mu(A_i)
+$$</p>
+<p>The second equality is due to the fact that the elemnts in the union are disjoint.</p>
+<p><strong>A second proof for the finite case</strong>: Take any $A,B\in{F}$, than -<br>
+$$
+\mu(A\cup{B}) \leq \mu(A\cup{B}) + \mu(A\cap{B}) = \mu(A) + \mu(B)
+$$</p>
+<p>By induction, assume the statement is correct up to some $n-1$, we prove -</p>
+<p>$$
+\mu(\cup_{i=1}^n{A_i}) = \mu(\cup_{i=1}^{n-1}{A_i}\cup{A_n}) \leq \mu(\cup_{i=1}^{n-1}{A_i}) + \mu(A_n) \leq \Sigma_{i=1}^{n-1} \mu(A_i) + \mu(A_n) = \Sigma_{i=1}^{n} \mu(A_i)
+$$</p>
+<p>Here we had used the induction hypothesis in both the inner inequalities.</p>
+<p>Equality is given when the sets are disjoint due to countable additivity.</p>
+<p><strong>Important note:</strong> What is the importance of the nonegativity assumption in 4?
+Indeed even the base case in the above proof may fall short as we can imagine a case were $\mu(A\cap{B})$ is negative and thus the right hand side may be smaller than the left hand side. For example; Lets take two sets $A, B$ such that the following holds -
+$$
+\mu(A-B) = \mu(B-A) = 5 \\
+\mu(A\cap{B}) = -6
+$$</p>
+<p>By 2 we have -
+$$
+\mu(A) = \mu(B) = 1 \\
+\mu(A\cup{B}) = \mu(A) + \mu(B) - \mu(A\cap{B}) = -1-1+6=4
+$$
+While -
+$$
+\mu(A) + \mu(B) = -1-1 = -2
+$$</p>
+<ol start="5">
+<li>Let $A_1, A_2,&hellip; \rightarrow A$ be an increasing collection and $\mu$ be a measure, than $\lim_i \mu(A_i) \rightarrow \mu(A)$.</li>
+</ol>
+<p><strong>Proof</strong>:</p>
+<p>Here again we need to be careful - what if, for some $i$, $\mu(A_i) = \infty$. By property 3, for any $k\geq{}i$ we have $\mu(A_k) = \infty$ and (from property 3 again) we have $\mu(A) = \infty$ and the statement holds.</p>
+<p>Can we say something about the statement if we only knew $\mu(A) = \infty$? I am uncertain.</p>
+<p>For the case $\mu(A_i)&lt;\infty$ for all $i$ - Indeed -</p>
+<p>$$
+\mu(A) = \mu(\bigcup_i^{\infty}A_i) =  \mu(\bigcup_i^{\infty}(A_i - A_{i-1})) =  \sum_i^\infty \mu(A_i-A_i-1)  =\sum_i^\infty \mu(A_i) - \mu(A_{i-1}) = \
+\mu(A_1) + \mu(A_2) - \mu(A_1) + &hellip; = \lim_{i\rightarrow\infty}\mu(A_i)
+$$</p>
+<ol start="6">
+<li>Let $A_1, A_2,&hellip; \rightarrow A$ be a decreasing collection and $\mu$ be a measure, than $\lim_i \mu(A_i) \rightarrow \mu(A)$.</li>
+</ol>
+<p>Here is a <strong>wrong proof</strong> -
+Since $A_1,..$ is decreasing $A_1^c,..$ is increasing up to $A^c$, thus -</p>
+<p>$$
+\mu(\Omega) - \mu(A) = \mu(\Omega - A) =\mu(A^c) = \\
+\lim_i\mu(A_i^c) = \lim_i\mu(\Omega-A_i) = \mu(\Omega) - \lim_i\mu(A_i)
+$$</p>
+<p>The statment follows. But the issue here is that $\mu(\Omega)$ may be $\infty$!</p>
+<p>Thus, take in the previous proof $A_1$ instead of $\Omega$ (As $A_1-A_i$ is an increasing collection) assumed to be the largest finite measured set and the proof is fixed! (This is the proof given in the book).</p>
+<h3 id="problems">Problems</h3>
+<ol>
+<li>Let $\Omega$ be a countable infinite set and let $F$ consist of all subsets of $\Omega$. Define $\mu(A)=0$ if $A$ is finite and $\mu(A)=\infty$ if $A$ is infinite.
+a. Show that $\mu$ is finitely additive but not countably additive.
+b. Show that $\Omega$ is the limit of an increasing sequence of sets $A_n$ with $\mu(A_n)=0$ for all $n$ yet $\mu(\Omega)=\infty$</li>
+</ol>
+<p><strong>Answer</strong>:
+1.</p>
+<p>a. Indeed let $A_1,..,A_k$ be a finite collection of disjoint finite sets - their union must also be finite so we have -
+$$\mu(\bigcup_{i=1}^k{A_i}) = 0 = \sum_{i=1}^k{A_i}$$</p>
+<p>Let $A_1,A_2..$ be a countably collection of disjoint finite sets. Define $B_n=\bigcup_{i=0}^nA_i$. Thus -
+$$\mu(\bigcup_{i=1}^{\infty}{A_i})=\lim_{n\rightarrow\infty}\mu(B_n) = \lim_{n\rightarrow\infty}\sum_{i=1}^n\mu(A_i)= \lim_{n\rightarrow\infty}\sum_{i=1}^n{0} = 0 * \infty = 0$$</p>
+<p>b. Since $\Omega$ is countably infinite we may build the sequence inductivly -</p>
+<p>We set $A_0=\phi$. For each index $i&gt;0$ we pick randomly an element from - $\omega\in\Omega-A_{i-1}$ and define $A_i=A_{i-1}\cup{\omega}$.</p>
+<p>We may pick an elemnt in this manner as $\Omega$ is countably infinite.</p>
+<p>We note that $|A_k|=k&lt;\infty$ (since at each step we add a single element), implying $\mu(A_k)=0$ for any $k$, however $A_k\rightarrow\Omega$.</p>
+<ol start="2">
+<li>Let $\mu$ be a counting measure on $\Omega$ (and infinite set). Show that there exists a sequence of sets $A_n\downarrow\phi$ with $\lim_{n\rightarrow\infty}\mu(A_n)\neq0$</li>
+</ol>
+<p><strong>Answer</strong>:</p>
+<p>We define an increasing sequence of sets such as in 1.b -</p>
+<p>We set $A_0=\phi$. For each index $i&gt;0$ we pick randomly an element from - $\omega\in\Omega-A_{i-1}$ and define $A_i=A_{i-1}\cup{\omega}$.</p>
+<p>We may pick an elemnt in this manner as $\Omega$ is countably infinite.</p>
+<p>We than define $B_i=\Omega-A_i$. Implying $B_0=\Omega$ and $B_n\downarrow\phi$ However -</p>
+<p>$$\lim_{n\rightarrow\infty}\mu(B_n)=\lim_{n\rightarrow\infty}\mu(\Omega-A_n)=\lim_{n\rightarrow\infty}\mu(\Omega)-\mu(A_n)=\infty$$</p>
+<ol start="3">
+<li>Let $\Omega$ be a countably infinite set and let $F$ be a field consisting of all finite subsets of $\Omega$ and their complements. Define the following -</li>
+</ol>
+<p>$$
+\mu(A) = \begin{cases}
+0 &amp;\text{A is finite} \\
+1 &amp;\text{$A^c$ is finite}
+\end{cases}
+$$</p>
+<p>a. Show that $\mu$ is finitely additive but not countably additive on $F$.
+b. Show that $\Omega$ is the limit of an increasing sequence of sets $A_n\in{F}$ with $\mu(A_n)=0$ for all $n$, but $\mu(\Omega)=1$.</p>
+<p><strong>Answer</strong>:
+a.
+We observe the following: 1. If $A^c$ is finite we deduce $A$ is infinite. 2. Take any finite collection of disjoint sets $A_1,&hellip;,A_k$ we cannot have two sets $A_i, A_j$ such that both have $\mu(A_i)= \mu(A_j) = 1$ for than both $A_i^c$ and $A_j^c$ are finite but since $A_i$ and $A_j$ are disjoint we have $A_i\in{A_j^c}$ (and vice versa) but $A_i$ is infinite. contradiction.</p>
+<p>Now that we have established these key observations, Let $A_1,&hellip;,A_k$ be a disjoint collection. There are two cases:</p>
+<ol>
+<li>$A_1,&hellip;,A_k$ contains a set $A_i$ with finite complement $A_i^c$ - In this case, by our first observation $A_i$ is infinite and thus the union $\cup_{i=1}^k{A_i}$ is infinite as well and its compliment is finite and its measure $\mu(\cup_{i=1}^k{A_i})=1=\sum_{i=1}^k{A_i}.$</li>
+<li>$A_1,&hellip;,A_k$ contains no set $A_i$ with finite complement $A_i^c$ than the union is finite and again we have - $\mu(\cup_{i=1}^k{A_i})=0=\sum_{i=1}^k{A_i}$.
+We have thus concluded with finite additivity.</li>
+</ol>
+<p>b. See 1.b</p>
+<ol start="5">
+<li>Let $\mu$ be finitely additive nonnegative set function on $F$ prove -
+$$
+\mu(\bigcup_{i=1}^{\infty}{A_i})\geq\sum_{i=1}^{\infty}\mu(A_i)
+$$</li>
+</ol>
+<p><strong>Answer</strong>:</p>
+<p>Assume otherwise, we would than have -</p>
+<p>$$
+\mu(\bigcup_{i=1}^{\infty}{A_i})&lt;\sum_{i=1}^{\infty}\mu(A_i) \implies 0 &lt;\sum_{i=1}^{\infty}\mu(A_i) - \mu(\bigcup_{i=1}^{\infty}{A_i}) = \\
+\mu(A_1) + &hellip; + \mu(A_k) + &hellip; - \mu(\bigcup_{i=1}^{\infty}{A_i}) =  \\
+-\mu(\bigcup_{i=1}^{\infty}{A_i} - A_1) + \mu(A_2) + &hellip; + \mu(A_k) +.. = \\
+-\mu(\bigcup_{i=1}^{\infty}{A_i} - A_1 - A_2 - A_3&hellip;) = \\
+-\mu(\phi)
+$$</p>
+<p>Contradiction.</p>
+<p>Another proof, relying on similar ideas:
+Since $\mu(\bigcup_{i=1}^{n}{A_i})\subset\bigcup_{i=1}^{\infty}{A_i}$ we have -
+$$
+\sum_{i=1}^{n}\mu(A_i)= \mu(\bigcup_{i=1}^{n}{A_i}) \leq \mu(\bigcup_{i=1}^{\infty}{A_i})
+$$</p>
+<p>This is true for any $n$. Take the limit $n\rightarrow\infty$.</p>
+<ol start="6">
+<li>Let $f: \Omega\rightarrow\Omega^\star $ and let $\gamma$ be a collection of subsets of $\Omega^*$. Show $\sigma(f^{-1}(\gamma)) = f^{-1}(\sigma(\gamma))$.</li>
+</ol>
+<p>First we show that $f^{-1}(\sigma(\gamma))$ is a $\sigma$-field.</p>
+<p>For if it is - we have $f^{-1}(\gamma)\subset{f^{-1}(\sigma(\gamma))}$ and thus $\sigma(f^{-1}(\gamma)) \subset f^{-1}(\sigma(\gamma)) $.</p>
+<p>Indeed, if $A, B\in f^{-1}(\sigma(\gamma))$, meaning there exists $A^\star, B^\star \in\sigma(\gamma)$ s.t. $f^{-1}(A^\star)=A$ and $f^{-1}(B^\star)=B$ we must have $A\cup{B}\in f^{-1}(\sigma(\gamma))$ otherwise -</p>
+<p>$$
+A\cup{B}=f^{-1}(A^\star)\cup{f^{-1}(B^\star)}=f^{-1}(A^\star\cup{B^\star}) \implies A^\star\cup{B^\star} \notin \sigma(\gamma)
+$$</p>
+<p>Contradiction. We argue the same for the complements. Thus, we have proved that $f^{-1}(\sigma(\gamma))$ is a $\sigma$-field. (I&rsquo;ve waived hands here a little bit but I am sure the reader can appreciate this line of logic can be extended to complements.)</p>
+<p>We must now show that $f^{-1}(\sigma(\gamma))\subset\sigma(f^{-1}(\gamma))$. For that we will use the &ldquo;Good Set&rdquo; principle as suggested by Ash.</p>
+<p>Define the following collection $M$ -
+$$
+M = \set{ A \in \sigma(\gamma) | f^{-1}(A) \in \sigma(f^{-1}(\gamma)) }
+$$</p>
+<p>We claim that M is a $\sigma$-field. Indeed if $A^{\star},B^{\star}\in{M}$ by definition we $f^{-1}(A^{\star})=A$, $f^{-1}(B^{\star})=B \in \sigma(f^{-1}(\gamma))$.</p>
+<p>Thus, $A\cup{B}\in\sigma(f^{-1}(\gamma))$. But as previously shown - $A\cup{B} = f^{-1}(A^{\star})\cup{f^{-1}({B^{\star}})}=f^{-1}(A^{\star}\cup{B^{\star}})$ Implying $A^{\star}\cup{B^{\star}}\in{M}$ as well. This same logic extends to complements as well.</p>
+<p>Now we note that $\gamma\in{M}$ as $f^{-1}(\gamma)\in{\sigma(f^{-1}(\gamma))}$. Implying, $\sigma(\gamma)\in{M}$ as M is a $\sigma$-field. Concluding our proof.</p>
+<ol start="7">
+<li>Let $A$ be a Borel set. Show that the $\sigma$-field of subsets of $A$ containing the open sets in $A$ is - $$\set{B\in{\mathbb{B}(\reals) | B\subset{A}}}=\mathbb{B}(\reals)\cap{A}$$</li>
+</ol>
+<p>Before we give the answer -  a brief reflection:
+This question, at first sight, appeared a little bit convoluted. Specifically, it took me a while to understand what <em>exactly</em> is &ldquo;the $\sigma$-field of subsets of $A$ containing the open sets in $A$&rdquo;? First its a $\sigma$-field (A collection of subsets with certain properties), but what are these subsets? Are they all subsets of $A$? The open sets in $A$? What is the right way to capture these sets formally but not too little sets such that when I take their $\sigma$-field I will be able to capture the entire Borel sets!.</p>
+<p>I went back and re-read the example provided by Ash for the &ldquo;Good Set&rdquo; principle and there (I think) I&rsquo;ve found a way which might be helpful in this case as well. We introduce the concept of $\sigma_A$ as the $\sigma$-field consisting of subsets of $A$.
+With this definition we can formally define the sets in question -</p>
+<p><strong>Answer</strong>:
+Let $\gamma$ be the collection of open sets in $\Reals$ and $A$ be the Borel set in question. We must show that $\sigma_A(\gamma\cap{A}) = \mathbb{B}(\reals)\cap{A}$.</p>
+<p>First, we will show that $\mathbb{B}(\reals)\cap{A}$ is a $\sigma$-field. For if $a,b\in\mathbb{B}(\reals)$ we have $a\cap{A}, b\cap{A}\in\mathbb{B}(\reals)\cap{A}$, but since $\mathbb{B}(\reals)$ is a $\sigma$-field we have $(a\cap{A})\cup{}(b\cap{A})=(a\cup{b})\cap{A}\in\mathbb{B}(\reals)\cap{A}$ implying $\mathbb{B}(\reals)\cap{A}$ is indeed a $\sigma$-field.</p>
+<p>Indeed, we have $\gamma\cap{A}\subset\mathbb{B}(\reals)\cap{A}\implies\sigma_A(\gamma\cap{A})\subset\mathbb{B}(\reals)\cap{A}$.</p>
+<p>To show the converse, $\mathbb{B}(\reals)\cap{A}\subset\sigma_A(\gamma\cap{A})$, we will use the &ldquo;Good Set&rdquo; principle.</p>
+<p>Define - $$M = \set{X\in\mathbb{B}(\reals) | X\cap{A} \in \sigma_A(\gamma\cap{A})}$$</p>
+<p>We will show that $M$ is a $\sigma$-field. Indeed, let $U,V\in{M}$ meaning $U\cap{A},V\cap{A}\in \sigma_A(\gamma\cap{A})$ but then, by definition of $\sigma_A(\gamma\cap{A})$ we have $U\cap{A}\cup{}V\cap{A}=(U\cup{V})\cap{A}\in\sigma_A(\gamma\cap{A}) \implies U\cup{V}\in{M}$.</p>
+<p>The same reasoning follows for complements.</p>
+<p>We finish the proof by observing that $\gamma\in{M}$ but since $M$ is a $\sigma$-field we also have $\sigma(\gamma)=\mathbb{B}(\reals)\in{M}.\space \square$</p>
 
 
 </article>
