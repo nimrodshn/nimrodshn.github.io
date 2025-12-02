@@ -6,10 +6,28 @@
    <description>Recent content in Posts on Yet another corner of the internet</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
-   <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate>
+   <lastBuildDate>Tue, 02 Dec 2025 00:00:00 +0000</lastBuildDate>
    
        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
    
+   
+     <item>
+       <title>The number of binary strings on $n$ letters with no two consequitive ones</title>
+       <link>http://localhost:1313/posts/non-consequitive-1s-binary/</link>
+       <pubDate>Tue, 02 Dec 2025 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/posts/non-consequitive-1s-binary/</guid>
+       <description>&lt;p&gt;This question is from a &lt;a href=&#34;https://www.youtube.com/watch?v=uynuxg0kRHo&#34;&gt;lecture&lt;/a&gt; by Prof. Gil Cohen that popped on my YT feed (To my discredit, I watch YT on my free time..).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt;&amp;ldquo;&lt;em&gt;How many binary strings on $n$ letters are there with no two consequitive ones?&lt;/em&gt;&amp;rdquo;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Observations:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Naivly, For any $n$, if the number of 1s is strictly larger than $n/2$ than by the pigenhole principle we surely have two consequitive ones.&lt;/li&gt;&lt;li&gt;But ofcourse we can have consequitive 1s when the number of 1s is strictly lower than $\frac{n}{2}$. (e.g. 01100).&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;strong&gt;Some simple examples:&lt;/strong&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;$n=1$, than we have 2 strings trivially.&lt;/li&gt;&lt;li&gt;$n=2$, than we have 3 strings - 10, 01, 00.&lt;/li&gt;&lt;li&gt;$n=3$, than we have 5 strings - 010, 101, 100, 001, 000.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;These look like Fibonnachi&amp;rsquo;s! (if we set $a_0=1$).&lt;/p&gt;&lt;p&gt;Why does this work? Lest take for example $n=3$: If the first digit is 0 we are free to choose from any of the legal strings of the case $n=2$ for the remaining digits.&lt;/p&gt;&lt;p&gt;Otherwise, the first digit is 1 so it must be followed by a &lt;em&gt;zero&lt;/em&gt; and we use the rest of the legal strings for $n=1$. All in all we get $a_3=a_2+a_1=3+2=5$.&lt;/p&gt;&lt;p&gt;I suppose we can use the same reasoning to prove this claim by induction.&lt;/p&gt;</description>
+     </item>
+   
+     <item>
+       <title>A question on the cardinality of a $\sigma$-field</title>
+       <link>http://localhost:1313/posts/a-question-on-cardinality/</link>
+       <pubDate>Mon, 01 Dec 2025 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/posts/a-question-on-cardinality/</guid>
+       <description>&lt;p&gt;Let $\gamma$ be a any class of subsets of $\Omega$ such that $\phi,\Omega\in\gamma$. We define $\gamma_0=\gamma$, and for any ordinal $\alpha&amp;gt;0$, inductively:&lt;/p&gt;&lt;p&gt;$$\gamma_\alpha = (\cup\set{\gamma_\beta:\beta&amp;lt;\alpha})&amp;rsquo;$$&lt;/p&gt;&lt;p&gt;Where $D&amp;rsquo;$ is the class of all countable unions of differences of sets in $D$.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;What is $D&amp;rsquo;$?&lt;/strong&gt;Assume $D = \set{\Omega, \phi}$ The difference $\Omega-\phi$ is the set $\Omega$.Assume $A\in{D}$ than $D&amp;rsquo;$ contain $\phi-A$, $\Omega-A=A^c$, $\phi-A=\phi$, etc.&lt;/p&gt;&lt;p&gt;We than define $\frak{U}=\cup\set{\gamma_{\alpha}:\alpha&amp;lt;\beta}$&lt;/p&gt;&lt;p&gt;Where $\beta$ is the first uncountable ordinal.&lt;/p&gt;&lt;p&gt;We define $\mathcal{F}$ to be the smallest $\sigma$-field on $\gamma$.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Question:&lt;/strong&gt; if the cardinality of $\gamma$ is equal to the cardinality of the reals $2^{\aleph_0}$ (In the book it is assigned the letter &lt;strong&gt;c&lt;/strong&gt;), prove that the cardinality of $\mathcal{F}$ is also $2^{\aleph_0}$.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;An initial attempt:&lt;/strong&gt;&lt;/p&gt;</description>
+     </item>
    
      <item>
        <title>A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</title>

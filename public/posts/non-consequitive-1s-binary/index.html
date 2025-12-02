@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>The number of binary strings on $n$ letters with no two consequitive ones - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/non-consequitive-1s-binary/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="The number of binary strings on $n$ letters with no two consequitive ones">
+  <meta property="og:description" content="This question is from a lecture by Prof. Gil Cohen that popped on my YT feed (To my discredit, I watch YT on my free time..).
+Question: “How many binary strings on $n$ letters are there with no two consequitive ones?”
+Observations:
+Naivly, For any $n$, if the number of 1s is strictly larger than $n/2$ than by the pigenhole principle we surely have two consequitive ones. But ofcourse we can have consequitive 1s when the number of 1s is strictly lower than $\frac{n}{2}$.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-02T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="The number of binary strings on $n$ letters with no two consequitive ones">
+  <meta name="twitter:description" content="This question is from a lecture by Prof. Gil Cohen that popped on my YT feed (To my discredit, I watch YT on my free time..).
+Question: “How many binary strings on $n$ letters are there with no two consequitive ones?”
+Observations:
+Naivly, For any $n$, if the number of 1s is strictly larger than $n/2$ than by the pigenhole principle we surely have two consequitive ones. But ofcourse we can have consequitive 1s when the number of 1s is strictly lower than $\frac{n}{2}$.">
+
+<meta name="generator" content="Hugo 0.126.2">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>The number of binary strings on $n$ letters with no two consequitive ones</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-12-02T00:00:00Z">Dec 2, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>One minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p>This question is from a <a href="https://www.youtube.com/watch?v=uynuxg0kRHo">lecture</a> by Prof. Gil Cohen that popped on my YT feed (To my discredit, I watch YT on my free time..).</p>
+<p><strong>Question:</strong>
+&ldquo;<em>How many binary strings on $n$ letters are there with no two consequitive ones?</em>&rdquo;</p>
+<p><strong>Observations:</strong></p>
+<ol>
+<li>Naivly, For any $n$, if the number of 1s is strictly larger than $n/2$ than by the pigenhole principle we surely have two consequitive ones.</li>
+<li>But ofcourse we can have consequitive 1s when the number of 1s is strictly lower than $\frac{n}{2}$. (e.g. 01100).</li>
+</ol>
+<p><strong>Some simple examples:</strong></p>
+<ol>
+<li>$n=1$, than we have 2 strings trivially.</li>
+<li>$n=2$, than we have 3 strings - 10, 01, 00.</li>
+<li>$n=3$, than we have 5 strings - 010, 101, 100, 001, 000.</li>
+</ol>
+<p>These look like Fibonnachi&rsquo;s! (if we set $a_0=1$).</p>
+<p>Why does this work? Lest take for example $n=3$: If the first digit is 0 we are free to choose from any of the legal strings of the case $n=2$ for the remaining digits.</p>
+<p>Otherwise, the first digit is 1 so it must be followed by a <em>zero</em> and we use the rest of the legal strings for $n=1$. All in all we get $a_3=a_2+a_1=3+2=5$.</p>
+<p>I suppose we can use the same reasoning to prove this claim by induction.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/another-limit-question/"><i class="fa fa-chevron-circle-left"></i> Yet another limit pf from Ash 😅</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+  
+
+
+
+
+</body>
+
+</html>
+
