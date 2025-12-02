@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Yet another limit pf from Ash 😅 - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/another-limit-question/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="Yet another limit pf from Ash 😅">
+  <meta property="og:description" content="Problem: Suppose $\mu$ is a probability measure (or nonegative countably additive set function) and the following holds - $A_i\uparrow A$ and $A_i’\uparrow A’$ such that $A\subset{A’}$ than we have - $\lim_i\mu(A_i)\leq\lim_i\mu(A_i’)$.
+The simplest proof possible: As we know from previous statements on countably additive set functions - $$\lim_i\mu(A_i)=\mu(\lim_i{A_i})=\mu(A)\leq\mu(A’)=\mu(\lim_i{A_i’})=\lim_i\mu(A_i’)$$
+A first attempt of a proof using elementary analysis: Naively, we may try to attack this question as purely a question on sequences of real numbers $\set{\mu(A_i)}_i$ and $\set{\mu(A_i’)}_i$?">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-02T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Yet another limit pf from Ash 😅">
+  <meta name="twitter:description" content="Problem: Suppose $\mu$ is a probability measure (or nonegative countably additive set function) and the following holds - $A_i\uparrow A$ and $A_i’\uparrow A’$ such that $A\subset{A’}$ than we have - $\lim_i\mu(A_i)\leq\lim_i\mu(A_i’)$.
+The simplest proof possible: As we know from previous statements on countably additive set functions - $$\lim_i\mu(A_i)=\mu(\lim_i{A_i})=\mu(A)\leq\mu(A’)=\mu(\lim_i{A_i’})=\lim_i\mu(A_i’)$$
+A first attempt of a proof using elementary analysis: Naively, we may try to attack this question as purely a question on sequences of real numbers $\set{\mu(A_i)}_i$ and $\set{\mu(A_i’)}_i$?">
+
+<meta name="generator" content="Hugo 0.126.2">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Yet another limit pf from Ash 😅</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-12-02T00:00:00Z">Dec 2, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p><strong>Problem:</strong>
+Suppose $\mu$ is a probability measure (or nonegative countably additive set function) and the following holds - $A_i\uparrow A$ and $A_i&rsquo;\uparrow A&rsquo;$ such that $A\subset{A&rsquo;}$ than we have - $\lim_i\mu(A_i)\leq\lim_i\mu(A_i&rsquo;)$.</p>
+<p><strong>The simplest proof possible:</strong>
+As we know from previous statements on countably additive set functions - $$\lim_i\mu(A_i)=\mu(\lim_i{A_i})=\mu(A)\leq\mu(A&rsquo;)=\mu(\lim_i{A_i&rsquo;})=\lim_i\mu(A_i&rsquo;)$$</p>
+<p><strong>A first attempt of a proof using elementary analysis:</strong>
+Naively, we may try to attack this question as purely a question on sequences of real numbers $\set{\mu(A_i)}_i$ and $\set{\mu(A_i&rsquo;)}_i$?</p>
+<p>We already know that for {de/in}creasing collection of sets $\lim_i{\mu(A_i)}=\mu(\lim{A_i})$.
+Since both collections are <em>increasing</em> we may assume there exists an $m_0,n_0$ such that for $m\geq{m_0},n\geq{n_0}$ we have -
+$$
+\mu(A&rsquo;)-\mu(A_m&rsquo;)&lt;\frac{\epsilon}{2} \\
+\mu(A)-\mu(A_n)&lt;\frac{\epsilon}{2}
+$$</p>
+<p>We remove the second inequality from the first to obtain -</p>
+<p>$$
+\mu(A_n)-\mu(A_m&rsquo;)&lt;\mu(A)-\mu(A&rsquo;)\implies\mu(A_n)&lt;\mu(A_m&rsquo;)-\mu(A&rsquo;-A)
+$$</p>
+<p>But since $\mu$ is nonegative we have - $\mu(A_n)\leq\mu(A_m)$. We take the limit $m,n\rightarrow\infty$  to conclude the proof. $\square$</p>
+<p><strong>What is wrong with this proof?</strong>
+The proof above assumes that for the given indexes $n&gt;n_0, m&gt;m_0$ we have, $\mu(A_n)\leq\mu(A_m&rsquo;)$. Yet that might not be the case b/c it might be that $A_m&rsquo;\subset{A_n}$ for a subset or all of these indexes which will break the proof. It may happen that the measure of the series $A_n$ increases very quickly wrt to the measure of the collection $A_m&rsquo;$ so we cannot simply &ldquo;substract&rdquo; the second inequality from the first as described.</p>
+<p><strong>A proof using properties of sets:</strong></p>
+<p>From monotinicity, we may write -</p>
+<p>$$
+\mu(A_n&rsquo;)\geq\mu(A_n&rsquo;\cap{A_m})\xrightarrow[n\rightarrow\infty]{}\lim_{n\rightarrow\infty}\mu(A_n&rsquo;)\geq\mu(A&rsquo;\cap{}A_m)=\mu(A_m)
+$$</p>
+<p>The second inequality is due to $A\subset{A&rsquo;}$ and $\set{A_i}_i$ an increasing collection. We take the $m\rightarrow\infty$ to conclude the proof.$\square$</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/lagranges-finite-increment-theorem/"><i class="fa fa-chevron-circle-left"></i> A proof of Lagrange\s finite increment theorem</a>
+        
+        </li>
+        <li>
+        
+            <a href="http://localhost:1313/posts/non-consequitive-1s-binary/">The number of binary strings on $n$ letters with no two consequitive ones <i class="fa fa-chevron-circle-right"></i> </a>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+  
+
+
+
+
+</body>
+
+</html>
+

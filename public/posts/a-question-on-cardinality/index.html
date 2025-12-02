@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>A question on the cardinality of a $\sigma$-field - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/a-question-on-cardinality/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="A question on the cardinality of a $\sigma$-field">
+  <meta property="og:description" content="Let $\gamma$ be a any class of subsets of $\Omega$ such that $\phi,\Omega\in\gamma$. We define $\gamma_0=\gamma$, and for any ordinal $\alpha&gt;0$, inductively:
+$$\gamma_\alpha = (\cup\set{\gamma_\beta:\beta&lt;\alpha})’$$
+Where $D’$ is the class of all countable unions of differences of sets in $D$.
+What is $D’$? Assume $D = \set{\Omega, \phi}$ The difference $\Omega-\phi$ is the set $\Omega$. Assume $A\in{D}$ than $D’$ contain $\phi-A$, $\Omega-A=A^c$, $\phi-A=\phi$, etc.
+But than - $A=\Omega-A^c\in{D’}$!
+We than define $\frak{U}=\cup\set{\gamma_{\alpha}:\alpha&lt;\beta}$">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-01T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-01T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A question on the cardinality of a $\sigma$-field">
+  <meta name="twitter:description" content="Let $\gamma$ be a any class of subsets of $\Omega$ such that $\phi,\Omega\in\gamma$. We define $\gamma_0=\gamma$, and for any ordinal $\alpha&gt;0$, inductively:
+$$\gamma_\alpha = (\cup\set{\gamma_\beta:\beta&lt;\alpha})’$$
+Where $D’$ is the class of all countable unions of differences of sets in $D$.
+What is $D’$? Assume $D = \set{\Omega, \phi}$ The difference $\Omega-\phi$ is the set $\Omega$. Assume $A\in{D}$ than $D’$ contain $\phi-A$, $\Omega-A=A^c$, $\phi-A=\phi$, etc.
+But than - $A=\Omega-A^c\in{D’}$!
+We than define $\frak{U}=\cup\set{\gamma_{\alpha}:\alpha&lt;\beta}$">
+
+<meta name="generator" content="Hugo 0.126.2">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>A question on the cardinality of a $\sigma$-field</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-12-01T00:00:00Z">Dec 1, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p>Let $\gamma$ be a any class of subsets of $\Omega$ such that $\phi,\Omega\in\gamma$. We define $\gamma_0=\gamma$, and for any ordinal $\alpha&gt;0$, inductively:</p>
+<p>$$\gamma_\alpha = (\cup\set{\gamma_\beta:\beta&lt;\alpha})&rsquo;$$</p>
+<p>Where $D&rsquo;$ is the class of all countable unions of differences of sets in $D$.</p>
+<p><strong>What is $D&rsquo;$?</strong>
+Assume $D = \set{\Omega, \phi}$ The difference $\Omega-\phi$ is the set $\Omega$.
+Assume $A\in{D}$ than $D&rsquo;$ contain $\phi-A$, $\Omega-A=A^c$, $\phi-A=\phi$, etc.</p>
+<p>But than - $A=\Omega-A^c\in{D&rsquo;}$!</p>
+<p>We than define $\frak{U}=\cup\set{\gamma_{\alpha}:\alpha&lt;\beta}$</p>
+<p>Where $\beta$ is the first uncountable ordinal.</p>
+<p>We define $\mathcal{F}$ to be the smallest $\sigma$-field on $\gamma$.</p>
+<p><strong>Question:</strong> if the cardinality of $\gamma$ is equal to the cardinality of the reals $2^{\aleph_0}$ (In the book it is assigned the letter <strong>c</strong>), prove that the cardinality of $\mathcal{F}$ is also $2^{\aleph_0}$.</p>
+<p><strong>An initial line of reasoning:</strong></p>
+<p>Since $\mathcal{F}$ is the smallest $\sigma$-field which contains $\gamma$, it also contains $\gamma_{\alpha}$ for every $\alpha$. It follows that $\frak{U}\subset\mathcal{F}$. If $\frak{U}$ is itself a $\sigma$-field on $\gamma$ (that is, containing $\gamma$) it would then imply from minimality that $\frak{U}=\mathcal{F}$.</p>
+<p>Thus, it would suffice to <em>estimate the cardinality of $\frak{U}$</em> (since it, naively, has simpler structure) to conclude the cardinality of $\mathcal{F}$!</p>
+<p><strong>Proof:</strong></p>
+<p>Let $A_1,A_2,..\in{\frak{U}}$ than by definition, for each $i$ we have $A_i\in\gamma_{\alpha_i}$ for some $\alpha_i$. We define $\alpha=\sup_i{\alpha_i}$. Since $\gamma_0\subset\gamma_1\subset..$ we have $A_i\in{\alpha}$ for all $i$ implying (From our previous observations) $\cup_iA_i\in{\gamma_{\alpha+1}}$.</p>
+<p>Let $A\in{\frak{U}}$ than $A\in\gamma_{\alpha}$ for some $\alpha$ implying $A^c\in\gamma_{\alpha+1}$</p>
+<p>As we know the upper bound for the cardinality of a $\sigma$-field on a given collection of sets with cardinality $c$ is $2^c$. This bound is attained when the field contains <strong>all</strong> countable unions of intersections of the sets or complements in the collection.</p>
+<p>If $|\gamma_{\alpha}| \leq 2^{\aleph_0}$ for all $\alpha$. Since this is true for all $\alpha&lt;\beta$ were $\beta$ is the first uncountable ordinal than we have $|\cup^{\beta}<em>\alpha\gamma</em>{\alpha}|\leq\beta*c=c$.</p>
+<p>If $D$ has cardinality $c$ than $|D&rsquo;|\leq c^{\aleph_0}={2^{\aleph_0}}^{\aleph_0}=2^{\aleph_0}=c$. Implying $|\frak{U}|=c$. $\square$</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/limits_proof/"><i class="fa fa-chevron-circle-left"></i> A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</a>
+        
+        </li>
+        <li>
+        
+            <a href="http://localhost:1313/posts/lagranges-finite-increment-theorem/">A proof of Lagrange\s finite increment theorem <i class="fa fa-chevron-circle-right"></i> </a>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+  
+
+
+
+
+</body>
+
+</html>
+
