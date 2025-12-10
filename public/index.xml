@@ -6,10 +6,19 @@
    <description>Recent content on Yet another corner of the internet</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
-   <lastBuildDate>Tue, 09 Dec 2025 00:00:00 +0000</lastBuildDate>
+   <lastBuildDate>Wed, 10 Dec 2025 00:00:00 +0000</lastBuildDate>
    
        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
    
+   
+     <item>
+       <title>A question from the 2025 UBC qualifying exam</title>
+       <link>http://localhost:1313/posts/a-question-from-ubc-qualifying-exam/</link>
+       <pubDate>Wed, 10 Dec 2025 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/posts/a-question-from-ubc-qualifying-exam/</guid>
+       <description>&lt;p&gt;Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differntiable function. Further suppose There are constants $A,B,C$ such that -&lt;/p&gt;&lt;p&gt;$A=\sup_{x&amp;gt;0}{|f(x)|}\newline B=\sup_{x&amp;gt;0}{|f&amp;rsquo;(x)|}\newline C=\sup_{x&amp;gt;0}{|f&amp;rsquo;&amp;rsquo;(x)|}$&lt;/p&gt;&lt;p&gt;Prove that $B^2\leq{4AC}$:&lt;/p&gt;&lt;p&gt;a.  Use Taylor’s Theorem to expand $f(x)$ about $a$ and compute $f(a + 2h)$for $h &amp;gt; 0$.&lt;/p&gt;&lt;p&gt;b. Rearrange the resulting expression to isolate $|f(a)|$ and bound it in terms of $A$, $C$ and $h$.&lt;/p&gt;&lt;p&gt;c. Now pick $h$ to minimise your bound on $|f(a)|$ and clean up.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;a. We expand $f$ around $a$ using Taylor&amp;rsquo;s formula (with Lagrange&amp;rsquo;s remainder):$$f(x) = f(a) + f&amp;rsquo;(a)(x-a) + \frac{f&amp;rsquo;&amp;rsquo;(\xi)(x-a)^2}{2!}$$&lt;/p&gt;&lt;p&gt;For some $\xi\in{[a,x]}$.&lt;/p&gt;&lt;p&gt;We plug in $x=a+2h$ -$$f(a+2h) = f(a) + 2hf&amp;rsquo;(a) + \frac{f&amp;rsquo;&amp;rsquo;(\xi)(2h)^2}{2} \$$&lt;/p&gt;&lt;p&gt;b. We re-arrange -$$f(a+2h) - f(a) - f&amp;rsquo;&amp;rsquo;(\xi)2h^2 = 2hf&amp;rsquo;(a) \\implies \frac{f(a+2h) - f(a)}{2h} - f&amp;rsquo;&amp;rsquo;(\xi)h = f&amp;rsquo;(a) \\implies |\frac{f(a+2h) - f(a)}{2h} - f&amp;rsquo;&amp;rsquo;(\xi)h| = |f&amp;rsquo;(a)|$$&lt;/p&gt;&lt;p&gt;We bound the left hand side using $A,C$ and $h$ to obtain a bound on $|f&amp;rsquo;(a)|$ -$$\frac{|f(a+2h)|+|f(a)|}{2h}+Ch\geq|\frac{f(a+2h) - f(a)}{2h}| + |f&amp;rsquo;&amp;rsquo;(\xi)h|\geq|\frac{f(a+2h) - f(a)}{2h} - f&amp;rsquo;&amp;rsquo;(\xi)h| = |f&amp;rsquo;(a)|$$&lt;/p&gt;&lt;p&gt;We obtain -$$\frac{A}{h}+Ch=\frac{2A}{2h}+Ch\geq\frac{|f(a+2h)|+|f(a)|}{2h}+Ch\geq|f&amp;rsquo;(a)|$$&lt;/p&gt;&lt;p&gt;c. We attempt to find $h$ to minimize the left hand side bound -&lt;/p&gt;&lt;p&gt;$$-\frac{A}{h^2}+C=0 \implies h^2=\frac{A}{C} \implies h=\sqrt{\frac{A}{C}}$$&lt;/p&gt;&lt;p&gt;We plug back the value to obtain -&lt;/p&gt;&lt;p&gt;$$2\sqrt{AC}=A\sqrt{\frac{C}{A}}+C\sqrt{\frac{A}{C}}\geq|f&amp;rsquo;(a)|$$&lt;/p&gt;&lt;p&gt;Since both sides are positive we get -$$4AC\geq|f&amp;rsquo;(a)|^2$$&lt;/p&gt;&lt;p&gt;Since $a$ was chosen at random this bound applies to all points in our domain, concluding the proof. $\square$&lt;/p&gt;</description>
+     </item>
    
      <item>
        <title>A proof of Rolles Theorem and Lagranges finite increment Theorem</title>
