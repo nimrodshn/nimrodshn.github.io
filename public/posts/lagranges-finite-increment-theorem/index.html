@@ -3,22 +3,28 @@
 <html lang="en-us">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <title>A proof of Lagrange\s finite increment theorem - Yet another corner of the internet</title>
+  <title>A proof of Rolles Theorem and Lagranges finite increment Theorem - Yet another corner of the internet</title>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="The HTML5 Herald" />
 <meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/lagranges-finite-increment-theorem/">
   <meta property="og:site_name" content="Yet another corner of the internet">
-  <meta property="og:title" content="A proof of Lagrange\s finite increment theorem">
+  <meta property="og:title" content="A proof of Rolles Theorem and Lagranges finite increment Theorem">
+  <meta property="og:description" content="Theorem: A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
+Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ there exists a neighborhood such that the function is bounded in that environment.
+[Side note: For that reason the function $f(x)=\frac{1}{x}$ is not continous on any interval containing 0, since it is unbounded at any environment of the point.]">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-12-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-12-01T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-12-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-09T00:00:00+00:00">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="A proof of Lagrange\s finite increment theorem">
+  <meta name="twitter:title" content="A proof of Rolles Theorem and Lagranges finite increment Theorem">
+  <meta name="twitter:description" content="Theorem: A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
+Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ there exists a neighborhood such that the function is bounded in that environment.
+[Side note: For that reason the function $f(x)=\frac{1}{x}$ is not continous on any interval containing 0, since it is unbounded at any environment of the point.]">
 
 <meta name="generator" content="Hugo 0.126.2">
     
@@ -83,20 +89,20 @@
 
 <article>
 
-    <h1>A proof of Lagrange\s finite increment theorem</h1>
+    <h1>A proof of Rolles Theorem and Lagranges finite increment Theorem</h1>
 
     
       <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2025-12-01T00:00:00Z">Dec 1, 2025</time>
+            <time class="post-date" datetime="2025-12-09T00:00:00Z">Dec 9, 2025</time>
         </li>
         
         
 
         
 
-        <li>0 minute read</li>
+        <li>3 minute read</li>
     </ul>
 </aside>
 
@@ -107,7 +113,31 @@
 
     
 
-    
+    <p><strong>Theorem:</strong>
+A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.</p>
+<p><strong>Proof:</strong>
+From the definition of continuity - for any point in $[\alpha,\beta]$ there <em>exists</em> a neighborhood such that the function is bounded in that environment.</p>
+<p>[Side note: For that reason the function $f(x)=\frac{1}{x}$ is <em>not</em> continous on any interval containing 0, since it is unbounded at any environment of the point.]</p>
+<p>Thus, we may cover $[\alpha,\beta]$ using a collection of open intervals. Using the Heine-Borel theorem we may extract a finite collection $A_1,..,A_k$ of open intervals covering $[\alpha,\beta]$ such that $f$ is bounded on each interval.</p>
+<p>We define $M_i=\sup_{x\in{A_i}}{f(x)}$, the maximal value of $f$ for the interval $A_i$ - this value <em>exists and is finite</em> since $f$ is bounded on $A_i$ by definition and $m_i=\inf_{x\in{A_i}}{f(x)}$ similiarly.</p>
+<p>Thus, $f$ is bounded on $[\alpha,\beta]$ - $m=\min_i{m_i} \leq f(x)\leq \max_i{M_i}=M$.</p>
+<p>Assume $f$ does not attains the values $m$ or $M$. Indeed if $f(x)$ is continous so is $f(x)-M$ thus $f$ attains values arbitrarily close to $M$ in some interval (Otherwise, $M$ is not a supremum of some interval) implying $\frac{1}{f(x)-M}$ is unbounded on $[\alpha,\beta]$, contradicting what was just proved.</p>
+<p>Thus there exists $x_M\in{[\alpha,\beta]}$ such that $f(x_M)=M$. Similarly for $m$. $\square$.</p>
+<p><strong>Rolle&rsquo;s Theorem:</strong>
+Let $f$ be a continous function on $[\alpha,\beta]$ such that $f(\alpha)=f(\beta)$. Than, there exists $\xi\in(\alpha,\beta)$ such that $f&rsquo;(\xi)=0$.</p>
+<p><strong>Proof:</strong>
+If $f$ is constant on $[\alpha,\beta]$ than $f&rsquo;(x)=0$ for all $x\in[\alpha,\beta]$.</p>
+<p>Otherwise, there exists a maximum $x_M$ and a minimum $x_m$ in $[\alpha,\beta]$ - <em>at least</em> one of which is in $(\alpha,\beta)$ [perhaps both] - we mark it as $\xi$. $\square$</p>
+<p>In other words - If $f$ represents the displacement of a particle over an interval of time $\beta-\alpha$. Than, in order to return to its starting point $f(\alpha)=f(\beta)$ the partical must have <em>stopped</em> (at least once) to return on its tracks! Implying - $v(\xi)=f&rsquo;(\xi)=0$ for some $\xi\in(\alpha,\beta)$.</p>
+<p><strong>Lagrange&rsquo;s finite increment Theorem:</strong>
+Let $f$ be continous function on a closed interval $[\alpha,\beta]$. Than there exists $\xi\in[\alpha,\beta]$ such that $$f(\beta)-f(\alpha)=f&rsquo;(\xi)(\beta-\alpha)$$</p>
+<p>In other words, if we regard $f$ as a particles location along a straign line in some time interval, than there exists a point on the line (perhaps more than one) such that the particle attains its average speed over the entire time interval.</p>
+<p><strong>Proof:</strong>
+We define the following function -
+$$g(t)=f(t)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}(t-\alpha)$$</p>
+<p>Simply put, $g$ is just $f$ minus the location of a particle with the average speed over time (the straight line between $f(\alpha)$ and $f(\beta)$). But since both our original partical as well as the &ldquo;avg speed&rdquo; particle have the same increment, than $g$ must start and finish at the same point!</p>
+<p>Indeed $g(\alpha)=g(\beta)=f(\alpha)$. Thus, using Rolle&rsquo;s theorem, we conculde there exists a point $\xi\in{[\alpha,\beta]}$ such that $g&rsquo;(\xi)=f&rsquo;(\xi)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}=0$. $\square$</p>
+
 
 </article>
 
@@ -116,12 +146,10 @@
     <ul>
         <li>
         
-            <a href="http://localhost:1313/posts/a-question-on-cardinality/"><i class="fa fa-chevron-circle-left"></i> A question on the cardinality of a $\sigma$-field</a>
+            <a href="http://localhost:1313/posts/non-consequitive-1s-binary/"><i class="fa fa-chevron-circle-left"></i> The number of binary strings on $n$ letters with no two consequitive ones</a>
         
         </li>
         <li>
-        
-            <a href="http://localhost:1313/posts/another-limit-question/">Yet another limit pf from Ash 😅 <i class="fa fa-chevron-circle-right"></i> </a>
         
         </li>
     </ul>
