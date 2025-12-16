@@ -45,3 +45,41 @@ $$g(t)=f(t)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}(t-\alpha)$$
 Simply put, $g$ is just $f$ minus the location of a particle with the average speed over time (the straight line between $f(\alpha)$ and $f(\beta)$). But since both our original partical as well as the "avg speed" particle have the same increment, than $g$ must start and finish at the same point!
 
 Indeed $g(\alpha)=g(\beta)=f(\alpha)$. Thus, using Rolle's theorem, we conculde there exists a point $\xi\in{[\alpha,\beta]}$ such that $g'(\xi)=f'(\xi)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}=0$. $\square$
+
+__Cauchy's "Mean value theorem":__
+Let $f,g$ be two differentiable (and thus, continous) functions on an interval $[\alpha,\beta]$ than there exists some $\xi$ such that -
+$$
+\frac{g'(\xi)}{f'(\xi)}=\frac{g(\beta)-g(\alpha)}{f(\beta)-f(\alpha)}
+$$
+
+__Intuition and ideas of a proof__:
+Assume two particles are moving at constant speeds for some duration of time and $f,g$ represent their distances over time. Than, we can safely deduce the formula above for *any point in time*! because - 
+
+$$
+g'(t) = \frac{g(\beta) - g(\alpha)}{\beta-\alpha} \\
+f'(t) = \frac{f(\beta) - f(\alpha)}{\beta-\alpha}
+$$
+
+for all $t\in[\alpha,\beta]$.
+
+Otherwise, one may ask if the expression 
+$$
+h(t) = \frac{g'(t)}{f'(t)}-\frac{g(\beta)-g(\alpha)}{f(\beta)-f(\alpha)}
+$$
+
+Changes sign b/c if it does than that would conclude the pf.
+
+__Proof__:
+Define -
+
+$$
+h(t)=g(t)(f(\beta)-f(\alpha)) - f(t)(g(\beta)-g(\alpha))
+$$
+
+Than, $h(\alpha)=h(\beta)=g(\alpha)f(\beta)-g(\beta)f(\alpha)$, implying the conditiions of Rolles theorem hold and their exists $\xi\in[\alpha,\beta]$ such that - 
+
+$$
+h'(\xi)=g'(\xi)(f(\beta)-f(\alpha)) - f'(\xi)(g(\beta)-g(\alpha))=0
+$$
+
+Concluding the proof.
