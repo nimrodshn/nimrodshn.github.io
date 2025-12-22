@@ -12,6 +12,15 @@
    
    
      <item>
+       <title>A proof of the Euclidean Algorithm</title>
+       <link>http://localhost:1313/posts/a-proof-of-the-euclidean-algorithm/</link>
+       <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/posts/a-proof-of-the-euclidean-algorithm/</guid>
+       <description>&lt;p&gt;&lt;strong&gt;The Euclidean Algorithm:&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;Let $m,n\in\mathbb{N}$ such that $m&amp;gt;n$. Then we define succesively -&lt;/p&gt;&lt;p&gt;$$m = q_1n+r_1 \n = q_2r_1+r_2 \r_1 = q_3r_2+r_3 \.. \r_k = q_{k+2}r_{k+1} + 0$$&lt;/p&gt;&lt;p&gt;than $\gcd(m,n)=r_{k+1}$&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Proof:&lt;/strong&gt;If $\gcd(m,n)=1$ than $m,n$ are foreign (or mutually prime). Otherwise, assume $\gcd(m,n)&amp;gt;1$. Define $r_0=n$ We prove by induction that $r_{i+1}|r_i$.&lt;/p&gt;&lt;p&gt;Base case - If $r_1\nmid{n}$ than we can deduce that $\gcd(m,n)=1$. Contradiction.&lt;/p&gt;&lt;p&gt;Assume the claim is correct up to $i$ and prove the claim for $i+1$:&lt;/p&gt;&lt;p&gt;We write $r_{i-1}=q_{i+1}r_i+r_{i+1}$. Using the same argument as before - if $r_{i+1}\nmid{r_i}$, than by &amp;ldquo;unrolling&amp;rdquo; the expression above we may find a constant $C$ such that $Cr_i=n$ implying -$$m=q_1n+r_1=Cr_i+r_{i+1}$$.&lt;/p&gt;&lt;p&gt;But than $\gcd(m,n)=1$. Contradiction.&lt;/p&gt;&lt;p&gt;Thus we conclude $r_{i+1}|{r_i}$ for all $i$. Since $m,n$ are finite and at each step the $r_i$ decrease we must reach after a finite number of steps at $r_i=0.$&lt;/p&gt;</description>
+     </item>
+   
+     <item>
        <title>A question on the expansion of rational numbers in  base-q</title>
        <link>http://localhost:1313/posts/a-question-on-the-q-ary-system/</link>
        <pubDate>Mon, 22 Dec 2025 00:00:00 +0000</pubDate>
