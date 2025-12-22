@@ -26,7 +26,7 @@ Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ the
 Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ there exists a neighborhood such that the function is bounded in that environment.
 [Side note: For that reason the function $f(x)=\frac{1}{x}$ is not continous on any interval containing 0, since it is unbounded at any environment of the point.]">
 
-<meta name="generator" content="Hugo 0.126.2">
+<meta name="generator" content="Hugo 0.147.8">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
@@ -137,6 +137,33 @@ We define the following function -
 $$g(t)=f(t)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}(t-\alpha)$$</p>
 <p>Simply put, $g$ is just $f$ minus the location of a particle with the average speed over time (the straight line between $f(\alpha)$ and $f(\beta)$). But since both our original partical as well as the &ldquo;avg speed&rdquo; particle have the same increment, than $g$ must start and finish at the same point!</p>
 <p>Indeed $g(\alpha)=g(\beta)=f(\alpha)$. Thus, using Rolle&rsquo;s theorem, we conculde there exists a point $\xi\in{[\alpha,\beta]}$ such that $g&rsquo;(\xi)=f&rsquo;(\xi)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}=0$. $\square$</p>
+<p><strong>Cauchy&rsquo;s &ldquo;Mean value theorem&rdquo;:</strong>
+Let $f,g$ be two differentiable (and thus, continous) functions on an interval $[\alpha,\beta]$ than there exists some $\xi$ such that -
+$$
+\frac{g&rsquo;(\xi)}{f&rsquo;(\xi)}=\frac{g(\beta)-g(\alpha)}{f(\beta)-f(\alpha)}
+$$</p>
+<p><strong>Intuition and ideas of a proof</strong>:
+Assume two particles are moving at constant speeds for some duration of time and $f,g$ represent their distances over time. Than, we can safely deduce the formula above for <em>any point in time</em>! because -</p>
+<p>$$
+g&rsquo;(t) = \frac{g(\beta) - g(\alpha)}{\beta-\alpha} \
+f&rsquo;(t) = \frac{f(\beta) - f(\alpha)}{\beta-\alpha}
+$$</p>
+<p>for all $t\in[\alpha,\beta]$.</p>
+<p>Otherwise, one may ask if the expression
+$$
+h(t) = \frac{g&rsquo;(t)}{f&rsquo;(t)}-\frac{g(\beta)-g(\alpha)}{f(\beta)-f(\alpha)}
+$$</p>
+<p>Changes sign b/c if it does than that would conclude the pf.</p>
+<p><strong>Proof</strong>:
+Define -</p>
+<p>$$
+h(t)=g(t)(f(\beta)-f(\alpha)) - f(t)(g(\beta)-g(\alpha))
+$$</p>
+<p>Than, $h(\alpha)=h(\beta)=g(\alpha)f(\beta)-g(\beta)f(\alpha)$, implying the conditiions of Rolles theorem hold and their exists $\xi\in[\alpha,\beta]$ such that -</p>
+<p>$$
+h&rsquo;(\xi)=g&rsquo;(\xi)(f(\beta)-f(\alpha)) - f&rsquo;(\xi)(g(\beta)-g(\alpha))=0
+$$</p>
+<p>Concluding the proof.</p>
 
 
 </article>
@@ -181,9 +208,6 @@ $$g(t)=f(t)-\frac{f(\beta)-f(\alpha)}{\beta-\alpha}(t-\alpha)$$</p>
 <script src="/js/scripts.js"></script>
 
   
-  
-
-
 
 
 </body>

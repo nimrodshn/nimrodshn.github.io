@@ -1,0 +1,201 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>A question on the expansion of rational numbers in  base-q - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/a-question-on-the-q-ary-system/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="A question on the expansion of rational numbers in  base-q">
+  <meta property="og:description" content="Question: A number $x\in{\mathbb{R}}$ has a periodic expansion (in any number system) $\iff$ $x$ is rational.
+Proof:
+$\impliedby$ Assume $x$ is rational, i.e. there are $m,n\in{\mathbb{Z}}$ such that, $x=\frac{m}{n}$ and $n\neq0$ - Assume this is the most reduced form. Than, by way of long division we obtain deteministically the decimals of its expansion in some $q$-ary number system:
+We define $r_0$ to be the remainder of $m$ upon division by $n$. We define the following recursive relation obtained from the “long division” process -">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-22T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A question on the expansion of rational numbers in  base-q">
+  <meta name="twitter:description" content="Question: A number $x\in{\mathbb{R}}$ has a periodic expansion (in any number system) $\iff$ $x$ is rational.
+Proof:
+$\impliedby$ Assume $x$ is rational, i.e. there are $m,n\in{\mathbb{Z}}$ such that, $x=\frac{m}{n}$ and $n\neq0$ - Assume this is the most reduced form. Than, by way of long division we obtain deteministically the decimals of its expansion in some $q$-ary number system:
+We define $r_0$ to be the remainder of $m$ upon division by $n$. We define the following recursive relation obtained from the “long division” process -">
+
+<meta name="generator" content="Hugo 0.147.8">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>A question on the expansion of rational numbers in  base-q</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-12-22T00:00:00Z">Dec 22, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <p><strong>Question:</strong>
+A number $x\in{\mathbb{R}}$ has a periodic expansion (in any number system) $\iff$ $x$ is rational.</p>
+<p><strong>Proof:</strong></p>
+<p>$\impliedby$ Assume $x$ is rational, i.e. there are $m,n\in{\mathbb{Z}}$ such that, $x=\frac{m}{n}$ and $n\neq0$ - Assume this is the most reduced form. Than, by way of long division we obtain deteministically the decimals of its expansion in some $q$-ary number system:</p>
+<p>We define $r_0$ to be the remainder of $m$ upon division by $n$. We define the following recursive relation obtained from the &ldquo;long division&rdquo; process -</p>
+<p>$d_i=\lfloor\frac{r_{i-1}q}{n}\rfloor$</p>
+<p>$r_i = qr_{i-1}-d_in$</p>
+<p>If at any step we obtain $r_i=0$ than the expansion terminates. Otherwise, the set of possible remainders obtained from dividing by $n$ is finite contained in $\set{0,&hellip;,n-1}$, Implying, by the &ldquo;Pigeonhole Principle&rdquo;, that after at most $n-1$ steps the digits of the expansion would <em>repeat</em>, thus, obtaining a scaled remainder. Since the division algorithm is deterministic, once a remainder repeats, the subsequent digits repeat as well - implying, that the expansion is periodic.</p>
+<p><strong>A first attempty at the harder direction:</strong></p>
+<p>$\implies$ Let $x\in{\mathbb{R}}$ with periodic expansion. Assume by contradiction that $x$ is <strong>irrational</strong>.</p>
+<p>By the recursive relation we have previously defined there exists $i&lt;j$ such that $r_j = r_i=r$</p>
+<p>Than, we can &ldquo;unroll&rdquo; the recursive relation to obtain -</p>
+<p>$$
+r = q^{j-i}r-c
+$$</p>
+<p>for some rational constant $c$ implying - $r=\frac{c}{q^{j-i}-1}$.</p>
+<p>Implying we can write the following -
+$$
+x = q^0d_0+&hellip;+q^{-i}d_i+r = q^0d_0+&hellip;+q^{-i}d_i+\frac{c}{q^{j-i}-1}\in{\mathbb{Q}}
+$$</p>
+<p>Contradiction.</p>
+<p><strong>Note:</strong> GPT claims the above pf is wrong as it <strong>relies</strong> on the recursive relation which in turn relies on the fact the $x$ is rational which breaks the pf.</p>
+<p><strong>A second attempt at the harder direction:</strong></p>
+<p>$\implies$ Let $x\in{\mathbb{R}}$ have a periodic base-$q$ expansion. Assume by contradiction that $x$ is <strong>irrational</strong>.</p>
+<p>That is, there exists digits $d_1,..,d_j$ and indicies $i&lt;j$ such that -
+$$
+x=0.d_1..d_{i-1}\overline{d_i..d_j}
+$$
+Hence -
+$$
+x = \sum_{k=1}^{i-1}q^{-k}d_k+\sum_{t=0}^{\infty}q^{-t(j-i)}\sum_{l=i}^{j}q^{-l}d_l=\\
+\sum_{k=1}^{i-1}q^{-k}d_k+\sum_{t=0}^{\infty}(\frac{1}{q^{j-i}})^{t}\sum_{l=i}^{j}q^{-l}d_l=\\
+\sum_{k=1}^{i-1}q^{-k}d_k+\frac{1}{1-\frac{1}{q^{j-i}}}\sum_{l=i}^{j}q^{-l}d_l
+$$</p>
+<p>The last equality is due to the Geometric series expansion.</p>
+<p>Each term in the above sum is a finite sum of rationals and thus the entire sum is rational, implying $x$ is rational. Contradiction. $\square$.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/a-question-from-ubc-qualifying-exam/"><i class="fa fa-chevron-circle-left"></i> A question from the 2025 UBC qualifying exam</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+
+
+</body>
+
+</html>
+

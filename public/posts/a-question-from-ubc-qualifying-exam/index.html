@@ -10,7 +10,7 @@
 <meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/a-question-from-ubc-qualifying-exam/">
   <meta property="og:site_name" content="Yet another corner of the internet">
   <meta property="og:title" content="A question from the 2025 UBC qualifying exam">
-  <meta property="og:description" content="Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differntiable function. Further suppose There are constants $A,B,C$ such that -
+  <meta property="og:description" content="Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differentiable function. Further suppose There are constants $A,B,C$ such that -
 $A=\sup_{x&gt;0}{|f(x)|}\newline B=\sup_{x&gt;0}{|f’(x)|}\newline C=\sup_{x&gt;0}{|f’’(x)|}$
 Prove that $B^2\leq{4AC}$:
 a. Use Taylor’s Theorem to expand $f(x)$ about $a$ and compute $f(a &#43; 2h)$ for $h &gt; 0$.
@@ -25,14 +25,14 @@ c. Now pick $h$ to minimise your bound on $|f(a)|$ and clean up.">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="A question from the 2025 UBC qualifying exam">
-  <meta name="twitter:description" content="Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differntiable function. Further suppose There are constants $A,B,C$ such that -
+  <meta name="twitter:description" content="Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differentiable function. Further suppose There are constants $A,B,C$ such that -
 $A=\sup_{x&gt;0}{|f(x)|}\newline B=\sup_{x&gt;0}{|f’(x)|}\newline C=\sup_{x&gt;0}{|f’’(x)|}$
 Prove that $B^2\leq{4AC}$:
 a. Use Taylor’s Theorem to expand $f(x)$ about $a$ and compute $f(a &#43; 2h)$ for $h &gt; 0$.
 b. Rearrange the resulting expression to isolate $|f(a)|$ and bound it in terms of $A$, $C$ and $h$.
 c. Now pick $h$ to minimise your bound on $|f(a)|$ and clean up.">
 
-<meta name="generator" content="Hugo 0.126.2">
+<meta name="generator" content="Hugo 0.147.8">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
@@ -119,7 +119,7 @@ c. Now pick $h$ to minimise your bound on $|f(a)|$ and clean up.">
 
     
 
-    <p>Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differntiable function. Further suppose There are constants $A,B,C$ such that -</p>
+    <p>Let $f:(0,\infty)\rightarrow\mathbb{R}$ be a twice differentiable function. Further suppose There are constants $A,B,C$ such that -</p>
 <p>$A=\sup_{x&gt;0}{|f(x)|}\newline B=\sup_{x&gt;0}{|f&rsquo;(x)|}\newline C=\sup_{x&gt;0}{|f&rsquo;&rsquo;(x)|}$</p>
 <p>Prove that $B^2\leq{4AC}$:</p>
 <p>a.  Use Taylor’s Theorem to expand $f(x)$ about $a$ and compute $f(a + 2h)$
@@ -144,11 +144,11 @@ f(a+2h) - f(a) - f&rsquo;&rsquo;(\xi)2h^2 = 2hf&rsquo;(a) \
 $$</p>
 <p>We bound the left hand side using $A,C$ and $h$ to obtain a bound on $|f&rsquo;(a)|$ -
 $$
-\frac{|f(a+2h)|+|f(a)|}{2h}+Ch\geq|\frac{f(a+2h) - f(a)}{2h}| + |f&rsquo;&rsquo;(\xi)h|\geq|\frac{f(a+2h) - f(a)}{2h} - f&rsquo;&rsquo;(\xi)h| = |f&rsquo;(a)|
+|f&rsquo;(a)| = |\frac{f(a+2h) - f(a)}{2h} - f&rsquo;&rsquo;(\xi)h| \leq |\frac{f(a+2h) - f(a)}{2h}| + |f&rsquo;&rsquo;(\xi)h| \leq \frac{|f(a+2h)|+|f(a)|}{2h}+Ch
 $$</p>
 <p>We obtain -
 $$
-\frac{A}{h}+Ch=\frac{2A}{2h}+Ch\geq\frac{|f(a+2h)|+|f(a)|}{2h}+Ch\geq|f&rsquo;(a)|
+|f&rsquo;(a)|\leq{\frac{|f(a+2h)|+|f(a)|}{2h}+Ch}\leq{\frac{2A}{2h}+Ch}=\frac{A}{h}+Ch
 $$</p>
 <p>c. We attempt to find $h$ to minimize the left hand side bound -</p>
 <p>$$
@@ -156,11 +156,11 @@ $$</p>
 $$</p>
 <p>We plug back the value to obtain -</p>
 <p>$$
-2\sqrt{AC}=A\sqrt{\frac{C}{A}}+C\sqrt{\frac{A}{C}}\geq|f&rsquo;(a)|
+|f&rsquo;(a)|\leq{A\sqrt{\frac{C}{A}}+C\sqrt{\frac{A}{C}}}=2\sqrt{AC}
 $$</p>
-<p>Since both sides are positive we get -
+<p>Since both sides are non-negative we obtain -
 $$
-4AC\geq|f&rsquo;(a)|^2
+|f&rsquo;(a)|^2\leq{4AC}
 $$</p>
 <p>Since $a$ was chosen at random this bound applies to all points in our domain, concluding the proof. $\square$</p>
 
@@ -176,6 +176,8 @@ $$</p>
         
         </li>
         <li>
+        
+            <a href="http://localhost:1313/posts/a-question-on-the-q-ary-system/">A question on the expansion of rational numbers in a q-ary number system <i class="fa fa-chevron-circle-right"></i> </a>
         
         </li>
     </ul>
@@ -205,9 +207,6 @@ $$</p>
 <script src="/js/scripts.js"></script>
 
   
-  
-
-
 
 
 </body>
