@@ -1,6 +1,6 @@
 +++
 title = 'A proof of the Euclidean Algorithm'
-date = 2025-12-22
+date = 2025-12-23
 draft = false
 +++
 
@@ -65,3 +65,15 @@ $r_{i-1}=q_{i+1}r_{i}+r_{i+1}$ and plugging back in our equations we find $m=q_1
 Thus, $\gcd(r_{i+1},r_i)=\gcd(r_i,r_{i-1})$.
 
 Since $m,n$ are finite and at each step the $r_i$ decrease we must reach after a finite number of steps at $r_{i+1}=0.$
+
+__A third attempt at a proof:__
+Assume $m>n\in{\mathbb{Z}}$. We prove by induction that $\gcd(r_{i+1},r_i)=\gcd(r_i,r_{i-1})$.
+
+Base case - By our initial condition of $m=q_1n+r_1$. if $d=\gcd(m,n)$ than $d|m$ and $d|n$ and thus, $d|m-q_1n=r_1$. If $d'=\gcd(r_1,n)$ than $d'|(q_1n-r_1)=m$, implying $\gcd(n,r_1)\leq{\gcd(m,n)}$, concluding the pf (since $d|r_1$ we have $d\leq{\gcd(r_1,n)}$).
+
+We assume the induction invariant is correct up to some $i\in{\mathbb{N}}$ and prove for $r_{i+1}$.
+
+Write - $r_{i-1}=q_{i+1}r_{i}+r_{i+1}$ Using the same reasoning as before, we have 
+$d=\gcd(r_i,r_{i-1})$, thus $d|r_{i-1}$ and $d|r_i$ implying $d|(r_{i-1}-q_{i+1}r_i)=r_{i+1}$. On the other hand if $d'=\gcd(r_{i+1},r_i)$ we have $d'|r_{i+1}$ and $d'|r_i$ implying $d'|q_{i+1}r_i+r_{i+1}=r_{i-1}$, implying $\gcd(r_i,r_{i+1})\leq{\gcd(r_i,r_{i-1})}$ concluding the proof.
+
+Since $m,n$ are finite - at each step the $r_i$ decrease, thus, we must reach after a finite number of steps at $r_{i+1}=0.$ $\square$
