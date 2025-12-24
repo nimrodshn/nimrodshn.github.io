@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich) - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/basic-questions-on-metric-spaces/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)">
+  <meta property="og:description" content="Proposition 1: Let $(X,d)$ be a metric space. a. The union $\bigcup_{\alpha\in{A}}G_{\alpha}$ of the sets in any system $\set{G_{\alpha}, \alpha\in{A}}$ of sets that are open in $X$ is and open set in $X$. b. The intersection $\bigcap_{i=1}^nG_i$ of any finite number of sets that are open in $X$ is an open set in $X$. c. The intesection $\bigcap_{\alpha\in{A}}F_{\alpha}$ of the sets in any system $\set{F_{\alpha}, \alpha\in{A}}$ of sets $F_{\alpha}$ that are closed in $X$ is a closed set in $X$. d. The union $\bigcup_{i=1}^nF_i$ of any finite number of sets that are closed in $X$ is a closed set in $X$.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-12-24T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-24T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)">
+  <meta name="twitter:description" content="Proposition 1: Let $(X,d)$ be a metric space. a. The union $\bigcup_{\alpha\in{A}}G_{\alpha}$ of the sets in any system $\set{G_{\alpha}, \alpha\in{A}}$ of sets that are open in $X$ is and open set in $X$. b. The intersection $\bigcap_{i=1}^nG_i$ of any finite number of sets that are open in $X$ is an open set in $X$. c. The intesection $\bigcap_{\alpha\in{A}}F_{\alpha}$ of the sets in any system $\set{F_{\alpha}, \alpha\in{A}}$ of sets $F_{\alpha}$ that are closed in $X$ is a closed set in $X$. d. The union $\bigcup_{i=1}^nF_i$ of any finite number of sets that are closed in $X$ is a closed set in $X$.">
+
+<meta name="generator" content="Hugo 0.147.8">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-12-24T00:00:00Z">Dec 24, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>3 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <h3 id="proposition-1">Proposition 1:</h3>
+<p>Let $(X,d)$ be a metric space.
+a. The union $\bigcup_{\alpha\in{A}}G_{\alpha}$ of the sets in any system $\set{G_{\alpha}, \alpha\in{A}}$ of sets that are open in $X$ is and open set in $X$.
+b. The intersection $\bigcap_{i=1}^nG_i$ of any <em>finite</em> number  of sets that are open in $X$ is an open set in $X$.
+c. The intesection $\bigcap_{\alpha\in{A}}F_{\alpha}$ of the sets in any system $\set{F_{\alpha}, \alpha\in{A}}$ of sets $F_{\alpha}$ that are closed in $X$ is a closed set in $X$.
+d. The union $\bigcup_{i=1}^nF_i$ of any <em>finite</em> number of sets that are closed in $X$ is a closed set in $X$.</p>
+<p><strong>Proof:</strong>
+a. Let $G=\bigcup_{\alpha\in{A}}G_{\alpha}$ be a union of open sets in $X$. Let $x\in{G}$ be an arbitrary point, than by definition there exists some $\alpha_0\in{A}$ such that $x\in{G_{\alpha_0}}$, an open set. thus there exists $r\in{\mathbb{R}}$ such that $B(x,r)\subset{G_{\alpha_0}}$ implying $B(x,r)\subset{G}$. $\square$</p>
+<p>b. Let $G=\bigcap_{i=1}^n{G_i}$ be the intersection of a finite number of sets that are open in $X$. Let $x\in{G}$ be an arbitrary point. Than, there exists $r_1,..,r_n$ such that $\forall{i}\in{[n]}$ we have $B(x,r_i)\subset{G_i}$. Thus, we may take $r=\min_ir_i$ and deduce $B(x,r)\subset{G_i},$ for all ${i}\in{[n]}$ implying $B(x,r)\subset{G}$. $\square$</p>
+<p>c. Let $F=\bigcap_{\alpha\in{A}}F_{\alpha}$ be an intersection of closed sets in $X$. By De-Morgan, we compute $F^c$:
+$$
+F^c = (\bigcap_{\alpha\in{A}}F_{\alpha})^c=\bigcup_{\alpha\in{A}}F_{\alpha}^c
+$$
+An open set by a. $\square$</p>
+<p>d. Again using, De-Morgan, we compute $F^c$ -
+$$
+F^c=(\bigcup_{i=1}^nF_i)^c=\bigcap_{i=1}^nF_i^c
+$$</p>
+<p>An open set by b. $\square$</p>
+<h3 id="proposition-2">Proposition 2:</h3>
+<p>Let $(X,d)$ be a metric space. A set $F\subset{X}$ is closed in $X$ $\iff$ $F$ contains all of its limit points. That is, $F=\bar{F}$.</p>
+<p><strong>Proof:</strong>
+$\implies$ Let $F$ be closed in $X$. Assume by contradiction there exists a limit point $x$ such that $x\notin{F}$. Implying any neighborhood of $x$ contains points in $F$. Thus, for any $\epsilon&gt;0$ the ball $B(x,\epsilon)$ contains point in $F$ and thus $F^c$ is not open. Contradiction.</p>
+<p>$\impliedby$ Assume $F=\bar{F}$. By contradiction, assume $F$ is not closed in $X$. Thus, there exists a point in $x\in{F^c}$ such that any neighborhood of $x$ contains pts in $F$ (Otherwise, $F^c$ is open implying $F$ is closed.) But then $x$ is a limit point of $F$ in $F^c$. Contradiction.</p>
+<h3 id="questions">Questions:</h3>
+<p>a. Is it true that the union of any family of closed sets is a closed set?</p>
+<p>Answer: Take the the following a countable collection of closed sets: $A_i=[\frac{1}{i},1]$. Than, $\cup_i^{\infty}A_i=(0,1]$ is not closed since it does not contain $0$.</p>
+<p>b. Is every boundry point of a set a limit point of a set?</p>
+<p>Answer: Yes, otherwise, let $x$ be a boundry point of a set $E$ and assume by contradiction $x$ is not a limit point of $E$ than, by definition, $\exists{r&gt;0}$ such that $B(x,r)\cap{E}$ is finite, thus we may take $r_{min}=\min{\set{d(x,a) | a\in{B(x,r)\cap{E}}}}$ implying $B(x,r_{min}-\epsilon)$ is contains no point in $E$ for any $\epsilon&gt;0$. Implying $x$ is not a boundry point. Contradiction.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/basic-questions-in-complex-analysis/"><i class="fa fa-chevron-circle-left"></i> Basic questions in Complex Analysis</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+
+
+</body>
+
+</html>
+
