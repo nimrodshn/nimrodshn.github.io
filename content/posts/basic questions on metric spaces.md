@@ -53,4 +53,4 @@ Answer: Yes, otherwise, let $x$ be a boundry point of a set $E$ and assume by co
 $$
 E = \set{0}
 $$
-Than every neighborhood of 0 contains both $E$ and $E^c$ yet it is not a limit point since any neighborhood of 0 contains only itself in $E$ meaning its is not a limit point.
+Than every neighborhood of 0 contains both $E$ and $E^c$ yet ite is not a limit point since any neighborhood of 0 contains only itself in $E$ meaning its is not a limit point.

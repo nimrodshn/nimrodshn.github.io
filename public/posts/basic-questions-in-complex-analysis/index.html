@@ -3,22 +3,32 @@
 <html lang="en-us">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <title>Basic questions in Complex Analysis - Yet another corner of the internet</title>
+  <title>Basic questions in Complex Analysis (From Ahlfors) - Yet another corner of the internet</title>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="The HTML5 Herald" />
 <meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/basic-questions-in-complex-analysis/">
   <meta property="og:site_name" content="Yet another corner of the internet">
-  <meta property="og:title" content="Basic questions in Complex Analysis">
+  <meta property="og:title" content="Basic questions in Complex Analysis (From Ahlfors)">
+  <meta property="og:description" content="Algebra of Complex numbers Prove the isomorphism between the system of matrices (wrt matrix multiplication and addition) of the following form and the field of complex numbers - $$ \begin{pmatrix} \alpha &amp; \beta \\ -\beta &amp; \alpha \end{pmatrix} $$
+Proof: Given a complex number $x=\alpha&#43;i\beta$ we define the correspondence $\phi(x)=\phi(\alpha&#43;i\beta)=$
+$$ \begin{pmatrix} \alpha &amp; \beta \\ -\beta &amp; \alpha \end{pmatrix} $$
+Let $y=\gamma&#43;i\delta$. Thus, $\phi(x&#43;y)=\phi(\alpha&#43;\gamma&#43;i(\beta&#43;\delta))$ =
+$$ \begin{pmatrix} \alpha&#43;\gamma &amp; \beta&#43;\delta \\ -(\beta&#43;\delta) &amp; \alpha&#43;\gamma \end{pmatrix} = \begin{pmatrix} \alpha &amp; \beta \\ -\beta &amp; \alpha \end{pmatrix} &#43; \begin{pmatrix} \gamma &amp; \delta \\ -\delta &amp; \gamma \end{pmatrix} = \phi(x)&#43;\phi(y) $$">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-12-24T00:00:00+00:00">
-    <meta property="article:modified_time" content="2025-12-24T00:00:00+00:00">
+    <meta property="article:published_time" content="2025-12-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-12-30T00:00:00+00:00">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Basic questions in Complex Analysis">
+  <meta name="twitter:title" content="Basic questions in Complex Analysis (From Ahlfors)">
+  <meta name="twitter:description" content="Algebra of Complex numbers Prove the isomorphism between the system of matrices (wrt matrix multiplication and addition) of the following form and the field of complex numbers - $$ \begin{pmatrix} \alpha &amp; \beta \\ -\beta &amp; \alpha \end{pmatrix} $$
+Proof: Given a complex number $x=\alpha&#43;i\beta$ we define the correspondence $\phi(x)=\phi(\alpha&#43;i\beta)=$
+$$ \begin{pmatrix} \alpha &amp; \beta \\ -\beta &amp; \alpha \end{pmatrix} $$
+Let $y=\gamma&#43;i\delta$. Thus, $\phi(x&#43;y)=\phi(\alpha&#43;\gamma&#43;i(\beta&#43;\delta))$ =
+$$ \begin{pmatrix} \alpha&#43;\gamma &amp; \beta&#43;\delta \\ -(\beta&#43;\delta) &amp; \alpha&#43;\gamma \end{pmatrix} = \begin{pmatrix} \alpha &amp; \beta \\ -\beta &amp; \alpha \end{pmatrix} &#43; \begin{pmatrix} \gamma &amp; \delta \\ -\delta &amp; \gamma \end{pmatrix} = \phi(x)&#43;\phi(y) $$">
 
 <meta name="generator" content="Hugo 0.147.8">
     
@@ -83,20 +93,20 @@
 
 <article>
 
-    <h1>Basic questions in Complex Analysis</h1>
+    <h1>Basic questions in Complex Analysis (From Ahlfors)</h1>
 
     
       <aside>
     <ul>
         <li>
-            <time class="post-date" datetime="2025-12-24T00:00:00Z">Dec 24, 2025</time>
+            <time class="post-date" datetime="2025-12-30T00:00:00Z">Dec 30, 2025</time>
         </li>
         
         
 
         
 
-        <li>0 minute read</li>
+        <li>One minute read</li>
     </ul>
 </aside>
 
@@ -107,7 +117,57 @@
 
     
 
-    
+    <h3 id="algebra-of-complex-numbers">Algebra of Complex numbers</h3>
+<ol>
+<li>Prove the isomorphism between the system of matrices (wrt matrix multiplication and addition) of the following form and the field of complex numbers -</li>
+</ol>
+<p>$$
+\begin{pmatrix}
+\alpha &amp; \beta \\
+-\beta &amp; \alpha
+\end{pmatrix}
+$$</p>
+<p><strong>Proof:</strong>
+Given a complex number $x=\alpha+i\beta$ we define the correspondence $\phi(x)=\phi(\alpha+i\beta)=$</p>
+<p>$$
+\begin{pmatrix}
+\alpha &amp; \beta \\
+-\beta &amp; \alpha
+\end{pmatrix}
+$$</p>
+<p>Let $y=\gamma+i\delta$. Thus, $\phi(x+y)=\phi(\alpha+\gamma+i(\beta+\delta))$ =</p>
+<p>$$
+\begin{pmatrix}
+\alpha+\gamma &amp; \beta+\delta \\
+-(\beta+\delta) &amp; \alpha+\gamma
+\end{pmatrix} =
+\begin{pmatrix}
+\alpha &amp; \beta \\
+-\beta &amp; \alpha
+\end{pmatrix} +
+\begin{pmatrix}
+\gamma &amp; \delta \\
+-\delta &amp; \gamma
+\end{pmatrix} = \phi(x)+\phi(y)
+$$</p>
+<p>We compute $\phi(x)\phi(y)=$
+$$
+\begin{pmatrix}
+\alpha &amp; \beta \\
+-\beta &amp; \alpha
+\end{pmatrix}
+\begin{pmatrix}
+\gamma &amp; \delta \\
+-\delta &amp; \gamma
+\end{pmatrix} =
+\begin{pmatrix}
+\alpha\gamma-\beta\delta &amp; \alpha\delta+\beta\gamma \\
+-(\alpha\delta+\beta\gamma) &amp; \alpha\gamma-\beta\delta
+\end{pmatrix} =
+\phi(\alpha\gamma-\beta\delta+i(\alpha\delta+\gamma\beta)) =
+\phi(xy)
+$$</p>
+
 
 </article>
 
@@ -116,12 +176,10 @@
     <ul>
         <li>
         
-            <a href="http://localhost:1313/posts/a-proof-of-the-euclidean-algorithm/"><i class="fa fa-chevron-circle-left"></i> A proof of the Euclidean Algorithm</a>
+            <a href="http://localhost:1313/posts/basic-questions-on-metric-spaces/"><i class="fa fa-chevron-circle-left"></i> Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)</a>
         
         </li>
         <li>
-        
-            <a href="http://localhost:1313/posts/basic-questions-on-metric-spaces/">Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich) <i class="fa fa-chevron-circle-right"></i> </a>
         
         </li>
     </ul>

@@ -137,7 +137,12 @@ $\implies$ Let $F$ be closed in $X$. Assume by contradiction there exists a limi
 <p>a. Is it true that the union of any family of closed sets is a closed set?</p>
 <p>Answer: Take the the following a countable collection of closed sets: $A_i=[\frac{1}{i},1]$. Than, $\cup_i^{\infty}A_i=(0,1]$ is not closed since it does not contain $0$.</p>
 <p>b. Is every boundry point of a set a limit point of a set?</p>
-<p>Answer: Yes, otherwise, let $x$ be a boundry point of a set $E$ and assume by contradiction $x$ is not a limit point of $E$ than, by definition, $\exists{r&gt;0}$ such that $B(x,r)\cap{E}$ is finite, thus we may take $r_{min}=\min{\set{d(x,a) | a\in{B(x,r)\cap{E}}}}$ implying $B(x,r_{min}-\epsilon)$ is contains no point in $E$ for any $\epsilon&gt;0$. Implying $x$ is not a boundry point. Contradiction.</p>
+<p>Answer: Yes, otherwise, let $x$ be a boundry point of a set $E$ and assume by contradiction $x$ is not a limit point of $E$ than, by definition, there exists a neighborhood of $x$, $O(x)$ such that $O(x)\cap{E}$ is finite, implying there exists $\set{r_1,..,r_n}$ such that $x_i\in{B(x,r_i)}\cap{E}$. We take $r=\min_i\set{\frac{1}{2}r_i}$ implying that $B(x,r)\cap{E}=\phi$. But $B(x,r)\subset{O(x)}$. Contradiction.</p>
+<p><strong>Correction</strong>: This is <strong>incorrect</strong>. We may take an <strong>isolated point</strong>. Here is a counter-example -
+$$
+E = \set{0}
+$$
+Than every neighborhood of 0 contains both $E$ and $E^c$ yet ite is not a limit point since any neighborhood of 0 contains only itself in $E$ meaning its is not a limit point.</p>
 
 
 </article>
@@ -147,10 +152,12 @@ $\implies$ Let $F$ be closed in $X$. Assume by contradiction there exists a limi
     <ul>
         <li>
         
-            <a href="http://localhost:1313/posts/basic-questions-in-complex-analysis/"><i class="fa fa-chevron-circle-left"></i> Basic questions in Complex Analysis</a>
+            <a href="http://localhost:1313/posts/a-proof-of-the-euclidean-algorithm/"><i class="fa fa-chevron-circle-left"></i> A proof of the Euclidean Algorithm</a>
         
         </li>
         <li>
+        
+            <a href="http://localhost:1313/posts/basic-questions-in-complex-analysis/">Basic questions in Complex Analysis (From Ahlfors) <i class="fa fa-chevron-circle-right"></i> </a>
         
         </li>
     </ul>
