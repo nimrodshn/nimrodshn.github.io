@@ -106,7 +106,7 @@ $$ \begin{pmatrix} \alpha&#43;\gamma &amp; \beta&#43;\delta \\ -(\beta&#43;\delt
 
         
 
-        <li>One minute read</li>
+        <li>2 minute read</li>
     </ul>
 </aside>
 
@@ -167,6 +167,44 @@ $$
 \phi(\alpha\gamma-\beta\delta+i(\alpha\delta+\gamma\beta)) =
 \phi(xy)
 $$</p>
+<ol start="2">
+<li>Verify by calculation that the values of $\frac{z}{z^2+1}$ for $z=x+iy$ and $z=x-iy$ are conjucate.</li>
+</ol>
+<p>Indeed -
+$$
+\frac{\overline{x+iy}}{\overline{(x+iy)^2+1}} =
+\frac{\overline{x+iy}}{\overline{(x+iy)(x+iy)}+1} =
+\frac{{x-iy}}{\overline{(x+iy)}\space\overline{(x+iy)}+1} =
+\frac{{x-iy}}{(x-iy)(x-iy)+1} =
+\frac{{x-iy}}{(x-iy)^2+1}
+$$</p>
+<ol start="3">
+<li>We Prove &ldquo;Lagrange&rsquo;s Identity&rdquo; - $|\sum_{i=1}^{n}a_ib_i|^2=\sum_{i=1}^{n}|a_i|^2\sum_{i=1}^{n}|b_i|^2-\sum_{1\leq{i}&lt;j\leq{n}}|a_i\bar{b_j}-a_j\bar{b_i}|^2$</li>
+</ol>
+<p>We prove by induction on $n$. For the case of $n=1$ we have, by definition of the absolute value -</p>
+<p>$$
+|ab|=ab\bar{ab}=ab\bar{a}\bar{b}=a\bar{a}b\bar{b}=|a||b| \implies |ab|^2=|a|^2|b|^2
+$$</p>
+<p>We assume the statement is correct for $n\in{\mathbb{N}}$ and prove for $n+1$:
+$$
+|\sum_{i=1}^{n+1}a_ib_i|^2=|\sum_{i=1}^{n}a_ib_i+a_{n+1}b_{n+1}|^2=|\sum_{i=1}^{n}a_ib_i|^2+|a_{n+1}b_{n+1}|^2+2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i) = \\
+\sum_{i=1}^{n}|a_i|^2\sum_{i=1}^{n}|b_i|^2-\sum_{1\leq{i}&lt;j\leq{n}}|a_i\bar{b_j}-a_j\bar{b_i}|^2+|a_{n+1}b_{n+1}|^2+2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i) = \\
+\sum_{i=1}^{n}|a_i|^2\sum_{i=1}^{n}|b_i|^2-[\sum_{1\leq{i}&lt;j\leq{n}}|a_i\overline{b_j}|^2+|a_j\overline{b_i}|^2-2Re(a_i\overline{b_j}\overline{a_j}b_i)] + |a_{n+1}b_{n+1}|^2+2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i)
+$$
+Next we note the following two statements -</p>
+<ol>
+<li>
+<p>$2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i)=2Re(a_1\overline{b_{n+1}}\overline{a_{n+1}}b_1+\dots+a_n\overline{b_{n+1}}\overline{a_{n+1}}b_n)=\sum_{i=1}^n2Re(a_i\overline{b_{n+1}}\overline{a_{n+1}}b_i)$</p>
+</li>
+<li>
+<p>Next, we add and subtract the following sums $\sum_i^n|a_ib_{n+1}|^2$ and $\sum_i^n|b_{i}a_{n+1}|^2$ to obtain the final result -
+$$
+\sum_{i=1}^{n+1}|a_i|^2\sum_{i=1}^{n+1}|b_i|^2-[\sum_{1\leq{i}&lt;j\leq{n+1}}|a_i\overline{b_j}|^2+|a_j\overline{b_i}|^2-2Re(a_i\overline{b_j}\overline{a_j}b_i)] = \\
+|\sum_{i=1}^{n+1}a_ib_i|^2=\sum_{i=1}^{n+1}|a_i|^2\sum_{i=1}^{n+1}|b_i|^2-\sum_{1\leq{i}&lt;j\leq{n+1}}|a_i\bar{b_j}-a_j\bar{b_i}|^2
+$$
+$\square$.</p>
+</li>
+</ol>
 
 
 </article>

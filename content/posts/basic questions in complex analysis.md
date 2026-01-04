@@ -70,3 +70,28 @@ $$
 \frac{{x-iy}}{(x-iy)(x-iy)+1} = 
 \frac{{x-iy}}{(x-iy)^2+1}
 $$
+
+3. We Prove "Lagrange's Identity" - $|\sum_{i=1}^{n}a_ib_i|^2=\sum_{i=1}^{n}|a_i|^2\sum_{i=1}^{n}|b_i|^2-\sum_{1\leq{i}<j\leq{n}}|a_i\bar{b_j}-a_j\bar{b_i}|^2$
+
+We prove by induction on $n$. For the case of $n=1$ we have, by definition of the absolute value - 
+
+$$
+|ab|=ab\bar{ab}=ab\bar{a}\bar{b}=a\bar{a}b\bar{b}=|a||b| \implies |ab|^2=|a|^2|b|^2
+$$
+
+We assume the statement is correct for $n\in{\mathbb{N}}$ and prove for $n+1$:
+$$
+|\sum_{i=1}^{n+1}a_ib_i|^2=|\sum_{i=1}^{n}a_ib_i+a_{n+1}b_{n+1}|^2=|\sum_{i=1}^{n}a_ib_i|^2+|a_{n+1}b_{n+1}|^2+2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i) = \\\
+\sum_{i=1}^{n}|a_i|^2\sum_{i=1}^{n}|b_i|^2-\sum_{1\leq{i}<j\leq{n}}|a_i\bar{b_j}-a_j\bar{b_i}|^2+|a_{n+1}b_{n+1}|^2+2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i) = \\\
+\sum_{i=1}^{n}|a_i|^2\sum_{i=1}^{n}|b_i|^2-[\sum_{1\leq{i}<j\leq{n}}|a_i\overline{b_j}|^2+|a_j\overline{b_i}|^2-2Re(a_i\overline{b_j}\overline{a_j}b_i)] + |a_{n+1}b_{n+1}|^2+2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i)
+$$
+Next we note the following two statements - 
+1. $2Re(\overline{a_{n+1}b_{n+1}}\sum_{i=1}^{n}a_ib_i)=2Re(a_1\overline{b_{n+1}}\overline{a_{n+1}}b_1+\dots+a_n\overline{b_{n+1}}\overline{a_{n+1}}b_n)=\sum_{i=1}^n2Re(a_i\overline{b_{n+1}}\overline{a_{n+1}}b_i)$
+
+2. Next, we add and subtract the following sums $\sum_i^n|a_ib_{n+1}|^2$ and $\sum_i^n|b_{i}a_{n+1}|^2$ to obtain the final result - 
+$$
+\sum_{i=1}^{n+1}|a_i|^2\sum_{i=1}^{n+1}|b_i|^2-[\sum_{1\leq{i}<j\leq{n+1}}|a_i\overline{b_j}|^2+|a_j\overline{b_i}|^2-2Re(a_i\overline{b_j}\overline{a_j}b_i)] = \\\
+|\sum_{i=1}^{n+1}a_ib_i|^2=\sum_{i=1}^{n+1}|a_i|^2\sum_{i=1}^{n+1}|b_i|^2-\sum_{1\leq{i}<j\leq{n+1}}|a_i\bar{b_j}-a_j\bar{b_i}|^2
+$$
+$\square$.
+
