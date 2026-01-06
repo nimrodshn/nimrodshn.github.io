@@ -95,3 +95,28 @@ $$
 $$
 $\square$.
 
+Going back to the question of $\overline{a}\overline{b}=$
+$$
+(\alpha-i\beta)(\gamma-i\delta) = (\alpha\gamma-\beta\delta)-i(\alpha\delta+\gamma\beta)=\overline{ab}
+$$
+
+3. A proof of Cauchy's inequality -
+$$
+|\sum_{i=1}^na_i\overline{b_i}|^2\leq\sum_{i=1}^n|a_i|^2\sum_{i=1}^n|b_i|^2
+$$
+This line of proof is taken from Ahlfors (p. 11) with details introduced by myself:
+Let $\lambda\in\mathbb{C}$. We write -
+$$
+0\leq\sum_{i=1}^n|a_i-\lambda\overline{b_i}|^2=\sum_{i=1}^n|a_i|^2+|\lambda|^2\sum_{i=1}^n|b_i|^2-\sum_{i=1}^n2Re(a_i\overline{\lambda}b_i)
+$$
+We plug in $\lambda=\frac{\sum_{i=1}^na_i\overline{b_i}}{\sum_{i=1}^n|b_i|^2}$ -
+$$
+\sum_{i=1}^n|a_i|^2+\frac{|\sum_{i=1}^na_i\overline{b_i}|}{(\sum_{i=1}^n|b_i|^2)^2}^2\sum_{i=1}^n|b_i|^2-2Re(\overline{\lambda}\sum_{i=1}^na_ib_i) = \\\
+\sum_{i=1}^n|a_i|^2+\frac{|\sum_{i=1}^na_i\overline{b_i}|}{(\sum_{i=1}^n|b_i|^2)^2}^2\sum_{i=1}^n|b_i|^2-2Re({\frac{\overline{\sum_{i=1}^na_i\overline{b_i}}}{\overline{\sum_{i=1}^n|b_i|^2}}}\sum_{i=1}^na_i\overline{b_i}) = \\\
+\sum_{i=1}^n|a_i|^2+\frac{|\sum_{i=1}^na_i\overline{b_i}|}{\sum_{i=1}^n|b_i|^2}^2-2Re(\frac{{|\sum_{i=1}^na_i\overline{b_i}|^2}}{\overline{\sum_{i=1}^n|b_i|^2}}) = \\\
+\sum_{i=1}^n|a_i|^2+\frac{|\sum_{i=1}^na_i\overline{b_i}|}{\sum_{i=1}^n|b_i|^2}^2-2\frac{{|\sum_{i=1}^na_i\overline{b_i}|^2}}{\sum_{i=1}^n|b_i|^2} = \\\
+\sum_{i=1}^n|a_i|^2-\frac{{|\sum_{i=1}^na_i\overline{b_i}|^2}}{\sum_{i=1}^n|b_i|^2} = \\\
+\sum_{i=1}^n|a_i|^2-\frac{{|\sum_{i=1}^na_i\overline{b_i}|^2}}{\sum_{i=1}^n|b_i|^2} \geq{0}
+$$
+
+Implying the inequality. $\square$.
