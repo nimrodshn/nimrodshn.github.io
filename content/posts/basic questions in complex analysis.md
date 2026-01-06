@@ -120,3 +120,47 @@ $$
 $$
 
 Implying the inequality. $\square$.
+
+__A different perspective:__
+
+Let $u,v\in{\mathbb{C^n}}$. Define $\braket{u,v}=\sum_{i=0}^na_i\overline{b_i}$. Implying - $\|u\|^2=\sum_{i=0}^na_i\overline{a_i}=\sum_{i=0}^n|a_i|^2$
+
+Implying we are to prove the *Cauchy-Schwarz* inequality - $|\braket{u,v}|^2\leq{\|u\|^2\|v\|^2}$.
+Thus we can use the fact that $\frac{\braket{u,v}}{\|v\|^2}$ represents the ortogonal projection of $u$ onto $v$ to minimize $\lambda$ in the expression $\|a-\lambda \bar{b}\|^2$.
+
+We choose $\lambda=\frac{\braket{a,b}}{\|b\|^2}$ to minimize the orthogonal projection and attain an expression with $\braket{a,b}$ - 
+
+$$
+0\leq\|a-\lambda b\|^2=\|a-\frac{\braket{a,b}}{\|b\|^2}b\|^2 = \\\
+ \braket{a-\frac{\braket{a,b}}{\|b\|^2}b,a-\frac{\braket{a,b}}{\|b\|^2}b} = 
+ \|a\|^2+\frac{|\braket{a,b}|^2}{\|b\|^4}\|b\|^2-2\frac{|\braket{a,b}|^2}{\|b\|^2} = \\\
+\|a\|^2+\frac{|\braket{a,b}|^2}{\|b\|^2}-2\frac{|\braket{a,b}|^2}{\|b\|^2}=\|a\|^2-\frac{|\braket{a,b}|^2}{\|b\|^2}
+$$
+
+Concluding the proof. $\square$
+
+
+### Analytical Geometry in the Complex plane
+
+A line in the complex plan is define by $f(t)=a+bt$ for $t\in{\mathbb{R}}$.
+
+__Theorem:__ Two lines $f(t)=a+bt$ and $g(t)=a'+b't$ are identical $\iff$ $a-a'$ and $b'$ are both multiple of $b$.
+
+$\implies$ Assume $g=f$. If $a=a'$ we are done, otherwise there exists $t_0$ such that $g(0)=f(t)$ implying $a'=a+bt_0$ implying $a-a'=-bt_0$.
+
+Similarly, there exists $t_1$ such that $g(1)=f(t_1)$ implying, $a'+b'=a+bt_1 \implies b'=b(t_1-t_0)$
+
+$\impliedby$ Assume $a-a'$ and $b'$ are both multiples of $b$. Let $t\in{\mathbb{R}}$. Than, by assumption there exists constants $q,c\in{\mathbb{R}}$ such that $f(t)=a+bt=(a'+qb)+cb't=a'+b'c(q+t)=g(c(q+t))$. $\square$
+
+__Question:__ Prove that the two diagonals of a parallelogram bisect each other. 
+
+__Answer:__
+Let $a,b\in{\mathbb{C}}$. We assume $|a|\neq0$, $|b|\neq0$
+
+We consider the following real function - $g(t)=|(a+b)t|^2-|(a(1-t)+bt)|^2$
+
+Than $g(0)=-|a|^2$ while $g(1)=|a+b|^2-|b|^2\geq{0}$ than by the intermediate value theorem there exists a point $p\in{[0,1]}$ such that $g(p)=0$ implying the result.
+
+While the above result only shows existance we may also prove the following - Define $f(t)=(a+b)t$ and $g(t)=a(1-t)+bt$. Then -
+
+$f(1/2)=\frac{a+b}{2}=g(1/2)$ concluding the pf.

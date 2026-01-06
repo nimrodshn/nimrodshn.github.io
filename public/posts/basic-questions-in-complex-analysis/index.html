@@ -106,7 +106,7 @@ $$ \begin{pmatrix} \alpha&#43;\gamma &amp; \beta&#43;\delta \\ -(\beta&#43;\delt
 
         
 
-        <li>2 minute read</li>
+        <li>3 minute read</li>
     </ul>
 </aside>
 
@@ -230,6 +230,31 @@ $$
 $$</li>
 </ol>
 <p>Implying the inequality. $\square$.</p>
+<p><strong>A different perspective:</strong></p>
+<p>Let $u,v\in{\mathbb{C^n}}$. Define $\braket{u,v}=\sum_{i=0}^na_i\overline{b_i}$. Implying - $|u|^2=\sum_{i=0}^na_i\overline{a_i}=\sum_{i=0}^n|a_i|^2$</p>
+<p>Implying we are to prove the <em>Cauchy-Schwarz</em> inequality - $|\braket{u,v}|^2\leq{|u|^2|v|^2}$.
+Thus we can use the fact that $\frac{\braket{u,v}}{|v|^2}$ represents the ortogonal projection of $u$ onto $v$ to minimize $\lambda$ in the expression $|a-\lambda \bar{b}|^2$.</p>
+<p>We choose $\lambda=\frac{\braket{a,b}}{|b|^2}$ to minimize the orthogonal projection and attain an expression with $\braket{a,b}$ -</p>
+<p>$$
+0\leq|a-\lambda b|^2=|a-\frac{\braket{a,b}}{|b|^2}b|^2 = \\
+\braket{a-\frac{\braket{a,b}}{|b|^2}b,a-\frac{\braket{a,b}}{|b|^2}b} =
+|a|^2+\frac{|\braket{a,b}|^2}{|b|^4}|b|^2-2\frac{|\braket{a,b}|^2}{|b|^2} = \\
+|a|^2+\frac{|\braket{a,b}|^2}{|b|^2}-2\frac{|\braket{a,b}|^2}{|b|^2}=|a|^2-\frac{|\braket{a,b}|^2}{|b|^2}
+$$</p>
+<p>Concluding the proof. $\square$</p>
+<h3 id="analytical-geometry-in-the-complex-plane">Analytical Geometry in the Complex plane</h3>
+<p>A line in the complex plan is define by $f(t)=a+bt$ for $t\in{\mathbb{R}}$.</p>
+<p><strong>Theorem:</strong> Two lines $f(t)=a+bt$ and $g(t)=a&rsquo;+b&rsquo;t$ are identical $\iff$ $a-a&rsquo;$ and $b&rsquo;$ are both multiple of $b$.</p>
+<p>$\implies$ Assume $g=f$. If $a=a&rsquo;$ we are done, otherwise there exists $t_0$ such that $g(0)=f(t)$ implying $a&rsquo;=a+bt_0$ implying $a-a&rsquo;=-bt_0$.</p>
+<p>Similarly, there exists $t_1$ such that $g(1)=f(t_1)$ implying, $a&rsquo;+b&rsquo;=a+bt_1 \implies b&rsquo;=b(t_1-t_0)$</p>
+<p>$\impliedby$ Assume $a-a&rsquo;$ and $b&rsquo;$ are both multiples of $b$. Let $t\in{\mathbb{R}}$. Than, by assumption there exists constants $q,c\in{\mathbb{R}}$ such that $f(t)=a+bt=(a&rsquo;+qb)+cb&rsquo;t=a&rsquo;+b&rsquo;c(q+t)=g(c(q+t))$. $\square$</p>
+<p><strong>Question:</strong> Prove that the two diagonals of a parallelogram bisect each other.</p>
+<p><strong>Answer:</strong>
+Let $a,b\in{\mathbb{C}}$. We assume $|a|\neq0$, $|b|\neq0$</p>
+<p>We consider the following real function - $g(t)=|(a+b)t|^2-|(a(1-t)+bt)|^2$</p>
+<p>Than $g(0)=-|a|^2$ while $g(1)=|a+b|^2-|b|^2\geq{0}$ than by the intermediate value theorem there exists a point $p\in{[0,1]}$ such that $g(p)=0$ implying the result.</p>
+<p>While the above result only shows existance we may also prove the following - Define $f(t)=(a+b)t$ and $g(t)=a(1-t)+bt$. Then -</p>
+<p>$f(1/2)=\frac{a+b}{2}=g(1/2)$ concluding the pf.</p>
 
 
 </article>
