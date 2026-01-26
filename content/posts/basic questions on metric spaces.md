@@ -1,5 +1,5 @@
 +++
-title = 'Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)'
+title = 'Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich)'
 date = 2025-12-24
 draft = false
 +++
@@ -34,10 +34,9 @@ An open set by b. $\square$
 Let $(X,d)$ be a metric space. A set $F\subset{X}$ is closed in $X$ $\iff$ $F$ contains all of its limit points. That is, $F=\bar{F}$.
 
 __Proof:__
-$\implies$ Let $F$ be closed in $X$. Assume by contradiction there exists a limit point $x$ such that $x\notin{F}$. Implying any neighborhood of $x$ contains points in $F$. Thus, for any $\epsilon>0$ the ball $B(x,\epsilon)$ contains point in $F$ and thus $F^c$ is not open. Contradiction.
+$\implies$ Let $F$ be closed in $X$. Assume by contradiction $F\neq\bar{F}$. That is, there exists a limit point $x$ such that $x\notin{F}$. However, since $F$ is closed, its complement is open, implying there exists $0<r\in{\mathbb{R}}$ such that $B(x,r)\subset{F^c}$. But $x$ is a limit point thus it contains infinitly many points in $F$, different from $x$ - $B(x,r)\cap{F}\neq\empty$. Contradiction.
 
-$\impliedby$ Assume $F=\bar{F}$. By contradiction, assume $F$ is not closed in $X$. Thus, there exists a point in $x\in{F^c}$ such that any neighborhood of $x$ contains pts in $F$ (Otherwise, $F^c$ is open implying $F$ is closed.) But then $x$ is a limit point of $F$ in $F^c$. Contradiction.
-
+$\impliedby$ Assume $F=\bar{F}$. By contradiction, assume $F$ is not closed in $X$. Implying $F^c$ is not open in $X$, thus, there exists a point $x\in{F^c}$ such that for any $r>0$ we have $B(x,r)\cap{F}\neq\empty$. But then $x$ would be a limit point of $F$. Contradiction.
 
 ### Questions:
 

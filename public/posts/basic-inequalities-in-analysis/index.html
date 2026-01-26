@@ -1,0 +1,229 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Basic Inequalities in Analysis - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/basic-inequalities-in-analysis/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="Basic Inequalities in Analysis">
+  <meta property="og:description" content="Young’s Inequality Let $a,b&gt;0$ and $p,q\neq0,1$ be such that - $\frac{1}{q}&#43;\frac{1}{p}=1$ than for $p&gt;1$ we have - $$ a^{\frac{1}{p}}b^{\frac{1}{q}}\leq\frac{1}{p}a&#43;\frac{1}{q}b $$ Implying - $$ a(\frac{b}{a})^{\frac{1}{q}} \leq (1-\frac{1}{q})a&#43;\frac{1}{q}b $$
+We note several observations:
+First, we have $\frac{1}{p}=\frac{q-1}{q}$. Implying - $p=\frac{q}{q-1}=1&#43;\frac{1}{q-1}$. This implies that $q&gt;1$ if $p&gt;1$.w
+Second, we obtain by substituting $x-1$ to Bernouli’s Inequality: $(1&#43;\alpha)^n\geq{n\alpha&#43;1}$ to obtain - $$ x^n\geq{n(x-1)&#43;1} $$
+To conclude, for $x\geq0$ and natural $n$ we have $x^n\geq{n(x-1)&#43;1}$">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-01-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-01-26T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Basic Inequalities in Analysis">
+  <meta name="twitter:description" content="Young’s Inequality Let $a,b&gt;0$ and $p,q\neq0,1$ be such that - $\frac{1}{q}&#43;\frac{1}{p}=1$ than for $p&gt;1$ we have - $$ a^{\frac{1}{p}}b^{\frac{1}{q}}\leq\frac{1}{p}a&#43;\frac{1}{q}b $$ Implying - $$ a(\frac{b}{a})^{\frac{1}{q}} \leq (1-\frac{1}{q})a&#43;\frac{1}{q}b $$
+We note several observations:
+First, we have $\frac{1}{p}=\frac{q-1}{q}$. Implying - $p=\frac{q}{q-1}=1&#43;\frac{1}{q-1}$. This implies that $q&gt;1$ if $p&gt;1$.w
+Second, we obtain by substituting $x-1$ to Bernouli’s Inequality: $(1&#43;\alpha)^n\geq{n\alpha&#43;1}$ to obtain - $$ x^n\geq{n(x-1)&#43;1} $$
+To conclude, for $x\geq0$ and natural $n$ we have $x^n\geq{n(x-1)&#43;1}$">
+
+<meta name="generator" content="Hugo 0.152.2">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Basic Inequalities in Analysis</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2026-01-26T00:00:00Z">Jan 26, 2026</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <h3 id="youngs-inequality">Young&rsquo;s Inequality</h3>
+<p>Let $a,b&gt;0$ and $p,q\neq0,1$ be such that - $\frac{1}{q}+\frac{1}{p}=1$ than for $p&gt;1$ we have -
+$$
+a^{\frac{1}{p}}b^{\frac{1}{q}}\leq\frac{1}{p}a+\frac{1}{q}b
+$$
+Implying -
+$$
+a(\frac{b}{a})^{\frac{1}{q}} \leq (1-\frac{1}{q})a+\frac{1}{q}b
+$$</p>
+<p>We note several observations:</p>
+<p>First, we have $\frac{1}{p}=\frac{q-1}{q}$. Implying - $p=\frac{q}{q-1}=1+\frac{1}{q-1}$. This implies that $q&gt;1$ if $p&gt;1$.w</p>
+<p>Second, we obtain by substituting $x-1$ to Bernouli&rsquo;s Inequality: $(1+\alpha)^n\geq{n\alpha+1}$ to obtain -
+$$
+x^n\geq{n(x-1)+1}
+$$</p>
+<p>To conclude, for $x\geq0$ and natural $n$ we have $x^n\geq{n(x-1)+1}$</p>
+<p>We substitute to the above inequality, $n=q$ and $x=(\frac{b}{a})^{\frac{1}{q}}$ to obtain -</p>
+<p>$$
+\frac{b}{a}\geq{q[(\frac{b}{a})^{\frac{1}{q}}-1]+1} = \\
+\frac{1}{q}b \geq a[(\frac{b}{a})^{\frac{1}{q}}-1+\frac{1}{q}] = \\
+\frac{1}{q}b \geq a(\frac{b}{a})^{\frac{1}{q}}-(1-\frac{1}{q})a = \\
+(1-\frac{1}{q})a+\frac{1}{q}b \geq a(\frac{b}{a})^{\frac{1}{q}}
+$$</p>
+<p>Concluding the proof. $\square$.</p>
+<p><strong>An alternative proof</strong>:</p>
+<p>We use the convexity of the exponent function:</p>
+<p>Let $e^u=a^p$, $e^t=b^q$. Implying, $a=e^{\frac{u}{p}}$, $b=e^{\frac{t}{q}}$. Thus,
+$$
+ab=e^{\frac{u}{p}}e^{\frac{t}{q}}=e^{\frac{u}{p}+\frac{t}{q}}=e^{u(1-\frac{1}{q})+\frac{t}{q}}\leq(1-\frac{1}{q})e^u+\frac{1}{q}e^t=(1-\frac{1}{q})a^p+\frac{1}{q}b^q
+$$</p>
+<h3 id="holders-inequality">Holder&rsquo;s Inequality</h3>
+<p>We prove for $x_i,y_i&gt;0$ for all $1\leq{i}\leq{n}$ and $p,q&gt;1$ such that $\frac{1}{q}+\frac{1}{p}=1$:</p>
+<p>$$
+\sum_{i=1}^{n}x_iy_i \leq (\sum_{i=1}^{n}x_i^p)^{\frac{1}{p}}(\sum_{i=1}^{n}y_i^q)^{\frac{1}{q}}
+$$</p>
+<p><strong>Proof:</strong>
+We set $a_j=\frac{x_j}{(\sum_{i=1}^{n}x_i^p)^{\frac{1}{p}}}$, $b_j=\frac{y_j}{(\sum_{i=1}^{n}y_i^q)^{\frac{1}{q}}}$</p>
+<p>By Young&rsquo;s inequality we have -
+$$
+a_jb_j=\frac{x_jy_j}{(\sum_{i=1}^{n}x_i^p)^{\frac{1}{p}}(\sum_{i=1}^{n}y_i^q)^{\frac{1}{q}}} \leq
+\frac{x_j^p}{p\sum_{i=1}^{n}x_i^p} + \frac{y_j^q}{q\sum_{i=1}^{n}y_i^q}
+$$</p>
+<p>We sum over $j$ to obtain -
+$$
+\frac{\sum_{j=1}^n{x_jy_j}}{(\sum_{i=1}^{n}x_i^p)^{\frac{1}{p}}(\sum_{i=1}^{n}y_i^q)^{\frac{1}{q}}} \leq \frac{1}{p}+\frac{1}{q}=1
+$$</p>
+<p>Implying the result.</p>
+<h3 id="minkowskis-inequality">Minkowski&rsquo;s Inequality</h3>
+<p>We prove for $x_i,y_i&gt;0$ for all $1\leq{i}\leq{n}$ and $p,q&gt;1$ such that $\frac{1}{q}+\frac{1}{p}=1$:</p>
+<p>$$
+(\sum_{i=1}^{n}(x_i+y_i)^p)^{\frac{1}{p}} \leq (\sum_{i=1}^{n}x_i^p)^{\frac{1}{p}} + (\sum_{i=1}^{n}y_i^p)^{\frac{1}{p}}
+$$</p>
+<p><strong>Attempts at a proof:</strong>
+We start by developing the left hand side -</p>
+<p>$$
+(\sum_{i=1}^n(x_i+y_i)^p)^{\frac{1}{p}} =  (\sum_{i=1}^n(x_i+y_i)^{p-1}(x_i+y_i))^{\frac{1}{p}} = \\
+(\sum_{i=1}^n(x_i+y_i)^{p-1}x_i+(x_i+y_i)^{p-1}y_i)^{\frac{1}{p}} \leq \\
+((\sum_{i=1}^n(x_i+y_i)^{q(p-1)})^{\frac{1}{q}}(\sum_{i=0}^nx_i^p)^{\frac{1}{p}}+(\sum_{i=1}^n((x_i+y_i)^{q(p-1)})^{\frac{1}{q}}(\sum_{i=0}^ny_i^p))^{\frac{1}{p}})^{\frac{1}{p}} =  \\
+(\sum_{i=1}^n(x_i+y_i)^{p})^{\frac{1}{pq}}((\sum_{i=0}^nx_i^p)^{\frac{1}{p}}+(\sum_{i=0}^ny_i^p)^{\frac{1}{p}})^{\frac{1}{p}} \implies \\
+(\sum_{i=1}^n(x_i+y_i)^p)^{\frac{1}{p^2}} \leq ((\sum_{i=0}^nx_i^p)^{\frac{1}{p}}+(\sum_{i=0}^ny_i^p)^{\frac{1}{p}})^{\frac{1}{p}}
+$$</p>
+<p>After raising to the $p$th power we arive at the conclusion.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/basic-questions-in-complex-analysis/"><i class="fa fa-chevron-circle-left"></i> Basic questions in Complex Analysis (From Ahlfors)</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+
+
+</body>
+
+</html>
+

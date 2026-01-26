@@ -17,7 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Yet another corner of the internet">
 
-<meta name="generator" content="Hugo 0.147.8">
+<meta name="generator" content="Hugo 0.152.2">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
@@ -85,6 +85,77 @@
     
 
     <li class="first" >
+      <h1><a href="http://localhost:1313/posts/a-question-on-cardinality/" title="A question on the cardinality of a $\sigma$-field">A question on the cardinality of a $\sigma$-field</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-12-01T00:00:00Z">Dec 1, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p><p>Let $\gamma$ be a any class of subsets of $\Omega$ such that $\phi,\Omega\in\gamma$. We define $\gamma_0=\gamma$, and for any ordinal $\alpha&gt;0$, inductively:</p>
+<p>$$\gamma_\alpha = (\cup\set{\gamma_\beta:\beta&lt;\alpha})&rsquo;$$</p>
+<p>Where $D&rsquo;$ is the class of all countable unions of differences of sets in $D$.</p>
+<p><strong>What is $D&rsquo;$?</strong>
+Assume $D = \set{\Omega, \phi}$ The difference $\Omega-\phi$ is the set $\Omega$.
+Assume $A\in{D}$ than $D&rsquo;$ contain $\phi-A$, $\Omega-A=A^c$, $\phi-A=\phi$, etc.</p>
+<p>But than - $A=\Omega-A^c\in{D&rsquo;}$!</p>
+<p>We than define $\frak{U}=\cup\set{\gamma_{\alpha}:\alpha&lt;\beta}$</p></p>
+      
+      <a href="/posts/a-question-on-cardinality/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
+      <h1><a href="http://localhost:1313/posts/limits_proof/" title="A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$">A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2025-11-30T00:00:00Z">Nov 30, 2025</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p><p><strong>Definition</strong>:
+If $\liminf A_n = \limsup A_n = A^{\star}$ we define $\lim_n A_n = A^{\star}$.</p>
+<p><strong>Problem</strong>: Assume $\mu$ a finite measure and $A_n\in\mathcal{F}, \forall{n}\in\mathbb{N}$.
+Show $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</p>
+<p><strong>An initial idea</strong>:</p>
+<p>My initial idea was to use the following properties of $\liminf A_n$ and $\limsup A_n$:</p>
+<ol>
+<li>
+<p>$w\in\liminf{A_n} \iff \exist{n}$ such that $\forall{k\geq{n}}$ we have $w\in{A_k}$.</p>
+</li>
+<li>
+<p>$w\in\limsup{A_n} \iff$ there are infinitely many $n$ such that $w\in{A_n}$.</p>
+</li>
+</ol>
+<p>However these propoerties do not reveal a connection between $\mu(\limsup{A_n})=\mu(\liminf{A_n})=\mu(A^{\star})$ and $\mu(A_n)$.</p></p>
+      
+      <a href="/posts/limits_proof/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
       <h1><a href="http://localhost:1313/posts/an-explicit-construction-of-a-sigma-field/" title="An explicit construction of a $\sigma$-field">An explicit construction of a $\sigma$-field</a></h1>
       <aside>
     <ul>

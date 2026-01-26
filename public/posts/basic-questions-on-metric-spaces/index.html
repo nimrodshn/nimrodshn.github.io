@@ -3,13 +3,13 @@
 <html lang="en-us">
 
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-  <title>Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich) - Yet another corner of the internet</title>
+  <title>Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich) - Yet another corner of the internet</title>
   <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="description" content="The HTML5 Herald" />
 <meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/basic-questions-on-metric-spaces/">
   <meta property="og:site_name" content="Yet another corner of the internet">
-  <meta property="og:title" content="Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)">
+  <meta property="og:title" content="Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich)">
   <meta property="og:description" content="Proposition 1: Let $(X,d)$ be a metric space. a. The union $\bigcup_{\alpha\in{A}}G_{\alpha}$ of the sets in any system $\set{G_{\alpha}, \alpha\in{A}}$ of sets that are open in $X$ is and open set in $X$. b. The intersection $\bigcap_{i=1}^nG_i$ of any finite number of sets that are open in $X$ is an open set in $X$. c. The intesection $\bigcap_{\alpha\in{A}}F_{\alpha}$ of the sets in any system $\set{F_{\alpha}, \alpha\in{A}}$ of sets $F_{\alpha}$ that are closed in $X$ is a closed set in $X$. d. The union $\bigcup_{i=1}^nF_i$ of any finite number of sets that are closed in $X$ is a closed set in $X$.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -19,10 +19,10 @@
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)">
+  <meta name="twitter:title" content="Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich)">
   <meta name="twitter:description" content="Proposition 1: Let $(X,d)$ be a metric space. a. The union $\bigcup_{\alpha\in{A}}G_{\alpha}$ of the sets in any system $\set{G_{\alpha}, \alpha\in{A}}$ of sets that are open in $X$ is and open set in $X$. b. The intersection $\bigcap_{i=1}^nG_i$ of any finite number of sets that are open in $X$ is an open set in $X$. c. The intesection $\bigcap_{\alpha\in{A}}F_{\alpha}$ of the sets in any system $\set{F_{\alpha}, \alpha\in{A}}$ of sets $F_{\alpha}$ that are closed in $X$ is a closed set in $X$. d. The union $\bigcup_{i=1}^nF_i$ of any finite number of sets that are closed in $X$ is a closed set in $X$.">
 
-<meta name="generator" content="Hugo 0.147.8">
+<meta name="generator" content="Hugo 0.152.2">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
@@ -85,7 +85,7 @@
 
 <article>
 
-    <h1>Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)</h1>
+    <h1>Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich)</h1>
 
     
       <aside>
@@ -131,8 +131,8 @@ $$</p>
 <h3 id="proposition-2">Proposition 2:</h3>
 <p>Let $(X,d)$ be a metric space. A set $F\subset{X}$ is closed in $X$ $\iff$ $F$ contains all of its limit points. That is, $F=\bar{F}$.</p>
 <p><strong>Proof:</strong>
-$\implies$ Let $F$ be closed in $X$. Assume by contradiction there exists a limit point $x$ such that $x\notin{F}$. Implying any neighborhood of $x$ contains points in $F$. Thus, for any $\epsilon&gt;0$ the ball $B(x,\epsilon)$ contains point in $F$ and thus $F^c$ is not open. Contradiction.</p>
-<p>$\impliedby$ Assume $F=\bar{F}$. By contradiction, assume $F$ is not closed in $X$. Thus, there exists a point in $x\in{F^c}$ such that any neighborhood of $x$ contains pts in $F$ (Otherwise, $F^c$ is open implying $F$ is closed.) But then $x$ is a limit point of $F$ in $F^c$. Contradiction.</p>
+$\implies$ Let $F$ be closed in $X$. Assume by contradiction $F\neq\bar{F}$. That is, there exists a limit point $x$ such that $x\notin{F}$. However, since $F$ is closed, its complement is open, implying there exists $0&lt;r\in{\mathbb{R}}$ such that $B(x,r)\subset{F^c}$. But $x$ is a limit point thus it contains infinitly many points in $F$, different from $x$ - $B(x,r)\cap{F}\neq\empty$. Contradiction.</p>
+<p>$\impliedby$ Assume $F=\bar{F}$. By contradiction, assume $F$ is not closed in $X$. Implying $F^c$ is not open in $X$, thus, there exists a point $x\in{F^c}$ such that for any $r&gt;0$ we have $B(x,r)\cap{F}\neq\empty$. But then $x$ would be a limit point of $F$. Contradiction.</p>
 <h3 id="questions">Questions:</h3>
 <p>a. Is it true that the union of any family of closed sets is a closed set?</p>
 <p>Answer: Take the the following a countable collection of closed sets: $A_i=[\frac{1}{i},1]$. Than, $\cup_i^{\infty}A_i=(0,1]$ is not closed since it does not contain $0$.</p>

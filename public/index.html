@@ -17,7 +17,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Yet another corner of the internet">
 
-<meta name="generator" content="Hugo 0.147.8">
+<meta name="generator" content="Hugo 0.152.2">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
@@ -85,6 +85,74 @@
     
 
     <li class="first" >
+      <h1><a href="http://localhost:1313/posts/proofs-in-topology/" title="Proofs in Topology and Metric Spaces (from Mathematical Analysis 2 by Zorich)">Proofs in Topology and Metric Spaces (from Mathematical Analysis 2 by Zorich)</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2026-02-04T00:00:00Z">Feb 4, 2026</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p><h3 id="a-criteria-for-compactness-in-a-metric-space">A criteria for compactness in a Metric space.</h3>
+<p>A metric space $(X,d)$ is compact if and only if for every sequence of elements one can extract a convergent subsequence.</p>
+<p><strong>Proof:</strong></p>
+<p>$\implies$ Let $\set{x_i}_{i\in{\mathbb{N}}}$ be a sequence of elements in $X$. If the sequence contains only a finite set of distinct elements than [by  &ldquo;the pigeonhole principle&rdquo;] some element repeats infinitly many times implying the result. Thus, we assume there are infinitly many distinct elements in the sequence. Since $X$ is compact it has a finite $\epsilon$-net for any $\epsilon&gt;04$. Thus we may pick a 1-net covering $X$. In this finite 1-net $E_1$ there exists an element $a_1$ such that there are infinitly many elements in the sequence in $\overline{B(a_1,1)}$ otherwise the sequence itself is finite.</p></p>
+      
+      <a href="/posts/proofs-in-topology/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
+      <h1><a href="http://localhost:1313/posts/basic-inequalities-in-analysis/" title="Basic Inequalities in Analysis">Basic Inequalities in Analysis</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2026-01-26T00:00:00Z">Jan 26, 2026</time>
+        </li>
+        
+        
+
+        
+
+        <li>2 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p><h3 id="youngs-inequality">Young&rsquo;s Inequality</h3>
+<p>Let $a,b&gt;0$ and $p,q\neq0,1$ be such that - $\frac{1}{q}+\frac{1}{p}=1$ than for $p&gt;1$ we have -
+$$
+a^{\frac{1}{p}}b^{\frac{1}{q}}\leq\frac{1}{p}a+\frac{1}{q}b
+$$
+Implying -
+$$
+a(\frac{b}{a})^{\frac{1}{q}} \leq (1-\frac{1}{q})a+\frac{1}{q}b
+$$</p>
+<p>We note several observations:</p>
+<p>First, we have $\frac{1}{p}=\frac{q-1}{q}$. Implying - $p=\frac{q}{q-1}=1+\frac{1}{q-1}$. This implies that $q&gt;1$ if $p&gt;1$.w</p>
+<p>Second, we obtain by substituting $x-1$ to Bernouli&rsquo;s Inequality: $(1+\alpha)^n\geq{n\alpha+1}$ to obtain -
+$$
+x^n\geq{n(x-1)+1}
+$$</p>
+<p>To conclude, for $x\geq0$ and natural $n$ we have $x^n\geq{n(x-1)+1}$</p></p>
+      
+      <a href="/posts/basic-inequalities-in-analysis/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
       <h1><a href="http://localhost:1313/posts/basic-questions-in-complex-analysis/" title="Basic questions in Complex Analysis (From Ahlfors)">Basic questions in Complex Analysis (From Ahlfors)</a></h1>
       <aside>
     <ul>
@@ -142,7 +210,7 @@ $$</p></p>
     
 
     <li >
-      <h1><a href="http://localhost:1313/posts/basic-questions-on-metric-spaces/" title="Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)">Basic properties of Metric Spaces (from Mathematical Analsys 2 by Zorich)</a></h1>
+      <h1><a href="http://localhost:1313/posts/basic-questions-on-metric-spaces/" title="Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich)">Basic properties of Metric Spaces (from Mathematical Analysis 2 by Zorich)</a></h1>
       <aside>
     <ul>
         <li>
@@ -356,77 +424,6 @@ As we know from previous statements on countably additive set functions - $$\lim
 Naively, we may try to attack this question as purely a question on sequences of real numbers $\set{\mu(A_i)}_i$ and $\set{\mu(A_i&rsquo;)}_i$?</p></p>
       
       <a href="/posts/another-limit-question/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="http://localhost:1313/posts/a-question-on-cardinality/" title="A question on the cardinality of a $\sigma$-field">A question on the cardinality of a $\sigma$-field</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2025-12-01T00:00:00Z">Dec 1, 2025</time>
-        </li>
-        
-        
-
-        
-
-        <li>2 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p><p>Let $\gamma$ be a any class of subsets of $\Omega$ such that $\phi,\Omega\in\gamma$. We define $\gamma_0=\gamma$, and for any ordinal $\alpha&gt;0$, inductively:</p>
-<p>$$\gamma_\alpha = (\cup\set{\gamma_\beta:\beta&lt;\alpha})&rsquo;$$</p>
-<p>Where $D&rsquo;$ is the class of all countable unions of differences of sets in $D$.</p>
-<p><strong>What is $D&rsquo;$?</strong>
-Assume $D = \set{\Omega, \phi}$ The difference $\Omega-\phi$ is the set $\Omega$.
-Assume $A\in{D}$ than $D&rsquo;$ contain $\phi-A$, $\Omega-A=A^c$, $\phi-A=\phi$, etc.</p>
-<p>But than - $A=\Omega-A^c\in{D&rsquo;}$!</p>
-<p>We than define $\frak{U}=\cup\set{\gamma_{\alpha}:\alpha&lt;\beta}$</p></p>
-      
-      <a href="/posts/a-question-on-cardinality/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="http://localhost:1313/posts/limits_proof/" title="A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$">A proof for $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2025-11-30T00:00:00Z">Nov 30, 2025</time>
-        </li>
-        
-        
-
-        
-
-        <li>2 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p><p><strong>Definition</strong>:
-If $\liminf A_n = \limsup A_n = A^{\star}$ we define $\lim_n A_n = A^{\star}$.</p>
-<p><strong>Problem</strong>: Assume $\mu$ a finite measure and $A_n\in\mathcal{F}, \forall{n}\in\mathbb{N}$.
-Show $\mu(\lim_{n\rightarrow\infty}{A})=\lim_{n\rightarrow\infty}{\mu(A_n)}$</p>
-<p><strong>An initial idea</strong>:</p>
-<p>My initial idea was to use the following properties of $\liminf A_n$ and $\limsup A_n$:</p>
-<ol>
-<li>
-<p>$w\in\liminf{A_n} \iff \exist{n}$ such that $\forall{k\geq{n}}$ we have $w\in{A_k}$.</p>
-</li>
-<li>
-<p>$w\in\limsup{A_n} \iff$ there are infinitely many $n$ such that $w\in{A_n}$.</p>
-</li>
-</ol>
-<p>However these propoerties do not reveal a connection between $\mu(\limsup{A_n})=\mu(\liminf{A_n})=\mu(A^{\star})$ and $\mu(A_n)$.</p></p>
-      
-      <a href="/posts/limits_proof/">Read more…</a>
       
     </li>
     
