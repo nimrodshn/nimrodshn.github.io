@@ -6,10 +6,19 @@
    <description>Recent content in Posts on Yet another corner of the internet</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
-   <lastBuildDate>Tue, 30 Dec 2025 00:00:00 +0000</lastBuildDate>
+   <lastBuildDate>Mon, 26 Jan 2026 00:00:00 +0000</lastBuildDate>
    
        <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
    
+   
+     <item>
+       <title>Basic Inequalities in Analysis</title>
+       <link>http://localhost:1313/posts/basic-inequalities-in-analysis/</link>
+       <pubDate>Mon, 26 Jan 2026 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/posts/basic-inequalities-in-analysis/</guid>
+       <description>&lt;h3 id=&#34;youngs-inequality&#34;&gt;Young&amp;rsquo;s Inequality&lt;/h3&gt;&lt;p&gt;Let $a,b&amp;gt;0$ and $p,q\neq0,1$ be such that - $\frac{1}{q}+\frac{1}{p}=1$ than for $p&amp;gt;1$ we have -$$a^{\frac{1}{p}}b^{\frac{1}{q}}\leq\frac{1}{p}a+\frac{1}{q}b$$Implying -$$a(\frac{b}{a})^{\frac{1}{q}} \leq (1-\frac{1}{q})a+\frac{1}{q}b$$&lt;/p&gt;&lt;p&gt;We note several observations:&lt;/p&gt;&lt;p&gt;First, we have $\frac{1}{p}=\frac{q-1}{q}$. Implying - $p=\frac{q}{q-1}=1+\frac{1}{q-1}$. This implies that $q&amp;gt;1$ if $p&amp;gt;1$.&lt;/p&gt;&lt;p&gt;Second, we obtain by substituting $x-1$ to Bernouli&amp;rsquo;s Inequality: $(1+\alpha)^n\geq{n\alpha+1}$ to obtain -$$x^n\geq{n(x-1)+1}$$&lt;/p&gt;&lt;p&gt;To conclude, for $x\geq0$ and natural $n$ we have $x^n\geq{n(x-1)+1}$&lt;/p&gt;&lt;p&gt;We substitute to the above inequality, $n=q$ and $x=(\frac{b}{a})^{\frac{1}{q}}$ to obtain -&lt;/p&gt;&lt;p&gt;$$\frac{b}{a}\geq{q[(\frac{b}{a})^{\frac{1}{q}}-1]+1} \implies \\\frac{1}{q}b \geq a[(\frac{b}{a})^{\frac{1}{q}}-1+\frac{1}{q}] = \\\frac{1}{q}b \geq a(\frac{b}{a})^{\frac{1}{q}}-(1-\frac{1}{q})a = \\(1-\frac{1}{q})a+\frac{1}{q}b \geq a(\frac{b}{a})^{\frac{1}{q}}$$&lt;/p&gt;&lt;p&gt;Concluding the proof. $\square$.&lt;/p&gt;</description>
+     </item>
    
      <item>
        <title>Basic questions in Complex Analysis (From Ahlfors)</title>
