@@ -1,0 +1,286 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>Proofs in Complex Analysis - Yet another corner of the internet</title>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="The HTML5 Herald" />
+<meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/proofs-in-complex-analysis/">
+  <meta property="og:site_name" content="Yet another corner of the internet">
+  <meta property="og:title" content="Proofs in Complex Analysis">
+  <meta property="og:description" content="More proofs in analysis: Question (Composition of differentiable functions): Let $f,g$ be differentiable functions such that $g:X\rightarrow{Y}$ and $f:Y\rightarrow{Z}$ such that the image of $g$ is contained within the domain of $f$. Than, $f\circ{g}$ is a differentiable function and its derivative is given by $f(g(x))’=f’(g(x))g’(x)$.
+Answer: Let $t\in{X}$, implying by our assumption $g(t)\in{Y}$. Than differentiability of $f$ we may write - $$ f(g(t)&#43;h)-f(g(t))=f’(g(t))h&#43;o(h) $$
+We define $h(u)=g(t&#43;u)-g(t)$ implying -
+$$ f(g(t&#43;u))-f(g(t)) = \ f(g(t)&#43;h(u))-f(g(t)) = \ f’(g(t))h(u)&#43;o(h(u)) = \ f’(g(t))(g(t&#43;u)-g(t))&#43;o(h(u)) $$">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-08T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-02-08T00:00:00+00:00">
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Proofs in Complex Analysis">
+  <meta name="twitter:description" content="More proofs in analysis: Question (Composition of differentiable functions): Let $f,g$ be differentiable functions such that $g:X\rightarrow{Y}$ and $f:Y\rightarrow{Z}$ such that the image of $g$ is contained within the domain of $f$. Than, $f\circ{g}$ is a differentiable function and its derivative is given by $f(g(x))’=f’(g(x))g’(x)$.
+Answer: Let $t\in{X}$, implying by our assumption $g(t)\in{Y}$. Than differentiability of $f$ we may write - $$ f(g(t)&#43;h)-f(g(t))=f’(g(t))h&#43;o(h) $$
+We define $h(u)=g(t&#43;u)-g(t)$ implying -
+$$ f(g(t&#43;u))-f(g(t)) = \ f(g(t)&#43;h(u))-f(g(t)) = \ f’(g(t))h(u)&#43;o(h(u)) = \ f’(g(t))(g(t&#43;u)-g(t))&#43;o(h(u)) $$">
+
+<meta name="generator" content="Hugo 0.152.2">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });"></script>
+
+  <link rel="stylesheet" href="/css/normalize.min.css" />
+  <link rel="stylesheet" href="http://localhost:1313/fontawesome/css/all.min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab|Ruda" />
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header>
+      
+      <h1>
+        <a href="/">Yet another corner of the internet</a>
+      </h1>
+
+      <ul id="social-media">
+      </ul>
+      
+    </header>
+
+    
+<nav>
+    <ul>
+        
+        <li>
+            <a class="" href="/about/">
+                <i class="fa-li fa  fa-lg"></i><span>About</span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="" href="/posts/">
+                <i class="fa-li fa  fa-lg"></i><span>Posts</span>
+            </a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+    <main>
+
+
+
+
+<article>
+
+    <h1>Proofs in Complex Analysis</h1>
+
+    
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2026-02-08T00:00:00Z">Feb 8, 2026</time>
+        </li>
+        
+        
+
+        
+
+        <li>3 minute read</li>
+    </ul>
+</aside>
+
+    
+
+    
+      
+
+    
+
+    <h3 id="more-proofs-in-analysis">More proofs in analysis:</h3>
+<p><strong>Question (Composition of differentiable functions):</strong>
+Let $f,g$ be differentiable functions such that $g:X\rightarrow{Y}$ and $f:Y\rightarrow{Z}$ such that the image of $g$ is contained within the domain of $f$.
+Than, $f\circ{g}$ is a differentiable function and its derivative is given by $f(g(x))&rsquo;=f&rsquo;(g(x))g&rsquo;(x)$.</p>
+<p><strong>Answer:</strong>
+Let $t\in{X}$, implying by our assumption $g(t)\in{Y}$. Than differentiability of $f$ we may write -
+$$
+f(g(t)+h)-f(g(t))=f&rsquo;(g(t))h+o(h)
+$$</p>
+<p>We define $h(u)=g(t+u)-g(t)$ implying -</p>
+<p>$$
+f(g(t+u))-f(g(t)) = \
+f(g(t)+h(u))-f(g(t)) = \
+f&rsquo;(g(t))h(u)+o(h(u)) = \
+f&rsquo;(g(t))(g(t+u)-g(t))+o(h(u))
+$$</p>
+<p>Since $h(u)=g(t+u)-g(t)=g&rsquo;(t)u+o(u)$,</p>
+<p>we have $h(u)=O(u)+o(u)=O(u)$, implying $o(h(u))=o(u).$</p>
+<p>$$
+f&rsquo;(g(t))(g&rsquo;(t)u+o(u))+o(u) = \
+f&rsquo;(g(t))g&rsquo;(t)u+f&rsquo;(g(t))o(u)+o(u) = \
+f&rsquo;(g(t))g&rsquo;(t)u+o(u)+o(u) = \
+f&rsquo;(g(t))g&rsquo;(t)u+o(u)
+$$</p>
+<p>Concluding the proof.</p>
+<p><strong>Question:</strong> Prove that a convergent sequence is bounded</p>
+<p><strong>Answer:</strong> Let $\set{a_i}$ be a convergent sequence, ie having a finite limit $A$.
+Let $\epsilon&gt;0$, by definition, there exists $N\in{\mathbb{N}}$ such that for $n&gt;N$ we have - $|a_n-A|&lt;\epsilon$ implying $|a_n|&lt;|A|+\epsilon$ for all $n&gt;N$. Implying that the tail end of the terms are bounded.</p>
+<p>On the other hand, the finite set if terms $\set{a_i}_{i\leq{N}}$ is also bounded as a finite set (simply take its maximum). Together, we have that the sequence is bounded.</p>
+<p><strong>Question:</strong> (Cesaro) If $\lim_{n\rightarrow\infty}z_n=A$ prove that
+$$
+\lim_{n\rightarrow\infty}\frac{1}{n}(z_1+&hellip;+z_n)=A
+$$</p>
+<p><strong>Answer:</strong></p>
+<p>We define $S_n=\frac{1}{n}(z_1+&hellip;+z_n)$. We compute
+$$
+|S_n-A| = |\frac{1}{n}((z_1-A)+&hellip;+(z_n-A))|
+$$</p>
+<p>Let $\epsilon&gt;0$. From the convergence of $\set{z_i}$, there exists $N\in{\mathbb{N}}$ such that for $n&gt;N$ we have -</p>
+<p>$$
+|S_n-A| = |\frac{1}{n}((z_1-A)+&hellip;+(z_n-A))|\leq\frac{1}{n}(|z_1-A|+..+|z_n-A|)&lt;\\
+\frac{1}{n}(|z_1-A|+..+|z_N-A|)+(1-\frac{N}{n})\epsilon
+$$</p>
+<p>We let $n\rightarrow\infty$ to conclude $\limsup_n|S_n-A|\leq\epsilon$, Since, $\epsilon$ is arbitrarily small we conclude $\lim{S_n}=A$.</p>
+<p><strong>Question</strong>: Investigate the convergence of the sequence $\set{nz^n}^{\infty}_{n=1}$.</p>
+<p><strong>Answer</strong>: Let $z\in{\mathbb{C}}$ such that $z\neq{0}$ .We compute -</p>
+<p>$$
+|\frac{(n+1)z^{n+1}}{nz^n}|=(1+\frac{1}{n})|z|
+$$</p>
+<p>As $n\rightarrow\infty$ we have</p>
+<p>$$
+|\frac{(n+1)z^{n+1}}{nz^n}|\rightarrow{|z|}
+$$</p>
+<p>Case $|z|&lt;1$:</p>
+<p>Thus, for sufficiently large $n$ we may pick $|z|&lt;q&lt;1$ such that-
+$$
+|a_n|=|nz^n|&lt;n|z|^n&lt;nq^n\rightarrow{0}
+$$</p>
+<p>Since $nq^n\rightarrow{0}$ for any $0&lt;q&lt;1$.</p>
+<p><strong>Side quest Pf</strong>: $nq^n\rightarrow{0}$ for any $0&lt;q&lt;1$.</p>
+<p>Recall: $a_{n+1}/a_{n}=(1+\frac{1}{n})q\rightarrow{q}&lt;1$. Implying there exists $N$ such that for $n\geq{N}$, the sequence is decreasing and as it is a sequence of positive numbers it is bounded. Moreover there is $q&lt;s&lt;1$ such that for all $n\geq{N}$ we have</p>
+<p>$$
+\frac{|a_{n+p}|}{|a_n|}=\frac{|a_{n+p}|}{|a_{n+p-1}|}&hellip;\frac{|a_{n+1}|}{|a_n|}&lt;s^p
+$$</p>
+<p>Implying for $p\geq{1}$ we have, $a_{N+p}&lt;a_Ns^p=Nq^Ns^p&lt;Ns^{N+p}$.
+Than, from our previous analysis, since $s&lt;1$, we may take $n$ to be arbitrarily large and make $|Ns^n|$ arbitrarily small. Implying $|a_n|&lt;|Ns^{n}|$. Now let $\epsilon$, take $n$ such that $n&gt;\log_s{\epsilon/N}$ to obtain $|a_n|&lt;|Ns^{n}|&lt;\epsilon$.</p>
+<p>For $|z|&gt;1$: The necessary conditions for convergence do not apply bc the terms do not tend to zero, and therefore the sequence diverges.</p>
+<h3 id="proofs-in-complex-analysis">Proofs in Complex Analysis:</h3>
+<p><strong>Question:</strong>
+If $g(z)$ and $f(z)$ are analytic functions show the $f(g(z))$ is analytic.</p>
+<p><strong>Answer:</strong>
+Since $f,g$ are both analytic there exists $u_f,u_g$ and $v_f,v_g$ differentiable such that -
+$$
+f(s+it) = u_f(s,t)+iv_f(s,t) \
+g(x+iy) = u_g(x,y)+iv_g(x,y)
+$$</p>
+<p>$f,g$ satisfy the Cauchy-Riemann equations respectively.</p>
+<p>Let $z\in{\mathbb{C}}$ we compute -</p>
+<p>$$
+u_{f\circ{g}} = u_f(u_g(x,y),v_g(x,y)) \implies \
+d_xu_{f\circ{g}} = d_su_fd_xu_g+d_tu_fd_xv_g = \
+$$</p>
+<p>Using the Cauchy-Riemann equations for both $f$ and $g$ in the last equality:</p>
+<p>$$
+d_su_f=d_tv_f \
+-d_tu_f=d_sv_f
+$$</p>
+<p>And -
+$$
+d_xu_g=d_yv_g \
+-d_yu_g=d_xv_g
+$$</p>
+<p>We obtain -
+$$
+d_su_fd_xu_g+d_tu_fd_xv_g = \
+d_tv_fd_yv_g+d_sv_fd_yu_g = d_yv_{f\circ{g}}
+$$</p>
+<p>Similarly, computing $d_yu_{f\circ{g}} = d_su_fd_yu_g + d_tu_fd_yv_g$ and applying Cauchy-Riemann equations yields $d_yu_{f\circ{g}}=-d_xv_{f\circ{g}}$.</p>
+<p><strong>Question:</strong> Let $f$ be analytic function. If $|f|$ is constant then $f$ is constant.</p>
+<p><strong>Answer:</strong></p>
+<p>Since $|f|$ is constant so is $|f|^2=u^2+v^2$ and thus we may deduce - $d|f|^2=(d_x|f|^2,d_y|f|^2)=0$</p>
+<p>$$
+d_x|f|^2=2ud_xu+2vd_xv = 0 \\
+d_y|f|^2=2ud_yu+2vd_yv = 0
+$$
+Using the Cauchy-Riemann equations for $f$ we obtain -
+$$
+2ud_xu+2vd_xv=0 \\
+-2ud_xv+2vd_xu=0
+$$</p>
+<p>We obtain two linear equations in $d_xu,d_xv$ corresponding to the following matrix -</p>
+<p>$$
+\begin{pmatrix}
+u &amp; v \\
+v &amp; -u
+\end{pmatrix}
+$$</p>
+<p>Which has a determinant, $-|f|^2=const$, by assumption.</p>
+<p>If $|f|=0$ we have $u,v=0$. Otherwise, the matrix is invertible and $d_xu=0,d_xv=0$.</p>
+<p>We repeat, in the same manner for $d_yu=0,d_yv=0$</p>
+<p>Implying that $f$ is constant.</p>
+
+
+</article>
+
+
+<section class="post-nav">
+    <ul>
+        <li>
+        
+            <a href="http://localhost:1313/posts/proofs-in-topology/"><i class="fa fa-chevron-circle-left"></i> Proofs in Topology and Metric Spaces (from Mathematical Analysis 2 by Zorich)</a>
+        
+        </li>
+        <li>
+        
+        </li>
+    </ul>
+</section>
+  
+    
+    
+  
+
+
+
+
+
+</main>
+    <footer>
+        <ul>
+            <li>
+                <h6>
+                    Rendered by <a href="https://gohugo.io" title="Hugo">Hugo</a> |
+                    <a href="http://localhost:1313/index.xml">Subscribe </a></h6>
+            </li>
+            
+            
+        </ul>
+    </footer>
+</div>
+<script src="/js/scripts.js"></script>
+
+  
+
+
+</body>
+
+</html>
+

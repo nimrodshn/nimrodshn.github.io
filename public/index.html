@@ -85,6 +85,46 @@
     
 
     <li class="first" >
+      <h1><a href="http://localhost:1313/posts/proofs-in-complex-analysis/" title="Proofs in Complex Analysis">Proofs in Complex Analysis</a></h1>
+      <aside>
+    <ul>
+        <li>
+            <time class="post-date" datetime="2026-02-08T00:00:00Z">Feb 8, 2026</time>
+        </li>
+        
+        
+
+        
+
+        <li>3 minute read</li>
+    </ul>
+</aside>
+
+      
+
+      <p><h3 id="more-proofs-in-analysis">More proofs in analysis:</h3>
+<p><strong>Question (Composition of differentiable functions):</strong>
+Let $f,g$ be differentiable functions such that $g:X\rightarrow{Y}$ and $f:Y\rightarrow{Z}$ such that the image of $g$ is contained within the domain of $f$.
+Than, $f\circ{g}$ is a differentiable function and its derivative is given by $f(g(x))&rsquo;=f&rsquo;(g(x))g&rsquo;(x)$.</p>
+<p><strong>Answer:</strong>
+Let $t\in{X}$, implying by our assumption $g(t)\in{Y}$. Than differentiability of $f$ we may write -
+$$
+f(g(t)+h)-f(g(t))=f&rsquo;(g(t))h+o(h)
+$$</p>
+<p>We define $h(u)=g(t+u)-g(t)$ implying -</p>
+<p>$$
+f(g(t+u))-f(g(t)) = \
+f(g(t)+h(u))-f(g(t)) = \
+f&rsquo;(g(t))h(u)+o(h(u)) = \
+f&rsquo;(g(t))(g(t+u)-g(t))+o(h(u))
+$$</p></p>
+      
+      <a href="/posts/proofs-in-complex-analysis/">Read more…</a>
+      
+    </li>
+    
+
+    <li >
       <h1><a href="http://localhost:1313/posts/proofs-in-topology/" title="Proofs in Topology and Metric Spaces (from Mathematical Analysis 2 by Zorich)">Proofs in Topology and Metric Spaces (from Mathematical Analysis 2 by Zorich)</a></h1>
       <aside>
     <ul>
@@ -394,36 +434,6 @@ From the definition of continuity - for any point in $[\alpha,\beta]$ there <em>
 <p><strong>Some simple examples:</strong></p></p>
       
       <a href="/posts/non-consequitive-1s-binary/">Read more…</a>
-      
-    </li>
-    
-
-    <li >
-      <h1><a href="http://localhost:1313/posts/another-limit-question/" title="Yet another limit pf from Ash 😅">Yet another limit pf from Ash 😅</a></h1>
-      <aside>
-    <ul>
-        <li>
-            <time class="post-date" datetime="2025-12-02T00:00:00Z">Dec 2, 2025</time>
-        </li>
-        
-        
-
-        
-
-        <li>2 minute read</li>
-    </ul>
-</aside>
-
-      
-
-      <p><p><strong>Problem:</strong>
-Suppose $\mu$ is a probability measure (or nonegative countably additive set function) and the following holds - $A_i\uparrow A$ and $A_i&rsquo;\uparrow A&rsquo;$ such that $A\subset{A&rsquo;}$ than we have - $\lim_i\mu(A_i)\leq\lim_i\mu(A_i&rsquo;)$.</p>
-<p><strong>The simplest proof possible:</strong>
-As we know from previous statements on countably additive set functions - $$\lim_i\mu(A_i)=\mu(\lim_i{A_i})=\mu(A)\leq\mu(A&rsquo;)=\mu(\lim_i{A_i&rsquo;})=\lim_i\mu(A_i&rsquo;)$$</p>
-<p><strong>A first attempt of a proof using elementary analysis:</strong>
-Naively, we may try to attack this question as purely a question on sequences of real numbers $\set{\mu(A_i)}_i$ and $\set{\mu(A_i&rsquo;)}_i$?</p></p>
-      
-      <a href="/posts/another-limit-question/">Read more…</a>
       
     </li>
     
