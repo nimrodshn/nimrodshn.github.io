@@ -6,10 +6,19 @@
    <description>Recent content on Yet another corner of the internet</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
-   <lastBuildDate>Wed, 04 Feb 2026 00:00:00 +0000</lastBuildDate>
+   <lastBuildDate>Sun, 08 Feb 2026 00:00:00 +0000</lastBuildDate>
    
        <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
    
+   
+     <item>
+       <title>Proofs in Complex Analysis</title>
+       <link>http://localhost:1313/posts/proofs-in-complex-analysis/</link>
+       <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
+       
+       <guid>http://localhost:1313/posts/proofs-in-complex-analysis/</guid>
+       <description>&lt;h3 id=&#34;more-proofs-in-analysis&#34;&gt;More proofs in analysis:&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Question (Composition of differentiable functions):&lt;/strong&gt;Let $f,g$ be differentiable functions such that $g:X\rightarrow{Y}$ and $f:Y\rightarrow{Z}$ such that the image of $g$ is contained within the domain of $f$.Than, $f\circ{g}$ is a differentiable function and its derivative is given by $f(g(x))&amp;rsquo;=f&amp;rsquo;(g(x))g&amp;rsquo;(x)$.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Answer:&lt;/strong&gt;Let $t\in{X}$, implying by our assumption $g(t)\in{Y}$. Than differentiability of $f$ we may write -$$f(g(t)+h)-f(g(t))=f&amp;rsquo;(g(t))h+o(h)$$We define $h(u)=g(t+u)-g(t)$ implying -$$f(g(t+u))-f(g(t)) = \f(g(t)+h(u))-f(g(t)) = \f&amp;rsquo;(g(t))h(u)+o(h(u)) = \f&amp;rsquo;(g(t))(g(t+u)-g(t))+o(h(u)) = \$$&lt;/p&gt;&lt;p&gt;Since $h(u)=g(t+u)-g(t)=g&amp;rsquo;(t)u+o(u)$,we have $h(u)=O(u)+o(u)=O(u)$ implying $o(h(u))=o(u).$&lt;/p&gt;&lt;p&gt;$$f&amp;rsquo;(g(t))(g&amp;rsquo;(t)u+o(u))+o(u) = \f&amp;rsquo;(g(t))g&amp;rsquo;(t)u+f&amp;rsquo;(g(t))o(u)+o(u) = \f&amp;rsquo;(g(t))g&amp;rsquo;(t)u+o(u)+o(u) = \f&amp;rsquo;(g(t))g&amp;rsquo;(t)u+o(u)$$&lt;/p&gt;&lt;p&gt;Concluding the proof.&lt;/p&gt;&lt;h3 id=&#34;proofs-in-complex-analysis&#34;&gt;Proofs in Complex Analysis:&lt;/h3&gt;</description>
+     </item>
    
      <item>
        <title>Proofs in Topology and Metric Spaces (from Mathematical Analysis 2 by Zorich)</title>
