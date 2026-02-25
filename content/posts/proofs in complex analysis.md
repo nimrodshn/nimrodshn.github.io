@@ -102,6 +102,33 @@ Than, from our previous analysis, since $s<1$, we may take $n$ to be arbitrarily
 
 For $|z|>1$: The necessary conditions for convergence do not apply bc the terms do not tend to zero, and therefore the sequence diverges.
 
+__Question__: Show that the sum of an absolute convergent series does not change if the terms are rearranged.
+
+__Proof__: 
+
+Let $S=\sum_{i=0}^\infty{a_i}$ be an absolutly convergent sequence.
+
+Let $\pi:\N\rightarrow\N$ be a permutation of $\N$. 
+
+Since the original sequence is absolutly convergent, let $\epsilon>0$, we find $n_0$ such the for $n>n_0$ we have $|a_n|+....+|a_{n+p}|<\epsilon$ for any $p\geq0$.
+
+This implies there are only finitely many terms in the original series such that the Cauchy criteria does not apply.
+
+For those finite set $\set{1,...,n_0}$, the permutation $\pi$ must place all of them in possibly large set therefore there exists $n_\pi$ such that all the indicies appears among them.
+
+Thus, we may find the largest index $n_\pi$ such that for any $n>n_\pi$ we have $|a_{\pi(n)}+...+a_{\pi(n+p)}|<\epsilon$ for any $p>0$. (since for each $\pi(n)$ we have $\pi(n)>n_0$)
+
+Implying the rearranged series converges from the Cauchy criteria. Moreover, for any $n>n_\pi$ we have
+
+We have -
+$$
+|S-\sum_{i=0}^n{a_{\pi(i)}}|=|\sum_{i=n+1}^\infty{a_{\pi(i)}}|\leq \\\
+\sum_{i=n+1}^\infty{|a_{\pi(i)}|} \leq \sum_{i=n_0+1}^\infty{|a_{i}}|=\epsilon
+$$
+
+Concluding the pf.
+
+
 ### Proofs in Complex Analysis:
 
 __Question:__
