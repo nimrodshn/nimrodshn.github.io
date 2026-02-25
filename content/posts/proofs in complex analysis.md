@@ -102,6 +102,99 @@ Than, from our previous analysis, since $s<1$, we may take $n$ to be arbitrarily
 
 For $|z|>1$: The necessary conditions for convergence do not apply bc the terms do not tend to zero, and therefore the sequence diverges.
 
+__Question__: Show that the sum of an absolute convergent series does not change if the terms are rearranged.
+
+__Proof__: 
+
+Let $S=\sum_{i=0}^\infty{a_i}$ be an absolutly convergent sequence.
+
+Let $\pi:\N\rightarrow\N$ be a permutation of $\N$. 
+
+Since the original sequence is absolutly convergent, let $\epsilon>0$, we find $n_0$ such the for $n>n_0$ we have $|a_n|+....+|a_{n+p}|<\epsilon$ for any $p\geq0$.
+
+This implies there are only finitely many terms in the original series such that the Cauchy criteria does not apply.
+
+For those finite set $\set{1,...,n_0}$, the permutation $\pi$ must place all of them in possibly large set therefore there exists $n_\pi$ such that all the indicies appears among them.
+
+Thus, we may find the largest index $n_\pi$ such that for any $n>n_\pi$ we have $|a_{\pi(n)}+...+a_{\pi(n+p)}|<\epsilon$ for any $p>0$. (since for each $\pi(n)$ we have $\pi(n)>n_0$)
+
+Implying the rearranged series converges from the Cauchy criteria. Moreover, for any $n>n_\pi$ we have
+
+We have -
+$$
+|S-\sum_{i=0}^n{a_{\pi(i)}}|=|\sum_{i=n+1}^\infty{a_{\pi(i)}}|\leq \\\
+\sum_{i=n+1}^\infty{|a_{\pi(i)}|} \leq \sum_{i=n_0+1}^\infty{|a_{i}}|=\epsilon
+$$
+
+Concluding the pf.
+
+__Question__:
+
+Discuss the uniform convergence of the series:
+$$
+\sum_{n=1}^{\infty}\frac{x}{n(1+nx^2)}
+$$
+
+__Proof:__
+Let $x\in{\R}$ such that $|x|<1$. We have -
+$$
+|a_n|=|\frac{x}{n(1+nx^2)}|=\frac{|x|}{n(1+nx^2)}\leq\frac{1}{n^2}
+$$
+
+if $|x|=1$ we have - 
+$$
+|a_n|=\frac{1}{n(1+n)}\leq\frac{1}{n^2}
+$$
+
+The latter are terms of a convergent series implying that the original series is converges uniformly inside the unit ball due to the Wierstrass M-test.
+
+if $|x|>1$ we have 
+$$
+|a_n|=|\frac{x}{n(1+nx^2)}|=\frac{|x|}{|n(1+nx^2)|}\leq\frac{|x|}{|n(1+n)|}<\frac{M}{|n(1+n)|}
+$$
+For some $M>|x|$, implying the convergence is only point-wise.
+
+__Question:__
+For real $y$, show that every remainder in the series expansion for $\cos{y}$ has the same sign of the last omitted term in the series.
+
+__Answer:__
+Indeed the terms of the series are given by $1-\frac{x^2}{2}+...+\frac{(-1^n)x^{2n}}{2n!}$. Since the sign of the terms alternate the remainder has the same sign of the last omitted term in the series. Indeed, by Taylor's formula the remainder is the following - 
+$$
+Re(y)=\frac{f^{(2n+1)}(\epsilon)}{(2n+1)!}=\frac{(-1)^n\sin{\epsilon}}{(2n+1)!}
+$$
+
+For some $0<\epsilon<y$. This term indeed has the same sign has the $n$th terms in the series. The same is true for $\sin$.
+
+__Question__:
+Show that $3<\pi<2\sqrt{3}$:
+
+We first find independently $\cos\frac{\pi}{3}$ and $\sin\frac{\pi}{3}$. Indeed since $\exp{\pi i}=-1$ we have $(\exp{\frac{\pi}{3}i})^3=-1$ implying $\exp{\frac{\pi}{3}i}$ is a solution for $z^3=-1$.
+
+Thus we reduce this question to finding solutions to $z^3+1=0$.
+
+Indeed, we have for any $a^3+b^3=0$ the following decomposition - $(a+b)(a^2-ab+b^2)$
+
+This can be viewed by observing that $a=-b$ is a solution to the qubic equations and solving for the quadratics $(a+b)(Aa^2+Bab+Cb^2)$
+
+We multiply and obtain $Aa^3+Ba^2b+Cab^2+Aa^2b+Bab^2+Cb^3$
+
+From the original equation $a^3+b^3=0$, we must have $A=C=1, B=-1$.
+
+Resulting in the decomposition mentioned. We than have $z^3+1=(z+1)(z^2-z+1)$
+
+Giving a single real root $z=-1$ and two imaginary roots: $\frac{1+i\sqrt{3}}{2},\frac{1-i\sqrt{3}}{2}$
+
+Since $\sin y>0$ for $y<\pi$ we arrive at $\exp{\frac{\pi}{3}i}=\cos{\frac{\pi}{3}}+i\sin{\frac{\pi}{3}}$ implying $\cos{\frac{\pi}{3}}=\frac{1}{2}$ and $\sin{\frac{\pi}{3}}=\frac{\sqrt{3}}{2}$.
+
+We return to the original inequlities now with this information.
+
+We have $1-\frac{\pi^2}{18}<\cos{\frac{\pi}{3}}=\frac{1}{2}$ Implying - $1<\frac{\pi^2}{9}$ giving $3<\pi$.
+
+On the other hand $\frac{\sqrt{3}}{2}=\sin{\frac{\pi}{3}}>\frac{\pi}{3}-\frac{\pi^3}{162}$. Assume by contradiction $\pi\geq{}2\sqrt{3}$. Than, define $f(y)=\frac{y}{3}-\frac{y^3}{162}$. We have $Df=\frac{1}{3}-\frac{3y^2}{162}\implies$ f has extremum at $y^2=\frac{162}{9}=18\implies y=\pm3\sqrt{2}$.
+
+From the second derivative test we get $3\sqrt{2}$ is a maximum which gives $f(3\sqrt{2})=\frac{3\sqrt{2}}{3}-\frac{54\sqrt{2}}{162}=\frac{162-54}{162}\sqrt{2}=\frac{108}{162}\sqrt{2}=\frac{2}{3}\sqrt{2}>\frac{\sqrt{3}}{2}$. Contradiction! we have found $y\geq{}2\sqrt{3}$ such that $f(y)>\frac{\sqrt{2}}{3}$. Implyin $y<2\sqrt{3}$. $\square$.
+
+
 ### Proofs in Complex Analysis:
 
 __Question:__

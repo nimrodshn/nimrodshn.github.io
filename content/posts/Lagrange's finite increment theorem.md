@@ -5,20 +5,20 @@ draft = false
 +++
 
 __Theorem:__
-A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
+A continous function on a closed interval $E=[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
 
 __Proof:__
 From the definition of continuity - for any point in $[\alpha,\beta]$ there *exists* a neighborhood such that the function is bounded in that environment.
 
 [Side note: For that reason the function $f(x)=\frac{1}{x}$ is *not* continous on any interval containing 0, since it is unbounded at any environment of the point.]
 
-Thus, we may cover $[\alpha,\beta]$ using a collection of open intervals. Using the Heine-Borel theorem we may extract a finite collection $A_1,..,A_k$ of open intervals covering $[\alpha,\beta]$ such that $f$ is bounded on each interval.
+From the local properties of continous functions, for any point $x\in[\alpha,\beta]$ there exists an open interval $U(x)$ such that $f$ on $U(x)\cap{E}$ is bounded. The collection of these open intervals forms a covering of $E$, thus, from Heine-Borel theorem, we may extract a finite collection $A_1,..,A_k$ of open intervals covering $[\alpha,\beta]$ such that $f$ is bounded on each interval.
 
 We define $M_i=\sup_{x\in{A_i}}{f(x)}$, the maximal value of $f$ for the interval $A_i$ - this value *exists and is finite* since $f$ is bounded on $A_i$ by definition and $m_i=\inf_{x\in{A_i}}{f(x)}$ similiarly.
 
 Thus, $f$ is bounded on $[\alpha,\beta]$ - $m=\min_i{m_i} \leq f(x)\leq \max_i{M_i}=M$.
 
-Assume $f$ does not attains the values $m$ or $M$. Indeed if $f(x)$ is continous so is $f(x)-M$ thus $f$ attains values arbitrarily close to $M$ in some interval (Otherwise, $M$ is not a supremum of some interval) implying $\frac{1}{f(x)-M}$ is unbounded on $[\alpha,\beta]$, contradicting what was just proved.
+We let $M=\sup_Ef(x)$. If $f$ does not attain $M$ in $E$ than, form the definition fo the supremum, $f$ there exists a sequence of points $x_n$ arbitrarily close to $M$. Thus, it contains a convergent subsequence $x_{n_k}\rightarrow{x^*}$. But from continuity, $\lim{f(x_{n_k})}=f(x^*)$.
 
 Thus there exists $x_M\in{[\alpha,\beta]}$ such that $f(x_M)=M$. Similarly for $m$. $\square$.
 
