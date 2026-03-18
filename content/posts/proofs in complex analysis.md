@@ -165,36 +165,6 @@ $$
 
 For some $0<\epsilon<y$. This term indeed has the same sign has the $n$th terms in the series. The same is true for $\sin$.
 
-__Question__:
-Show that $3<\pi<2\sqrt{3}$:
-
-We first find independently $\cos\frac{\pi}{3}$ and $\sin\frac{\pi}{3}$. Indeed since $\exp{\pi i}=-1$ we have $(\exp{\frac{\pi}{3}i})^3=-1$ implying $\exp{\frac{\pi}{3}i}$ is a solution for $z^3=-1$.
-
-Thus we reduce this question to finding solutions to $z^3+1=0$.
-
-Indeed, we have for any $a^3+b^3=0$ the following decomposition - $(a+b)(a^2-ab+b^2)$
-
-This can be viewed by observing that $a=-b$ is a solution to the qubic equations and solving for the quadratics $(a+b)(Aa^2+Bab+Cb^2)$
-
-We multiply and obtain $Aa^3+Ba^2b+Cab^2+Aa^2b+Bab^2+Cb^3$
-
-From the original equation $a^3+b^3=0$, we must have $A=C=1, B=-1$.
-
-Resulting in the decomposition mentioned. We than have $z^3+1=(z+1)(z^2-z+1)$
-
-Giving a single real root $z=-1$ and two imaginary roots: $\frac{1+i\sqrt{3}}{2},\frac{1-i\sqrt{3}}{2}$
-
-Since $\sin y>0$ for $y<\pi$ we arrive at $\exp{\frac{\pi}{3}i}=\cos{\frac{\pi}{3}}+i\sin{\frac{\pi}{3}}$ implying $\cos{\frac{\pi}{3}}=\frac{1}{2}$ and $\sin{\frac{\pi}{3}}=\frac{\sqrt{3}}{2}$.
-
-We return to the original inequlities now with this information.
-
-We have $1-\frac{\pi^2}{18}<\cos{\frac{\pi}{3}}=\frac{1}{2}$ Implying - $1<\frac{\pi^2}{9}$ giving $3<\pi$.
-
-On the other hand $\frac{\sqrt{3}}{2}=\sin{\frac{\pi}{3}}>\frac{\pi}{3}-\frac{\pi^3}{162}$. Assume by contradiction $\pi\geq{}2\sqrt{3}$. Than, define $f(y)=\frac{y}{3}-\frac{y^3}{162}$. We have $Df=\frac{1}{3}-\frac{3y^2}{162}\implies$ f has extremum at $y^2=\frac{162}{9}=18\implies y=\pm3\sqrt{2}$.
-
-From the second derivative test we get $3\sqrt{2}$ is a maximum which gives $f(3\sqrt{2})=\frac{3\sqrt{2}}{3}-\frac{54\sqrt{2}}{162}=\frac{162-54}{162}\sqrt{2}=\frac{108}{162}\sqrt{2}=\frac{2}{3}\sqrt{2}>\frac{\sqrt{3}}{2}$. Contradiction! we have found $y\geq{}2\sqrt{3}$ such that $f(y)>\frac{\sqrt{2}}{3}$. Implyin $y<2\sqrt{3}$. $\square$.
-
-
 ### Proofs in Complex Analysis:
 
 __Question:__
@@ -271,3 +241,35 @@ If $|f|=0$ we have $u,v=0$. Otherwise, the matrix is invertible and $d_xu=0,d_xv
 We repeat, in the same manner for $d_yu=0,d_yv=0$
 
 Implying that $f$ is constant.
+
+
+__Question__:
+Show that $3<\pi<2\sqrt{3}$:
+
+We first find independently $\cos\frac{\pi}{3}$ and $\sin\frac{\pi}{3}$. Indeed since $\exp{\pi i}=-1$ we have $(\exp{\frac{\pi}{3}i})^3=-1$ implying $\exp{\frac{\pi}{3}i}$ is a solution for $z^3=-1$.
+
+Thus we reduce this question to finding solutions to $z^3+1=0$.
+
+Indeed, we have for any $a^3+b^3=0$ the following decomposition - $(a+b)(a^2-ab+b^2)$
+
+This can be viewed by observing that $a=-b$ is a solution to the qubic equations and solving for the quadratics $(a+b)(Aa^2+Bab+Cb^2)$
+
+We multiply and obtain $Aa^3+Ba^2b+Cab^2+Aa^2b+Bab^2+Cb^3$
+
+From the original equation $a^3+b^3=0$, we must have $A=C=1, B=-1$.
+
+Resulting in the decomposition mentioned. We than have $z^3+1=(z+1)(z^2-z+1)$
+
+Giving a single real root $z=-1$ and two imaginary roots: $\frac{1+i\sqrt{3}}{2},\frac{1-i\sqrt{3}}{2}$
+
+Since $\sin y>0$ for $y<\pi$ (from continuity of the polynomial everywhere and the intermediate value theorem) we arrive at $\exp{\frac{\pi}{3}i}=\cos{\frac{\pi}{3}}+i\sin{\frac{\pi}{3}}$ implying $\cos{\frac{\pi}{3}}=\frac{1}{2}$ and $\sin{\frac{\pi}{3}}=\frac{\sqrt{3}}{2}$.
+
+We return to the original inequlities now with this information.
+
+We have $1-\frac{\pi^2}{18}<\cos{\frac{\pi}{3}}=\frac{1}{2}$ Implying - $1<\frac{\pi^2}{9}$ giving $3<\pi$.
+
+On the other hand $\frac{\sqrt{3}}{2}=\sin{\frac{\pi}{3}}>\frac{\pi}{3}-\frac{\pi^3}{162}$. We study the polynomial $f(y)=\frac{y}{3}-\frac{y^3}{162}$ and find a (crude) bound such that the above inequality is satisfied. We have $Df=\frac{1}{3}-\frac{3y^2}{162}\implies$ f has extremum at $y^2=\frac{162}{9}=18\implies y=\pm3\sqrt{2}$.
+
+We note that $f$ increases for $|{y}|<{3\sqrt{2}}$
+
+We would like to show that $\pi<2\sqrt{3}$. Indeed, compute $f(2\sqrt{3})=\frac{2\sqrt{3}}{3}-\frac{(2\sqrt{3})^3}{162}=\frac{252}{162\sqrt{3}}=\frac{84*3}{162\sqrt{3}}=\frac{84\sqrt{3}}{162}>\frac{81\sqrt{3}}{162}=\frac{\sqrt{3}}{2}$. However, since $f$ is increasing in this range and is continous everywhere we deduce that $y<2\sqrt{3}$ to obtain $f(y)<\frac{\sqrt{3}}{2}$ implying $\pi<2\sqrt{3}$.  

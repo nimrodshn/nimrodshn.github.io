@@ -104,7 +104,7 @@ $$ f(g(t&#43;u))-f(g(t)) = \ f(g(t)&#43;h(u))-f(g(t)) = \ f’(g(t))h(u)&#43;o(h
 
         
 
-        <li>3 minute read</li>
+        <li>6 minute read</li>
     </ul>
 </aside>
 
@@ -182,6 +182,64 @@ $$</p>
 <p>Implying for $p\geq{1}$ we have, $a_{N+p}&lt;a_Ns^p=Nq^Ns^p&lt;Ns^{N+p}$.
 Than, from our previous analysis, since $s&lt;1$, we may take $n$ to be arbitrarily large and make $|Ns^n|$ arbitrarily small. Implying $|a_n|&lt;|Ns^{n}|$. Now let $\epsilon$, take $n$ such that $n&gt;\log_s{\epsilon/N}$ to obtain $|a_n|&lt;|Ns^{n}|&lt;\epsilon$.</p>
 <p>For $|z|&gt;1$: The necessary conditions for convergence do not apply bc the terms do not tend to zero, and therefore the sequence diverges.</p>
+<p><strong>Question</strong>: Show that the sum of an absolute convergent series does not change if the terms are rearranged.</p>
+<p><strong>Proof</strong>:</p>
+<p>Let $S=\sum_{i=0}^\infty{a_i}$ be an absolutly convergent sequence.</p>
+<p>Let $\pi:\N\rightarrow\N$ be a permutation of $\N$.</p>
+<p>Since the original sequence is absolutly convergent, let $\epsilon&gt;0$, we find $n_0$ such the for $n&gt;n_0$ we have $|a_n|+&hellip;.+|a_{n+p}|&lt;\epsilon$ for any $p\geq0$.</p>
+<p>This implies there are only finitely many terms in the original series such that the Cauchy criteria does not apply.</p>
+<p>For those finite set $\set{1,&hellip;,n_0}$, the permutation $\pi$ must place all of them in possibly large set therefore there exists $n_\pi$ such that all the indicies appears among them.</p>
+<p>Thus, we may find the largest index $n_\pi$ such that for any $n&gt;n_\pi$ we have $|a_{\pi(n)}+&hellip;+a_{\pi(n+p)}|&lt;\epsilon$ for any $p&gt;0$. (since for each $\pi(n)$ we have $\pi(n)&gt;n_0$)</p>
+<p>Implying the rearranged series converges from the Cauchy criteria. Moreover, for any $n&gt;n_\pi$ we have</p>
+<p>We have -
+$$
+|S-\sum_{i=0}^n{a_{\pi(i)}}|=|\sum_{i=n+1}^\infty{a_{\pi(i)}}|\leq \\
+\sum_{i=n+1}^\infty{|a_{\pi(i)}|} \leq \sum_{i=n_0+1}^\infty{|a_{i}}|=\epsilon
+$$</p>
+<p>Concluding the pf.</p>
+<p><strong>Question</strong>:</p>
+<p>Discuss the uniform convergence of the series:
+$$
+\sum_{n=1}^{\infty}\frac{x}{n(1+nx^2)}
+$$</p>
+<p><strong>Proof:</strong>
+Let $x\in{\R}$ such that $|x|&lt;1$. We have -
+$$
+|a_n|=|\frac{x}{n(1+nx^2)}|=\frac{|x|}{n(1+nx^2)}\leq\frac{1}{n^2}
+$$</p>
+<p>if $|x|=1$ we have -
+$$
+|a_n|=\frac{1}{n(1+n)}\leq\frac{1}{n^2}
+$$</p>
+<p>The latter are terms of a convergent series implying that the original series is converges uniformly inside the unit ball due to the Wierstrass M-test.</p>
+<p>if $|x|&gt;1$ we have
+$$
+|a_n|=|\frac{x}{n(1+nx^2)}|=\frac{|x|}{|n(1+nx^2)|}\leq\frac{|x|}{|n(1+n)|}&lt;\frac{M}{|n(1+n)|}
+$$
+For some $M&gt;|x|$, implying the convergence is only point-wise.</p>
+<p><strong>Question:</strong>
+For real $y$, show that every remainder in the series expansion for $\cos{y}$ has the same sign of the last omitted term in the series.</p>
+<p><strong>Answer:</strong>
+Indeed the terms of the series are given by $1-\frac{x^2}{2}+&hellip;+\frac{(-1^n)x^{2n}}{2n!}$. Since the sign of the terms alternate the remainder has the same sign of the last omitted term in the series. Indeed, by Taylor&rsquo;s formula the remainder is the following -
+$$
+Re(y)=\frac{f^{(2n+1)}(\epsilon)}{(2n+1)!}=\frac{(-1)^n\sin{\epsilon}}{(2n+1)!}
+$$</p>
+<p>For some $0&lt;\epsilon&lt;y$. This term indeed has the same sign has the $n$th terms in the series. The same is true for $\sin$.</p>
+<p><strong>Question</strong>:
+Show that $3&lt;\pi&lt;2\sqrt{3}$:</p>
+<p>We first find independently $\cos\frac{\pi}{3}$ and $\sin\frac{\pi}{3}$. Indeed since $\exp{\pi i}=-1$ we have $(\exp{\frac{\pi}{3}i})^3=-1$ implying $\exp{\frac{\pi}{3}i}$ is a solution for $z^3=-1$.</p>
+<p>Thus we reduce this question to finding solutions to $z^3+1=0$.</p>
+<p>Indeed, we have for any $a^3+b^3=0$ the following decomposition - $(a+b)(a^2-ab+b^2)$</p>
+<p>This can be viewed by observing that $a=-b$ is a solution to the qubic equations and solving for the quadratics $(a+b)(Aa^2+Bab+Cb^2)$</p>
+<p>We multiply and obtain $Aa^3+Ba^2b+Cab^2+Aa^2b+Bab^2+Cb^3$</p>
+<p>From the original equation $a^3+b^3=0$, we must have $A=C=1, B=-1$.</p>
+<p>Resulting in the decomposition mentioned. We than have $z^3+1=(z+1)(z^2-z+1)$</p>
+<p>Giving a single real root $z=-1$ and two imaginary roots: $\frac{1+i\sqrt{3}}{2},\frac{1-i\sqrt{3}}{2}$</p>
+<p>Since $\sin y&gt;0$ for $y&lt;\pi$ we arrive at $\exp{\frac{\pi}{3}i}=\cos{\frac{\pi}{3}}+i\sin{\frac{\pi}{3}}$ implying $\cos{\frac{\pi}{3}}=\frac{1}{2}$ and $\sin{\frac{\pi}{3}}=\frac{\sqrt{3}}{2}$.</p>
+<p>We return to the original inequlities now with this information.</p>
+<p>We have $1-\frac{\pi^2}{18}&lt;\cos{\frac{\pi}{3}}=\frac{1}{2}$ Implying - $1&lt;\frac{\pi^2}{9}$ giving $3&lt;\pi$.</p>
+<p>On the other hand $\frac{\sqrt{3}}{2}=\sin{\frac{\pi}{3}}&gt;\frac{\pi}{3}-\frac{\pi^3}{162}$. Assume by contradiction $\pi\geq{}2\sqrt{3}$. Than, define $f(y)=\frac{y}{3}-\frac{y^3}{162}$. We have $Df=\frac{1}{3}-\frac{3y^2}{162}\implies$ f has extremum at $y^2=\frac{162}{9}=18\implies y=\pm3\sqrt{2}$.</p>
+<p>From the second derivative test we get $3\sqrt{2}$ is a maximum which gives $f(3\sqrt{2})=\frac{3\sqrt{2}}{3}-\frac{54\sqrt{2}}{162}=\frac{162-54}{162}\sqrt{2}=\frac{108}{162}\sqrt{2}=\frac{2}{3}\sqrt{2}&gt;\frac{\sqrt{3}}{2}$. Contradiction! we have found $y\geq{}2\sqrt{3}$ such that $f(y)&gt;\frac{\sqrt{2}}{3}$. Implyin $y&lt;2\sqrt{3}$. $\square$.</p>
 <h3 id="proofs-in-complex-analysis">Proofs in Complex Analysis:</h3>
 <p><strong>Question:</strong>
 If $g(z)$ and $f(z)$ are analytic functions show the $f(g(z))$ is analytic.</p>
