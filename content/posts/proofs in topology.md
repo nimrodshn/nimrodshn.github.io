@@ -30,3 +30,93 @@ Let $y\in{Y}$ than, by definition $y\in{{Y\cap{B(x_i,\epsilon)}}}$ for some $i$.
 We have by the triangle inequality, $d(y_i,y)\leq d(y_i,x_i)+d(x_i,y)=\epsilon+\epsilon=2\epsilon$. Implying that our choice of $y_1$,..,$y_N$ form an $2\epsilon$-net.
 
 Implying we may form an $\epsilon$-net from elements of $Y$ or $X$ of arbitrarily small $\epsilon$.
+
+__Question__:
+Having a metric space $d$ on a set $X$ one may attempt to define the distand $\bar{d}(A,B)$ over sets $A,B\subset{X}$:
+
+$$
+\bar{d}(A,B)=\inf_{a\in{A},b\in{B}}d(a,b)
+$$
+
+Intuitivly, that is the minimal distances between $A,B$.
+Naviely, if $A\cap{B}\neq\phi$ then $\bar{d}(A,B)=0$. But this is not a necessary condition for one may take $A=[-\infty,0)$ and $B=[0,\infty]$ than $\bar{d}(A,B)=0$ but $A\cap{B}=\phi$. (this is question a, in Zorich.)
+
+We now define a distance over *closed sets* in $X$, take 
+
+$$
+D(A,B)=\max{(\sup_{a\in{A}}\bar{d}(a,B), \sup_{b\in{B}}\bar{d}(b,A))}
+$$
+
+Prove this function is a metric over closed sets.
+
+__Proof__
+At first glance, the importance of *closed sets* is not entirely clear in the above definition.
+
+We first proove $D(A,A)=0$.
+
+Assume by contradiciton the $A\neq{B}$ yet $D(A,B)=0$.
+
+Than, by definition $D(A,B)=\max{(\sup_{a\in{A}}\bar{d}(a,B), \sup_{b\in{B}}\bar{d}(b,A))}=0$
+
+We must have $\sup_{a\in{A}}\bar{d}(a,B)=\sup_{b\in{B}}\bar{d}(b,A)=0$.
+
+Without loss of generality we consider the first case of $\sup_{a\in{A}}\bar{d}(a,B)=0$, we must have $\bar{d}=0$ since $\bar{d}$ is infimum over a metric, implying $\forall{a}\in{A}$ either $a$ is a limit point of $B$ or it is in $B$ but since B is closed it must contain all of its limit points thus we must have $A\subset{B}$.
+
+The case for $B\subset{A}$ is symmetric.
+
+The symmetry condition for distance functions apply for D from its definition.
+
+We are left to derive the triangles inequality:
+
+We write $D(A,C)=\max{(\sup_{a\in{A}}\bar{d}(a,C), \sup_{c\in{C}}\bar{d}(c,A))}$
+
+Let, $a\in{A},b\in{B}$ be arbitrary points. From the definition of $\bar{d}$ and the triangle inequality we have - 
+$$
+\bar{d}(a,C) \leq d(a,b)+ \bar{d}(b,C) \leq \\\
+\bar{d}(a,B)+\sup_{b\in{B}}\bar{d}(b,C) \leq
+$$
+We take the supremum over $a$ to obtain - 
+$$
+\sup_{a\in{A}}\bar{d}(a,C) \leq \sup_{a\in{A}}\bar{d}(a,B)+\sup_{b\in{B}}\bar{d}(b,C)
+$$
+
+The same applies for the symmetric inequelity (i.e "from C to A through B").
+
+We take the maximum over both to obtain - 
+
+$$
+D(A,C)=\max(\sup_{a\in{A}}\bar{d}(a,C), \sup_{c\in{C}}\bar{d}(c,A)) \leq \\\
+\max(\sup_{a\in{A}}\bar{d}(a,B)+\sup_{b\in{B}}\bar{d}(b,C),\sup_{c\in{C}}\bar{d}(c,B)+\sup_{b\in{B}}\bar{d}(b,A)) \leq \\\
+\max(\sup_{a\in{A}}\bar{d}(a,B),\sup_{b\in{B}}\bar{d}(b,A)) + \max(\sup_{b\in{B}}\bar{d}(b,C),\sup_{c\in{C}}\bar{d}(c,B)) = \\\
+D(A,B)+D(B,C)
+$$
+
+$\square$.
+
+__Question__:
+Verify that if $(X,d)$ is a metric space then $(X,\frac{d}{1+d})$ is also a metric space and the metrics  $d,\frac{d}{d+1}$ induce the same topology.
+
+__Proof__:
+Indeed, for any $x\in{X}$, from $d$ as a metric, we have $\frac{d(x,x)}{1+d(x,x)}=0$.
+
+And for any $x,y\in{X}$ from having $d$ as a metric - 
+$$
+\frac{d(x,y)}{1+d(x,y)}=\frac{d(y,x)}{1+d(y,x)}
+$$ 
+
+Now we must show that for any $x,y,z\in{X}$
+
+$$
+\frac{d(x,y)}{1+d(x,y)}+\frac{d(y,z)}{1+d(y,z)}\geq\frac{d(x,z)}{1+d(x,z)}
+$$
+
+Indeed, 
+$$
+\frac{d(x,y)}{1+d(x,y)} + \frac{d(y,z)}{1+d(y,z)}\geq \\\
+\frac{d(x,y)}{1+d(x,y)+d(y,z)} + \frac{d(y,z)}{1+d(x,y)+d(y,z)}\geq \\\
+\frac{d(x,y)+d(y,z)}{1+d(x,y)+d(y,z)}\geq \\\
+\frac{d(x,z)}{1+d(x,z)}
+$$
+
+To show that they define the same topology, we must show that if $A$ is open in $(X,d)$ it is also open in $(X,\frac{d}{1+d})$
+

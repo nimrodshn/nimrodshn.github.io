@@ -10,7 +10,7 @@
 <meta name="author" content="" /><meta property="og:url" content="http://localhost:1313/posts/lagranges-finite-increment-theorem/">
   <meta property="og:site_name" content="Yet another corner of the internet">
   <meta property="og:title" content="A proof of Rolles Theorem and Lagranges finite increment Theorem">
-  <meta property="og:description" content="Theorem: A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
+  <meta property="og:description" content="Theorem: A continous function on a closed interval $E=[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
 Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ there exists a neighborhood such that the function is bounded in that environment.
 [Side note: For that reason the function $f(x)=\frac{1}{x}$ is not continous on any interval containing 0, since it is unbounded at any environment of the point.]">
   <meta property="og:locale" content="en_us">
@@ -22,7 +22,7 @@ Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ the
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="A proof of Rolles Theorem and Lagranges finite increment Theorem">
-  <meta name="twitter:description" content="Theorem: A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
+  <meta name="twitter:description" content="Theorem: A continous function on a closed interval $E=[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.
 Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ there exists a neighborhood such that the function is bounded in that environment.
 [Side note: For that reason the function $f(x)=\frac{1}{x}$ is not continous on any interval containing 0, since it is unbounded at any environment of the point.]">
 
@@ -114,14 +114,14 @@ Proof: From the definition of continuity - for any point in $[\alpha,\beta]$ the
     
 
     <p><strong>Theorem:</strong>
-A continous function on a closed interval $[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.</p>
+A continous function on a closed interval $E=[\alpha,\beta]$ attains a maximum or a minimum in the closed interval.</p>
 <p><strong>Proof:</strong>
 From the definition of continuity - for any point in $[\alpha,\beta]$ there <em>exists</em> a neighborhood such that the function is bounded in that environment.</p>
 <p>[Side note: For that reason the function $f(x)=\frac{1}{x}$ is <em>not</em> continous on any interval containing 0, since it is unbounded at any environment of the point.]</p>
-<p>Thus, we may cover $[\alpha,\beta]$ using a collection of open intervals. Using the Heine-Borel theorem we may extract a finite collection $A_1,..,A_k$ of open intervals covering $[\alpha,\beta]$ such that $f$ is bounded on each interval.</p>
+<p>From the local properties of continous functions, for any point $x\in[\alpha,\beta]$ there exists an open interval $U(x)$ such that $f$ on $U(x)\cap{E}$ is bounded. The collection of these open intervals forms a covering of $E$, thus, from Heine-Borel theorem, we may extract a finite collection $A_1,..,A_k$ of open intervals covering $[\alpha,\beta]$ such that $f$ is bounded on each interval.</p>
 <p>We define $M_i=\sup_{x\in{A_i}}{f(x)}$, the maximal value of $f$ for the interval $A_i$ - this value <em>exists and is finite</em> since $f$ is bounded on $A_i$ by definition and $m_i=\inf_{x\in{A_i}}{f(x)}$ similiarly.</p>
 <p>Thus, $f$ is bounded on $[\alpha,\beta]$ - $m=\min_i{m_i} \leq f(x)\leq \max_i{M_i}=M$.</p>
-<p>Assume $f$ does not attains the values $m$ or $M$. Indeed if $f(x)$ is continous so is $f(x)-M$ thus $f$ attains values arbitrarily close to $M$ in some interval (Otherwise, $M$ is not a supremum of some interval) implying $\frac{1}{f(x)-M}$ is unbounded on $[\alpha,\beta]$, contradicting what was just proved.</p>
+<p>We let $M=\sup_Ef(x)$. If $f$ does not attain $M$ in $E$ than, form the definition fo the supremum, $f$ there exists a sequence of points $x_n$ arbitrarily close to $M$. Thus, it contains a convergent subsequence $x_{n_k}\rightarrow{x^<em>}$. But from continuity, $\lim{f(x_{n_k})}=f(x^</em>)$.</p>
 <p>Thus there exists $x_M\in{[\alpha,\beta]}$ such that $f(x_M)=M$. Similarly for $m$. $\square$.</p>
 <p><strong>Rolle&rsquo;s Theorem:</strong>
 Let $f$ be a continous function on $[\alpha,\beta]$ such that $f(\alpha)=f(\beta)$. Than, there exists $\xi\in(\alpha,\beta)$ such that $f&rsquo;(\xi)=0$.</p>
