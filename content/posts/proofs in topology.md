@@ -94,7 +94,7 @@ $$
 $\square$.
 
 __Question__:
-Verify that if $(X,d)$ is a metric space then $(X,\frac{d}{1+d})$ is also a metric space and the metrics  $d,\frac{d}{d+1}$ induce the same topology.
+Verify that if $(X,d)$ is a metric space than $(X,\frac{d}{1+d})$ is also a metric space then the metrics  $d,\frac{d}{d+1}$ induce the same topology.
 
 __Proof__:
 Indeed, for any $x\in{X}$, from $d$ as a metric, we have $\frac{d(x,x)}{1+d(x,x)}=0$.
@@ -118,5 +118,18 @@ $$
 \frac{d(x,z)}{1+d(x,z)}
 $$
 
-To show that they define the same topology, we must show that if $A$ is open in $(X,d)$ it is also open in $(X,\frac{d}{1+d})$
+To show that they define the same topology, we must show that if $A$ is open in $(X,d)$ it is also open in $(X,\frac{d}{1+d})$ and vice versa.
 
+Indeed let $A$ be open in $(X,\frac{d}{1+d})$, implying that for any $x\in{A}$ there exists $r>0$ such that $B(x,r)\subset{A}$. 
+
+Since $\frac{1}{1+d}\leq{1}$ and $d\geq{0}$ we have $\frac{d}{1+d}\leq{d}$ 
+
+This implies that for any $r>0$ we have $B_{d}(x,r)\subset{B_{\frac{d}{1+d}}(x,r)}$ so that if $A$ is open in $(X,\frac{d}{d+1})$ than it is also open in $(X,d)$ since for any point $x\in{A}$ we have $B_{d}(x,r)\subset{B_{\frac{d}{1+d}}(x,r)}\subset{A}$.
+
+On the other hand take $r>0$ and $B_{d}(x,r)$ than set $t=\frac{r}{1+r}$
+
+Than, for arbitrary point in $y\in{B_{\frac{d}{1+d}}(x,t)}$ Since $\frac{d(x,y)}{1+d(x,y)}<\frac{r}{1+r}$ and $\frac{t}{1+t}$ is strictly increasing we have $d(x,y)<r$.
+
+$\implies$ We have $B_{\frac{d}{1+d}}(x,t)\subset{B_d(x,r)}$. Thus, if $A$ is open in $(X,d)$ than  $B_{\frac{d}{1+d}}(x,t)\subset{B_d(x,r)}\subset{A}$. 
+
+We find that $A$ is also open in $(X,\frac{d}{1+d})$ as required, concluding the proof.
